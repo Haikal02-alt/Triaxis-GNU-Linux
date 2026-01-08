@@ -1,0 +1,36 @@
+Welcome To Triaxis Install Guide
+This Guide Will Help You To Install Triaxis Correctly
+
+1 enter https://ubuntu.com/download/server
+2 Setup Ubuntu Server
+3 Update Using sudo apt update
+4 Install Kde Plasma Desktop sudo apt install kde-standard
+5 Show Grub if You Need it sudo nano /etc/default/grub GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=0
+Change them to:
+GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+update grub using sudo update-grub
+6 Rename GRUB Menu Entries GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian` Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
+Then Update grub using sudo update-grub
+7 Edit /etc/os-release sudo nano /etc/os-release Change NAME="Ubuntu"
+PRETTY_NAME="Ubuntu 24.04 LTS"
+To NAME="Triaxis"
+PRETTY_NAME="Triaxis"
+8 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
+9 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
+10 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
+Run sudo nano /etc/sddm.conf If the file doesn’t exist, create it with root Generate a default config: sudo sddm --example-config > /etc/sddm.conf then edit it sudo nano /etc/sddm.conf Set LXQt theme in the config
+Inside /etc/sddm.conf, add: [Theme]
+Current=lubuntu
+Restart SDDM Using sudo systemctl restart sddm
+Themes are usually stored in: /usr/share/sddm/themes/
+Edit the SDDM config file: with sudo nano /etc/sddm.conf If the file doesn’t exist, create it and add: [Theme]
+Current=lubuntu
+Or use the command sudo sddm --example-config > /etc/sddm.conf
+Restart SDDM sudo systemctl restart sddm
+Install Firefox with sudo apt update
+sudo apt install firefox
+11 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
+12 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
+13 Have Fun And Start Using Triaxis
