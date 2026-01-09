@@ -1,0 +1,13 @@
+In Kde Discover Theres A Missing Backends Called Flatpak Backends
+But If theres No Flatpak backend on kde discover settings Heres The Tutorial
+Install Flatpak With sudo apt install flatpak
+If you are running KDE, you should instead install the Plasma Discover Flatpak backend:
+sudo apt install plasma-discover-backend-flatpak
+If you are running GNOME, it is also a good idea to install the Flatpak plugin for GNOME Software. To do this, run:
+sudo apt install gnome-software-plugin-flatpak
+Add the Flathub repository
+
+Flathub is the best place to get Flatpak apps. To enable it, download and install the Flathub repository file or run the following in a terminal:
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+Then Reboot Your System
