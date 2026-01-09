@@ -1,6 +1,6 @@
 Welcome To Triaxis Install Guide
 This Guide Will Help You To Install Triaxis Correctly
-
+Before You Install Flash Ubuntu Server Iso With Rufus Etcher Or Ventoy Then Backup Your Data On Your System Because It Will Erase Your Drive After Installing Triaxis
 1 enter https://ubuntu.com/download/server
 2 Setup Ubuntu Server
 3 Update Using sudo apt update
