@@ -1,0 +1,106 @@
+If you dont want to use kde plasma you can change to other desktop environment to gnome xfce lxqt lxde mate budgie cosmic and others
+
+1 Gnome
+To Install Use sudo apt install ubuntu-gnome-desktop -y
+
+2 XFCE
+sudo apt install xfce4 xfce4-goodies -y
+
+3 LXQt
+sudo apt install lxqt -y
+
+4 Mate
+sudo apt install ubuntu-mate-desktop -y
+
+5 Cinnamon
+sudo apt install cinnamon -y
+
+6 Budgie
+sudo apt install ubuntu-budgie-desktop -y
+
+7 Enlightenment
+sudo apt install enlightenment -y
+
+8 I3 (tiling WM)
+sudo apt install i3 -y
+
+9 Pantheon (elementary OS DE)
+sudo add-apt-repository ppa:elementary-os/stable
+sudo apt update
+sudo apt install pantheon -y
+
+Note: Pantheon packages outside elementary OS can be unstable.
+
+10 Deepin Desktop Environment (DDE)
+sudo add-apt-repository ppa:ubuntudde-dev/stable
+sudo apt update
+sudo apt install ubuntudde-dde -y
+
+11 Sugar (Education DE)
+sudo apt install sugar-session -y
+
+12 UKUI
+sudo apt install ukui-desktop-environment -y
+
+13 Trinity Desktop Environment (TDE)
+sudo add-apt-repository ppa:trinitydesktop/trinity
+sudo apt update
+sudo apt install tde-trinity -y
+
+14 Awesome WM
+sudo apt install awesome -y
+
+15 Sway (Wayland tiling WM)
+sudo apt install sway -y
+
+16 IceWM
+sudo apt install icewm -y
+
+17 Fluxbox
+sudo apt install fluxbox -y
+
+18 Openbox
+sudo apt install openbox -y
+
+19 Ratpoison
+sudo apt install ratpoison -y
+
+20 Lumina
+Lumina is BSD‑origin and not always in Ubuntu repos. If available:
+sudo apt install lumina-desktop -y
+Otherwise, build from source.
+
+21 CDE (Common Desktop Environment)
+CDE is legacy UNIX software, not in Ubuntu repos. You’d need to compile:
+sudo apt install build-essential libmotif-dev
+# then build CDE from source tarball
+
+22 Hyprland
+install Hyprland on Ubuntu (and thus Triaxis) using JaKooLit’s “Kool Hyprland” installer. It’s a GitHub project that automates Hyprland setup, including dependencies, themes, and dotfiles, making it much easier than configuring Hyprland manually.
+
+Install dependencies:
+sudo apt update
+sudo apt install git -y
+
+Clone the repo:
+git clone https://github.com/JaKooLit/Ubuntu-Hyprland.git
+cd Ubuntu-Hyprland
+
+Then Run The Installer
+./install.sh
+
+23 LXDE (Lightweight X11 Desktop Environment)
+Extremely lightweight, fast, low RAM usage.
+Best for: Old hardware, survival builds, minimal systems.
+Install
+sudo apt update
+sudo apt install lxde -y
+
+24 Unity (Canonical’s old DE)
+Best for: Users who liked Ubuntu’s old workflow with global menus and Dash.
+Install
+sudo apt update
+sudo apt install ubuntu-unity-desktop -y
+
+These Are 24 Listed Certified Alternative Desktop Environment Including WM For Triaxis
+For Pantheon Pantheon packages outside elementary OS can be unstable.
