@@ -33,4 +33,18 @@ Install Firefox with sudo apt update
 sudo apt install firefox
 11 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
 12 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
-13 Have Fun And Start Using Triaxis
+13 Change the Link Open the os-release file sudo nano /etc/os-release
+Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
+Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+(Optional) You can also change other fields:
+NAME="Triaxis GNU/Linux"
+PRETTY_NAME="Triaxis GNU/Linux 1.0"
+ID=triaxis
+VERSION="1.0"
+SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
+BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
+Save and exit (CTRL+O, CTRL+X in nano).
+Restart Plasma session (log out and back in, or reboot).
+Now, when you open About System, the link will point to your GitHub page.
+
+14 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
