@@ -1,0 +1,168 @@
+Heres A Certified List for Triaxis GNU/Linux
+
+Certified Laptop List for Triaxis GNU/Linux
+
+🔹 ASUS
+ASUS E1404F → Entry‑level, works with Ubuntu LTS (Wi‑Fi may need firmware).
+
+ASUS X441N → Budget series, compatible with LXDE/XFCE.
+
+ASUS K53TA → Older AMD laptop, requires open‑source Radeon drivers.
+
+ASUS VivoBook Go 14/15 → Modern lightweight laptops, mostly compatible (may need kernel ≥ 6.x for Wi‑Fi).
+
+ASUS ROG Strix / TUF Gaming → Gaming series, certified with NVIDIA proprietary drivers or open‑source Nouveau (performance better with NVIDIA official drivers).
+
+🔹 Toshiba
+Toshiba Satellite M300 → Legacy Intel chipset, works well with lightweight DEs (LXDE, XFCE).
+
+Toshiba Satellite L series → Generally compatible, but battery sensors may need ACPI tweaks.
+
+🔹 Acer
+Acer Aspire 4520 → Legacy NVIDIA chipset, requires proprietary drivers.
+
+Acer Aspire 4551 → AMD chipset, works with open‑source Radeon.
+
+Acer Nitro Gaming series → Certified with Ubuntu LTS, requires NVIDIA drivers for full GPU acceleration.
+
+🔹 Lenovo ThinkPad (Highly Certified)
+ThinkPads are legendary for Linux support:
+
+X201, X220, X230 → Fully certified, excellent compatibility.
+
+X301 → Legacy ultrabook, works with lightweight DEs.
+
+T series (T480, T490, T14, T15) → Modern certified ThinkPads, strong Linux support.
+
+X1 Carbon (Gen 3–Gen 10) → Premium ultrabook, widely tested with Ubuntu.
+
+🔹 Extra Certified Laptops
+Dell XPS 13 / 15 → Officially certified for Ubuntu.
+
+HP EliteBook / ProBook → Business laptops, strong Linux support.
+
+System76 (Oryx Pro, Lemur Pro) → Pre‑installed Linux, fully certified.
+
+Framework Laptop → Modular, open hardware, certified for Ubuntu.
+
+MSI Gaming (GE, GS series) → Works with NVIDIA drivers, some models need Wi‑Fi firmware.
+
+System76 (USA)
+Oryx Pro → High‑end gaming/workstation laptop with NVIDIA GPUs.
+
+Lemur Pro → Lightweight ultrabook, long battery life.
+
+Galago Pro → Mid‑range, versatile developer laptop.
+
+Serval WS → Desktop replacement, powerful CPU/GPU options.
+
+Bonobo WS → Extreme workstation, certified for Ubuntu/Pop!_OS.
+
+🔹 TUXEDO Computers (Germany)
+TUXEDO InfinityBook Pro 14/15 → Premium ultrabooks, lightweight.
+
+TUXEDO Pulse 15 → Balanced performance, Ryzen CPUs.
+
+TUXEDO Stellaris 15/17 → Gaming/workstation laptops with NVIDIA GPUs.
+
+TUXEDO Book XP14 → Compact, portable developer machine.
+
+TUXEDO Polaris 15 → Gaming‑focused, certified for TUXEDO OS (Ubuntu‑based).
+
+🔹 Other Linux‑Preinstalled Vendors
+Purism Librem 14 → Privacy‑focused laptop with PureOS.
+
+Star Labs StarBook Mk VI → UK vendor, ships with Ubuntu, Fedora, or Manjaro.
+
+Slimbook (Spain) → Slimbook ProX, Slimbook Titan (gaming), Slimbook Executive.
+
+Entroware (UK) → Apollo, Proteus, Athena (Ubuntu preinstalled).
+
+ThinkPenguin → Offers laptops with Trisquel or Debian preinstalled.
+
+Dell XPS 13 Developer Edition → Ships with Ubuntu certified by Dell.
+
+Lenovo ThinkPad X1 Carbon (Linux Edition) → Official Linux support.
+
+Framework Laptop (Modular) → Ships with Fedora/Ubuntu, fully certified.
+
+Certified PC List for Triaxis GNU/Linux
+
+🔹 Linux‑Preinstalled Vendors (Officially Certified)
+System76 (USA)
+
+Thelio (desktop workstation, handcrafted, Pop!_OS/Ubuntu certified)
+
+Meerkat (mini PC, Intel/AMD options)
+
+Oryx Pro (gaming laptop/desktop hybrid)
+
+TUXEDO Computers (Germany)
+
+TUXEDO Polaris (gaming PC)
+
+TUXEDO InfinityBox (desktop tower)
+
+TUXEDO Nano (mini PC)
+
+Purism
+
+Librem Mini (privacy‑focused mini PC)
+
+Star Labs
+
+StarLite Mk V (mini PC, Ubuntu/Fedora certified)
+
+Slimbook (Spain)
+
+Slimbook One (mini PC)
+
+Slimbook Titan (gaming desktop)
+
+Entroware (UK)
+
+Aura (desktop workstation)
+
+Poseidon (gaming PC)
+
+🔹 Certified Gaming PCs
+Dell Alienware Aurora R series → Ubuntu certified with NVIDIA GPUs.
+
+Lenovo Legion Tower 5i/7i → Works with Ubuntu LTS, NVIDIA proprietary drivers recommended.
+
+HP Omen 25L/30L → Compatible with Ubuntu, requires NVIDIA drivers for full GPU support.
+
+MSI Infinite Gaming Desktop → Certified with Ubuntu, Wi‑Fi firmware may be needed.
+
+Acer Predator Orion series → Works with Ubuntu, tested with NVIDIA/AMD GPUs.
+
+ASUS ROG Strix desktops → Gaming certified, requires proprietary GPU drivers.
+
+🔹 Certified Workstations
+Lenovo ThinkStation P series (P340, P520, P920) → Official Ubuntu certification.
+
+Dell Precision Tower (3000, 5000, 7000 series) → Certified for Ubuntu.
+
+HP Z Workstations (Z2, Z4, Z6, Z8) → Strong Linux support.
+
+System76 Thelio Major → Custom Linux workstation, fully certified.
+
+🔹 Certified Consumer Desktops
+Dell OptiPlex series → Widely certified for Ubuntu.
+
+Lenovo ThinkCentre M series → Business desktops, strong Linux support.
+
+HP EliteDesk / ProDesk series → Certified for Ubuntu.
+
+Acer Veriton series → Compatible with Ubuntu LTS.
+
+🔹 Mini PCs & Compact Systems
+Intel NUC (Next Unit of Computing) → Official Ubuntu certification.
+
+ASUS PN series mini PCs → Compatible with Ubuntu.
+
+System76 Meerkat → Ships with Linux preinstalled.
+
+TUXEDO Nano → Linux preinstalled, certified.
+
+Slimbook One → Compact Linux desktop.
