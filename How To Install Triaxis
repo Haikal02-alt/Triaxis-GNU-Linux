@@ -4,7 +4,7 @@ Before You Install Flash Ubuntu Server Iso With Rufus Etcher Or Ventoy Then Back
 1 enter https://ubuntu.com/download/server
 2 Setup Ubuntu Server
 3 Update Using sudo apt update
-4 Install Kde Plasma Desktop sudo apt install kde-standard
+4 Install Kde Plasma Desktop sudo apt install kde-standard for base and servers dont install desktop environment
 5 Show Grub if You Need it sudo nano /etc/default/grub GRUB_TIMEOUT_STYLE=hidden
 GRUB_TIMEOUT=0
 Change them to:
