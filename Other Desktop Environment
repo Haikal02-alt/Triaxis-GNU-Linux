@@ -1,7 +1,7 @@
 If you dont want to use kde plasma you can change to other desktop environment to gnome xfce lxqt lxde mate budgie cosmic and others
 
 1 Gnome
-To Install Use sudo apt install ubuntu-gnome-desktop -y
+To Install Use sudo apt install gnome-session -y
 
 2 XFCE
 sudo apt install xfce4 xfce4-goodies -y
@@ -10,13 +10,13 @@ sudo apt install xfce4 xfce4-goodies -y
 sudo apt install lxqt -y
 
 4 Mate
-sudo apt install ubuntu-mate-desktop -y
+sudo apt install mate-desktop-environment-extras -y
 
 5 Cinnamon
 sudo apt install cinnamon -y
 
 6 Budgie
-sudo apt install ubuntu-budgie-desktop -y
+sudo apt install budgie-extras -y
 
 7 Enlightenment
 sudo apt install enlightenment -y
