@@ -112,13 +112,37 @@ sudo add-apt-repository ppa:system76-dev/stable
 sudo apt update
 sudo apt install cosmic-session cosmic-greeter cosmic-settings -y
 
+27 Xmonad
+sudo apt update
+sudo apt install xmonad xmobar -y
+
+28 BSPWM
+sudo apt install bspwm sxhkd -y
+
+29 DWM
+sudo apt install build-essential libx11-dev libxft-dev libxinerama-dev -y
+git clone https://git.suckless.org/dwm
+cd dwm
+make
+sudo make install
+
+30 Niri
+sudo apt install cargo rustc libwayland-dev libxkbcommon-dev -y
+cargo install niri
+
+31 MangoWM
+git clone https://github.com/mangowm/mangowm.git
+cd mangowm
+make
+sudo make install
+
 Option 2: Build COSMIC from Source (if PPA not available)
 sudo apt install cargo rustc libgtk-3-dev libglib2.0-dev libpango1.0-dev libx11-dev -y
 git clone https://github.com/pop-os/cosmic-epoch.git
 cd cosmic-epoch
 cargo build --release
 
-These Are 26 Listed Certified Alternative Desktop Environment Including WM For Triaxis
+These Are 31 Listed Certified Alternative Desktop Environment Including WM For Triaxis
 For Pantheon Pantheon packages outside elementary OS can be unstable.
 
 After You Install It Logout The Session Or Restart The System
