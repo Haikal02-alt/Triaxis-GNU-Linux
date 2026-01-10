@@ -1,4 +1,5 @@
 If you dont want to use kde plasma you can change to other desktop environment to gnome xfce lxqt lxde mate budgie cosmic and others
+Note That Kde Plasma Is Official And Default Desktop Environment For Triaxis Gnome Is Also Official For Triaxis But Not Default Desktop Environment Sway Is A Official Window Manager For Triaxis But Not Default As A Desktop Environment
 
 1 Gnome
 To Install Use sudo apt install gnome-session -y
