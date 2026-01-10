@@ -10,20 +10,20 @@ Change them to:
 GRUB_TIMEOUT_STYLE=menu
 GRUB_TIMEOUT=5
 update grub using sudo update-grub
-6 Rename GRUB Menu Entries GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian` Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
+5 Rename GRUB Menu Entries GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian` Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
 Then Update grub using sudo update-grub
-7 Edit /etc/os-release sudo nano /etc/os-release Change NAME="Ubuntu"
+6 Edit /etc/os-release sudo nano /etc/os-release Change NAME="Ubuntu"
 PRETTY_NAME="Ubuntu 24.04 LTS"
 To NAME="Triaxis"
 PRETTY_NAME="Triaxis"
-8 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
-9 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
+7 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
+8 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
 Or You Can Download Triaxis Logo On Readme then theres a triaxis logo then Save Image As /home/yourname/Pictures then name it to Triaxis-logo.png then Open a terminal.
 Use the mv command with sudo:
 sudo mv /home/yourname/Picture/Triaxis-logo.png /usr/share/pixmaps/
 the open sudo nano /etc/os-release then you find logo= then Cahnge to LOGO=/usr/share/pixmaps/Triaxis-logo.png
 
-10 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
+9 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
 Run sudo nano /etc/sddm.conf If the file doesn’t exist, create it with root Generate a default config: sudo sddm --example-config > /etc/sddm.conf then edit it sudo nano /etc/sddm.conf Set LXQt theme in the config
 Inside /etc/sddm.conf, add: [Theme]
 Current=lubuntu
@@ -35,9 +35,9 @@ Or use the command sudo sddm --example-config > /etc/sddm.conf
 Restart SDDM sudo systemctl restart sddm
 Install Firefox with sudo apt update
 sudo apt install firefox
-11 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
-12 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
-13 Change the Link Open the os-release file sudo nano /etc/os-release
+10 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
+11 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
+12 Change the Link Open the os-release file sudo nano /etc/os-release
 Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
 Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 (Optional) You can also change other fields:
@@ -58,4 +58,4 @@ then sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis
 then sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis
 Then type sudo reboot Or type logout
 
-14 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
+13 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
