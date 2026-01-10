@@ -52,4 +52,11 @@ Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
 Now, when you open About System, the link will point to your GitHub page.
 
+For Base Install
+sudo nano /etc/os-release
+then rename id=ubuntu to id=triaxis
+then sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis
+then sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis
+Then type sudo reboot Or type logout
+
 14 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
