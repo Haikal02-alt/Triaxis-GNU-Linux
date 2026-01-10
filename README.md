@@ -20,4 +20,4 @@ Sway
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-23-30" src="https://github.com/user-attachments/assets/c42ea94a-02a4-4076-9034-88d0e65a6856" />
 
 Xfce
-file:///home/haikal/Pictures/Screenshots/Screenshot%20from%202026-01-10%2011-18-23.png
+<img width="1316" height="831" alt="Screenshot from 2026-01-10 11-18-23" src="https://github.com/user-attachments/assets/2d0a2c9b-4a65-479b-833e-c57d3322e409" />
