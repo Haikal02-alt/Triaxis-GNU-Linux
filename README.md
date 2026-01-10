@@ -21,3 +21,8 @@ Sway
 
 Xfce
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-18-23" src="https://github.com/user-attachments/assets/2d0a2c9b-4a65-479b-833e-c57d3322e409" />
+
+Some Features Preview
+
+Plymouth Preview
+<img width="1275" height="795" alt="Screenshot from 2026-01-10 20-10-05" src="https://github.com/user-attachments/assets/67d92c41-6c02-4437-bfa5-4b2b4d37cb86" />
