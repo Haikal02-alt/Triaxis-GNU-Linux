@@ -8,3 +8,4 @@ then sudo apt install gnome-backgrounds if you need it
 then change the wallpaper or reboot or logout
 sudo cp /usr/share/pixmaps/Triaxis-logo.png /usr/share/pixmaps/ubuntu-logo-text.png
 Close and reopen “Settings → About”
+If You Want To Remove Maxmize and Minimize Button Go To Gnome tweaks then windows then uncheck maximize and minimize
