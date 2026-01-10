@@ -1,0 +1,5 @@
+To Install Sway
+sudo apt install sway -y
+Then
+sudo apt install sddm (This May Affect To Other Window manager)
+sudo reboot
