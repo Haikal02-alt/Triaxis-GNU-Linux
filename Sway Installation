@@ -1,4 +1,5 @@
 To Install Sway
+Make sure you are on base with no desktop environment
 sudo apt install sway -y
 Then
 sudo apt install sddm (This May Affect To Other Window manager)
