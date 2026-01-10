@@ -1,0 +1,3 @@
+To Configure Plymouth Use sudo nano /etc/default/grub then GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" ctrl x then y then enter then sudo update-grub
+Then sudo nano /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth Then Change title=Ubuntu 24.04 to title=Triaxis GNU/Linux Ctrl X Y Enter Then sudo update-initramfs -u
+Then Reboot Or sudo plymouthd then sudo plymouth --show-splash
