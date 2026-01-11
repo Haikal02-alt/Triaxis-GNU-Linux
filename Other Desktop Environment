@@ -194,7 +194,30 @@ sudo ninja -C build install
 Run Wayfire
 wayfire
 
-These Are 34 Listed Certified Alternative Desktop Environment Including WM For Triaxis
+35 Puppy Linux JWM/Rox combo
+Update your system first
+sudo apt update && sudo apt upgrade
+
+Install JWM (Joe’s Window Manager)
+sudo apt install jwm
+
+Install ROX-Filer
+sudo apt install rox-filer
+
+Bind ROX to the desktop
+Create or edit your .xinitrc or session startup file:
+rox --pinboard=Default &
+exec jwm
+
+Optional: Add Puppy-like session
+You can create a custom .desktop entry under /usr/share/xsessions/ called jwm-rox.desktop:
+[Desktop Entry]
+Name=JWM + ROX
+Comment=Puppy Linux style session
+Exec=rox --pinboard=Default & jwm
+Type=Application
+
+These Are 35 Listed Certified Alternative Desktop Environment Including WM For Triaxis
 For Pantheon Pantheon packages outside elementary OS can be unstable.
 
 After You Install It Logout The Session Or Restart The System
