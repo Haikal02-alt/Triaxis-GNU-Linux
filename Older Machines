@@ -1,0 +1,83 @@
+When you ask if Triaxis GNU/Linux is lightweight, the answer depends on Desktop Environment,Ram,etc
+
+Lightweight Desktop Environments
+LXDE (Lightweight X11 Desktop Environment)
+LXQt
+XFCE (It Is The Only One Lightweight Desktop Environemnt Which Is Official Triaxis Desktop Environment But Not A Default Desktop Environment)
+MATE
+Enlightenment (E17/E25)
+Puppy Linux JWM/Rox combo
+
+Why Its Lightweight
+LXDE (Lightweight X11 Desktop Environment)
+
+RAM: ~250–350 MB idle
+
+Extremely light, modular, and fast. Still beloved for older machines.
+
+Symbol: The Lantern Mask — guiding low-spec survivors through the dark.
+
+LXQt
+
+RAM: ~300–400 MB idle
+
+Successor to LXDE, modern Qt base, still feather-light.
+
+Symbol: The Phoenix Mask — reborn from LXDE’s ashes.
+
+XFCE
+
+RAM: ~400–600 MB idle
+
+Balanced, stable, customizable.
+
+Symbol: The Anchor Mask — steady and reliable.
+
+MATE
+
+RAM: ~600–800 MB idle
+
+Fork of GNOME 2, nostalgic yet efficient.
+
+Symbol: The Heritage Mask — carrying old wisdom forward.
+
+Enlightenment (E17/E25)
+
+RAM: ~300–500 MB idle
+
+Lightweight but stylish, quirky setup.
+
+Symbol: The Mirage Mask — beautiful yet elusive.
+
+Puppy Linux JWM/Rox combo
+
+RAM: ~200–300 MB idle
+
+Minimal DE experience, almost a WM with panels.
+
+Symbol: The Puppy Mask — playful but skeletal.
+
+Ultra-Light Window Managers
+Openbox → ~100 MB idle (The Blade Gauntlet)
+
+Fluxbox → ~80–100 MB idle (The Shadow Gauntlet)
+
+IceWM → ~100 MB idle (The Frost Gauntlet)
+
+i3 → ~100–150 MB idle (The Grid Gauntlet)
+
+AwesomeWM → ~150 MB idle (The Script Gauntlet)
+
+dwm → ~20–30 MB idle (The Phantom Gauntlet)
+
+bspwm → ~100 MB idle (The Binary Gauntlet)
+
+herbstluftwm → ~100 MB idle (The Manual Gauntlet)
+
+ratpoison → ~50 MB idle (The Ascetic Gauntlet) — no mouse, pure keyboard survival.
+
+wmii → ~60–80 MB idle (The Rune Gauntlet) — early tiling inspiration.
+
+xmonad → ~100 MB idle (The Haskell Gauntlet) — functional programming meets tiling.
+
+notion → ~80–100 MB idle (The Scholar Gauntlet) — descendant of Ion WM.
