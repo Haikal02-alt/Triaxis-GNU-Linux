@@ -38,3 +38,9 @@ Spinner
 Breeze-Text
 <img width="1274" height="791" alt="Screenshot from 2026-01-11 13-11-09" src="https://github.com/user-attachments/assets/20b08b62-8f5d-4af1-a95d-66d5c9ef01e8" />
 
+Bootloader Preview
+
+Grub
+<img width="1018" height="761" alt="Screenshot from 2026-01-11 14-44-51" src="https://github.com/user-attachments/assets/ccbe9107-32be-4203-bb0f-2e60cfed8540" />
+
+
