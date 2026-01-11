@@ -16,3 +16,11 @@ sudo update-alternatives --config default.plymouth
 /usr/share/plymouth/themes/yourtheme/yourtheme.plymouth
 Example
 /usr/share/plymouth/themes/spinner/spinner.plymouth
+For Breeze
+sudo apt install plymouth-theme-breeze
+Then sudo nano /usr/share/plymouth/themes/breeze-text/breeze-text.plymouth
+then change title to Triaxis GNU/Linux Rolling Release _________ For Example Triaxis GNU/Linux Rolling Release 2026.1.08
+Then sudo update-initramfs -u
+Then reboot
+If you Want To add plymouth themes use
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/<theme-name>/<theme-name>.plymouth 100
