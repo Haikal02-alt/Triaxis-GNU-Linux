@@ -26,7 +26,7 @@ Some Features Preview
 
 Plymouth Preview
 
-Textb With 4 dots
+Text With 4 dots
 <img width="1275" height="795" alt="Screenshot from 2026-01-10 20-10-05" src="https://github.com/user-attachments/assets/67d92c41-6c02-4437-bfa5-4b2b4d37cb86" />
 
 BGRT
