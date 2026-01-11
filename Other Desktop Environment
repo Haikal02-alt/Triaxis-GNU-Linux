@@ -217,8 +217,17 @@ Comment=Puppy Linux style session
 Exec=rox --pinboard=Default & jwm
 Type=Application
 
-These Are 35 Listed Certified Alternative Desktop Environment Including WM For Triaxis
-For Pantheon Pantheon packages outside elementary OS can be unstable.
+36 Herbstluftwm
+sudo apt install herbstluftwm
 
+37 wmii
+sudo apt install wmii
+
+38 notion
+sudo apt install notion
+
+These Are 38 Listed Certified Alternative Desktop Environment Including WM For Triaxis
+For Pantheon Pantheon packages outside elementary OS can be unstable.
+For herbstluftwm wmii notion Update the system first Using sudo apt update && sudo apt upgrade
 After You Install It Logout The Session Or Restart The System
 Then Log in — enjoy your new DE.
