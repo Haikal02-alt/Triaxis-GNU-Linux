@@ -88,7 +88,7 @@ PRETTY_NAME="Triaxis"
 Or You Can Download Triaxis Logo On Readme then theres a triaxis logo then Save Image As /home/yourname/Pictures then name it to Triaxis-logo.png then Open a terminal.
 Use the mv command with sudo:
 sudo mv /home/yourname/Picture/Triaxis-logo.png /usr/share/pixmaps/
-the open sudo nano /etc/os-release then you find logo= then Cahnge to LOGO=/usr/share/pixmaps/Triaxis-logo.png
+the open sudo nano /etc/os-release then you find logo= then Change to LOGO=/usr/share/pixmaps/Triaxis-logo.png
 
 22 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
 Run sudo nano /etc/sddm.conf If the file doesn’t exist, create it with root Generate a default config: sudo sddm --example-config > /etc/sddm.conf then edit it sudo nano /etc/sddm.conf Set LXQt theme in the config
