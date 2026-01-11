@@ -25,4 +25,12 @@ Xfce
 Some Features Preview
 
 Plymouth Preview
+
+Textb With 4 dots
 <img width="1275" height="795" alt="Screenshot from 2026-01-10 20-10-05" src="https://github.com/user-attachments/assets/67d92c41-6c02-4437-bfa5-4b2b4d37cb86" />
+
+BGRT
+<img width="1019" height="761" alt="Screenshot from 2026-01-11 11-34-00" src="https://github.com/user-attachments/assets/f1fd51d5-caa5-4116-ac24-a399c78a5987" />
+
+Spinner
+<img width="1019" height="761" alt="Screenshot from 2026-01-11 11-37-17" src="https://github.com/user-attachments/assets/59268257-a1d1-46a2-bc41-724035805484" />
