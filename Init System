@@ -44,3 +44,15 @@ sudo update-grub
 
 Reboot and confirm With
 ps -p 1 -o comm=
+
+Risks
+Package dependencies: Many Triaxis packages assume systemd is present. Removing it can cause boot failures.
+
+Desktop environments: GNOME, KDE, and others rely heavily on systemd’s logind and journald.
+
+Maintenance burden: You’ll need to manually patch or replace systemd-dependent packages.
+
+Practical Guidance
+Experiment in a VM first — don’t try this on your main Triaxis install.
+
+Try runit-run for supervision without removing systemd.
