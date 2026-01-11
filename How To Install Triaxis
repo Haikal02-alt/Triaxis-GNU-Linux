@@ -1,8 +1,8 @@
 Welcome To Triaxis Install Guide
 This Guide Will Help You To Install Triaxis Correctly
-Before You Install Flash Ubuntu Server Iso With Rufus Etcher Or Ventoy Make Sure That There Are No important Files Inside the USB Drive Then Backup Your Data On Your System Because It Will Erase Your Partition Drive After Installing Triaxis
 
-1 enter https://ubuntu.com/download/server
+1 enter https://ubuntu.com/download/server then download ubuntu server lts iso then Before You Install Flash Ubuntu Server Iso With Rufus Etcher Or Ventoy
+Make Sure That There Are No important Files Inside the USB Drive Then Backup Your Data On Your System Because It Will Erase Your Partition Drive After Installing Triaxis
 
 2 Boot from the Ubuntu Server ISO (or Triaxis bootstrap ISO if available).
   Theres Password on su -
