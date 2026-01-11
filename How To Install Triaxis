@@ -107,11 +107,12 @@ sudo apt install firefox
 25 Change the Link Open the os-release file sudo nano /etc/os-release
 Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
 Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+Then Pretty Name And Name To Triaxis then Change Version_id and version to 2026.1.08
 (Optional) You can also change other fields:
 NAME="Triaxis GNU/Linux"
 PRETTY_NAME="Triaxis GNU/Linux 1.0"
 ID=triaxis
-VERSION="1.0"
+VERSION="2026.1.08"
 SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
 BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
 Save and exit (CTRL+O, CTRL+X in nano).
