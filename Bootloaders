@@ -1,0 +1,402 @@
+What Is Bootloader
+A bootloader is a small program that runs when you power on a computer.
+Its job is to initialize hardware and load the operating system into memory so the system can start.
+Without a bootloader, your machine wouldn’t know how to transition from firmware (BIOS/UEFI) into the OS.
+
+Grub
+Grub Is A Default Bootloader For Triaxis
+
+Efistub
+On Triaxis, you don’t “install” EFISTUB as a package — it’s already built into the Linux kernel.
+What you do is configure your UEFI firmware to boot the kernel directly (without GRUB) by creating a boot entry that points to the kernel and initrd using efibootmgr.
+
+1. Verify Kernel Support
+Ubuntu kernels (since 12.10) include EFI stub loader support by default.
+
+No extra installation is required — the kernel itself can be loaded directly by UEFI.
+
+2. Identify EFI Partition
+Check your EFI System Partition (ESP), usually mounted at /boot/efi.
+
+Run:
+
+bash
+lsblk | grep EFI
+or check /etc/fstab for the ESP mount point.
+
+3. Copy Kernel & Initrd
+Ubuntu/Triaxis places kernel and initrd in /boot.
+
+Example:
+
+Kernel: /boot/vmlinuz-<version>
+
+Initrd: /boot/initrd.img-<version>
+
+4. Create EFISTUB Boot Entry
+Use efibootmgr to register the kernel as a boot option:
+
+bash
+sudo efibootmgr -c -d /dev/sda -p 1 \
+  -L "Ubuntu EFISTUB" \
+  -l '\vmlinuz-<version>' \
+  -u "root=/dev/sdaX ro initrd=\initrd.img-<version>"
+-d /dev/sda → disk containing EFI partition
+
+-p 1 → partition number of EFI System Partition
+
+-L → label for the boot entry
+
+-l → path to kernel relative to EFI partition
+
+-u → kernel command line (root device, initrd, etc.)
+
+5. Confirm Entry
+Run:
+
+bash
+sudo efibootmgr -v
+You should see “Ubuntu EFISTUB” listed as a boot option.
+
+6. Reboot & Test
+Restart your system and select the new EFISTUB entry from the UEFI boot menu. If configured correctly, Ubuntu should boot directly without GRUB.
+
+⚠️ Risks & Considerations
+No boot menu: EFISTUB boots straight into the kernel. If you need multiple kernels or OSes, GRUB/systemd-boot may be more flexible.
+
+Kernel updates: Each time Ubuntu updates the kernel, you must update the EFISTUB entry manually.
+
+Recovery: Keep GRUB installed as a fallback in case EFISTUB fails.
+
+Limine
+
+install Limine on Triaxis, you need to build it from source,
+copy its bootloader files to your EFI System Partition (ESP),
+and configure a limine.cfg file. Limine is not available in Ubuntu’s repositories or TUR Triaxis User Repository, so manual installation is required.
+
+1. Install Build Dependencies
+sudo apt update
+sudo apt install build-essential git mtools
+
+2. Clone Limine Source
+git clone https://github.com/limine-bootloader/limine.git
+cd limine
+
+3. Build Limine
+Compile the bootloader with make
+
+4 Prepare EFI System Partition
+Identify your EFI partition (usually /boot/efi).
+Mount it if not already mounted:
+sudo mount /dev/sdX1 /boot/efi
+
+5 Install Limine Bootloader
+Run
+sudo ./limine-install /dev/sdX
+
+6 Create Configuration File
+Limine uses limine.cfg for boot entries. Example:
+
+TIMEOUT=5
+DEFAULT_ENTRY=Triaxis
+
+:Triaxis
+    PROTOCOL=linux
+    KERNEL_PATH=/boot/vmlinuz-<version>
+    INITRD_PATH=/boot/initrd.img-<version>
+    CMDLINE=root=/dev/sdaX ro quiet splash
+
+7 Update UEFI Boot Entries (Optional)
+You can register Limine with efibootmgr
+sudo efibootmgr -c -d /dev/sdX -p 1 -L "Limine Bootloader" -l '\EFI\BOOT\BOOTX64.EFI'
+
+8 Reboot Your System
+
+Systemd Boot
+
+Systemd-boot only works with UEFI systems. Check with:
+[ -d /sys/firmware/efi ] && echo "UEFI system" || echo "Legacy BIOS"
+
+Remove GRUB (Optional but Recommended)
+If you want to fully replace GRUB:
+sudo apt purge --allow-remove-essential grub2-common grub-pc-bin grub-pc grub-efi-amd64-bin grub-efi-amd64-signed grub-common os-prober shim-signed
+sudo apt autoremove --purge
+sudo rm -rf /boot/grub /boot/efi/EFI/ubuntu
+
+3. Install systemd-boot
+sudo apt install systemd-boot systemd-ukify
+
+4 Configure Kernel Command Line
+Create /etc/kernel/cmdline with your desired boot parameters. Example:
+root=/dev/sdaX ro quiet splash
+You can check your current parameters with:
+cat /proc/cmdline
+
+5 Hook for Kernel Updates
+Create a script /etc/kernel/postinst.d/zz-update-systemd-boot
+#!/bin/bash
+kernel-install add "$1" "/boot/vmlinuz-$1"
+
+Make it executable:
+sudo chmod 755 /etc/kernel/postinst.d/zz-update-systemd-boot
+
+6 Reinstall Kernel to Trigger Setup
+  sudo apt reinstall linux-image-$(uname -r)
+
+7 Reboot
+
+Risks & Considerations
+Kernel updates: Unlike GRUB, systemd-boot requires hooks/scripts to keep entries updated.
+
+Dual-boot setups: It’s simpler but less feature-rich than GRUB for managing multiple OSes.
+
+Fallback: Keep a GRUB rescue USB or live Ubuntu installer in case of misconfiguration.
+
+syslinux
+
+Install Syslinux Packages
+Triaxis provides Syslinux in its repositories:
+sudo apt update
+sudo apt install syslinux syslinux-common
+
+Prepare Target Partition
+Syslinux works on FAT filesystems (FAT16/FAT32).
+
+Format your target device (USB stick or partition):
+
+bash
+sudo mkfs.vfat /dev/sdX1
+Replace /dev/sdX1 with your partition.
+
+Mount it:
+
+bash
+sudo mount /dev/sdX1 /mnt
+Install Syslinux Bootloader
+Run:
+
+bash
+sudo syslinux --install /dev/sdX1
+This writes the Syslinux boot sector and places ldlinux.sys in the root of the FAT partition.
+
+Copy Kernel & Initrd
+Place your Linux kernel and initrd files onto the partition:
+
+bash
+sudo cp /boot/vmlinuz-$(uname -r) /mnt/
+sudo cp /boot/initrd.img-$(uname -r) /mnt/
+Create Configuration File
+Syslinux uses syslinux.cfg in the root of the partition. Example:
+
+ini
+DEFAULT linux
+LABEL linux
+    KERNEL /vmlinuz-<version>
+    INITRD /initrd.img-<version>
+    APPEND root=/dev/sdaX ro quiet splash
+Adjust <version> and root device accordingly.
+
+Unmount & Test
+Unmount the partition:
+
+bash
+sudo umount /mnt
+Reboot and select the device in your firmware boot menu. Syslinux should load and present your configured entry.
+
+⚠️ Risks & Considerations
+FAT-only: Syslinux requires FAT filesystems; it won’t install on ext4 directly.
+
+Manual upkeep: Kernel updates require you to copy new kernel/initrd files and update syslinux.cfg.
+
+Fallback: Keep GRUB or another bootloader available for recovery.
+
+UEFI vs BIOS: Syslinux is primarily BIOS-oriented; for UEFI, consider Syslinux EFI or alternatives like systemd-boot
+
+Windows Boot Manager
+
+You can add Triaxis to the Windows Boot Manager so that when your PC starts,
+you’ll see Triaxis listed alongside Windows.
+This is typically done using the Windows Boot Manager (BCD) and a tool like EasyBCD,
+or by manually configuring entries with bcdedit.
+
+Method 1: Using EasyBCD (Simplest)
+Install EasyBCD on Windows (free for non-commercial use).
+
+Open EasyBCD → Add New Entry.
+
+Select Linux/BSD → choose GRUB2 (Ubuntu uses GRUB2).
+
+Point it to the partition where Ubuntu is installed.
+
+Save settings → reboot.
+
+You’ll now see Ubuntu listed in the Windows Boot Manager menu.
+
+🔧 Method 2: Using bcdedit (Manual)
+Boot into Windows.
+
+Open Command Prompt as Administrator.
+
+Find your EFI partition (usually mounted as \EFI\ubuntu\grubx64.efi).
+
+Ubuntu installer places GRUB EFI files there.
+
+Add a new boot entry:
+
+cmd
+bcdedit /create /d "Ubuntu" /application bootsector
+Note the identifier returned (e.g., {abcd-1234}), then link it to the GRUB EFI file:
+
+cmd
+bcdedit /set {abcd-1234} device partition=\Device\HarddiskVolumeX
+bcdedit /set {abcd-1234} path \EFI\ubuntu\grubx64.efi
+bcdedit /displayorder {abcd-1234} /addlast
+Reboot → Windows Boot Manager will now list Ubuntu.
+
+⚠️ Things to Keep in Mind
+UEFI vs BIOS: On UEFI systems, Ubuntu usually registers itself automatically in the firmware boot menu. Adding it to Windows Boot Manager is optional.
+
+Updates: Kernel or GRUB updates in Ubuntu don’t affect the Windows Boot Manager entry, but if EFI paths change, you may need to reconfigure.
+
+Fallback: Keep a live USB handy in case boot entries break.
+
+Dualboot
+Dual‑booting Triaxis GNU/Linux with Windows and other operating systems is essentially about managing your firmware (UEFI/BIOS), partitions, and bootloader so each OS can coexist without overwriting the others.
+
+Step‑by‑Step Dual‑Boot
+
+1. Prepare Your Disk
+Back up first — partitioning always carries risk.
+
+Use Windows’ Disk Management or gparted from a live Linux USB to shrink existing partitions and create free space for Triaxis and any other OS.
+
+Plan partitions:
+
+One EFI System Partition (ESP) — already exists if Windows is UEFI.
+
+Separate root partitions for each OS (e.g., / for Triaxis, / for Ubuntu, etc.).
+
+Optional: shared data partition (NTFS or exFAT) for cross‑OS access.
+
+2. Install Windows First (if not already)
+Windows tends to overwrite bootloaders. Installing it first ensures later OSes can reclaim control.
+
+3. Install Triaxis GNU/Linux
+Boot from the Triaxis installer USB.
+
+Choose manual partitioning and install into the prepared partition.
+
+Install the bootloader (GRUB, Limine, or systemd‑boot depending on your ritual) into the EFI System Partition.
+
+Ensure the installer doesn’t overwrite Windows partitions.
+
+4. Add Other OSes (Ubuntu, BSD, etc.)
+Repeat the process: boot installer, select manual partitioning, install into its own partition.
+
+Each OS will attempt to add itself to the EFI boot menu.
+
+5. Manage the Bootloader
+GRUB (default choice):
+
+Detects Windows and other OSes automatically.
+
+Run sudo update-grub inside Triaxis/Ubuntu to refresh entries.
+
+systemd‑boot or Limine:
+
+Requires manual config files (loader.conf, limine.cfg).
+
+Add entries for each kernel and for Windows Boot Manager (EFI/Microsoft/Boot/bootmgfw.efi).
+
+6. Verify UEFI Boot Entries
+Use efibootmgr in Linux or bcdedit in Windows to check entries.
+
+Example for Windows entry in GRUB:
+
+bash
+sudo update-grub
+GRUB should list “Windows Boot Manager” automatically.
+
+7. Reboot & Test
+On startup, you should see your chosen bootloader menu.
+
+Select Triaxis, Windows, or other OS as desired.
+
+⚠️ Key Considerations
+UEFI vs BIOS: Modern systems use UEFI. Stick to one mode across all OSes.
+
+Kernel updates: GRUB handles them automatically; systemd‑boot/Limine require manual edits.
+
+Rescue USB: Always keep a live USB handy in case boot entries break.
+
+Shared lore: If you want a unified archive, consider a shared /home or data partition accessible across OSes.
+
+Lilo
+
+Install The Bootloader Using
+sudo apt install lilo
+sudo lilo
+
+Config file: /etc/lilo.conf
+Notes: Works only with BIOS systems, not UEFI. Rarely used today, but symbolic as a “phantom mask” in your lore.
+
+rEFInd
+
+sudo apt install refind
+sudo refind-install
+
+Clover
+
+No native Linux package; you must download Clover EFI binaries and copy them to the EFI System Partition.
+
+Process:
+
+Mount ESP (/boot/efi).
+
+Copy Clover EFI files into /EFI/CLOVER/.
+
+Add entry with efibootmgr.
+
+U‑Boot (Das U‑Boot)
+
+Not typical on desktop Linux. You cross‑compile U‑Boot for your hardware:
+
+git clone https://source.denx.de/u-boot/u-boot.git
+cd u-boot
+make <board_defconfig>
+make
+
+Barebox
+
+git clone https://github.com/barebox/barebox.git
+cd barebox
+make <board_defconfig>
+make
+
+Bootloaders That Are Legacy BIOS Only
+
+LILO (Linux Loader)
+LOADLIN
+SYSLINUX (original BIOS variant)
+GRUB Legacy (GRUB 0.x)
+
+Bootloaders That Are UEFI‑Only
+
+systemd‑boot
+
+rEFInd
+
+Clover
+
+Limine (UEFI mode)
+
+Bootloaders Supporting Both BIOS & UEFI
+
+GRUB2 (GNU GRUB)
+
+Syslinux (modern builds)
+Originally BIOS‑only, but now has Syslinux EFI variants.
+
+Limine
+
+GRUB4DOS (legacy project)
