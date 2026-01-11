@@ -93,7 +93,46 @@ git clone https://github.com/JaKooLit/Ubuntu-Hyprland.git
 cd Ubuntu-Hyprland
 
 Then Run The Installer
-./install.sh
+./install.shcurl -L https://nixos.org/nix/install | sh
+
+For caelestia shell
+
+Install Dependencies
+Ensure you have Hyprland already running on Triaxis GNU/Linux.
+
+Install required build tools:
+sudo apt install git cmake meson ninja-build gcc g++ pkg-config
+
+Install Nix (since Caelestia Shell uses flakes):
+curl -L https://nixos.org/nix/install | sh
+
+Clone Caelestia Shell
+git clone https://github.com/caelestia-dots/shell.git
+cd shell
+
+Build with Nix Flakes
+nix build .#caelestia-shell
+
+Enable Hyprland Integration
+Caelestia Shell integrates with Hyprland through three layers:
+
+Quickshell Hyprland module (basic workspace/window tracking)
+
+HyprExtras C++ plugin (advanced IPC, device state, events)
+
+Hypr QML service (unified API for UI components)
+
+After building, copy the configuration:
+
+cp -r config ~/.config/caelestia
+
+Launch Caelestia Shell
+
+Start it alongside Hyprland:
+caelestia-shell &
+
+Add it to your Hyprland autostart (~/.config/hypr/hyprland.conf):
+exec-once = caelestia-shell
 
 23 LXDE (Lightweight X11 Desktop Environment)
 Extremely lightweight, fast, low RAM usage.
