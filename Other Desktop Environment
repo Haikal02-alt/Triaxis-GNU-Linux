@@ -149,7 +149,52 @@ cd mangowm
 make
 sudo make install
 
-These Are 31 Listed Certified Alternative Desktop Environment Including WM For Triaxis
+32 Cutefish
+Install dependencies
+sudo apt update
+sudo apt install git build-essential cmake ninja-build \
+    qtbase5-dev qtquickcontrols2-5-dev libkf5networkmanagerqt-dev \
+    modemmanager-qt-dev debhelper extra-cmake-modules libkf5kio-dev
+
+Clone source:
+git clone https://github.com/cutefish-ubuntu/cutefish-desktop-ubuntu.git
+cd cutefish-desktop-ubuntu
+
+Build & install:
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+
+33 Qtile
+sudo apt install qtile
+
+For X11
+qtile start
+
+For Wayland
+qtile start -b wayland
+
+34 Wayfire
+Install dependencies
+sudo apt install meson ninja-build pkg-config \
+    libwayland-dev libwlroots-dev libxkbcommon-dev \
+    libinput-dev libdrm-dev libevdev-dev libpixman-1-dev \
+    libglm-dev libfreetype6-dev libjpeg-dev libpng-dev
+
+Clone Source
+git clone https://github.com/WayfireWM/wayfire.git
+cd wayfire
+
+Build & Install
+meson build
+ninja -C build
+sudo ninja -C build install
+
+Run Wayfire
+wayfire
+
+These Are 34 Listed Certified Alternative Desktop Environment Including WM For Triaxis
 For Pantheon Pantheon packages outside elementary OS can be unstable.
 
 After You Install It Logout The Session Or Restart The System
