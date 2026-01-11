@@ -4,10 +4,10 @@ Before You Install Flash Ubuntu Server Iso With Rufus Etcher Or Ventoy Make Sure
 
 1 enter https://ubuntu.com/download/server
 
-2 Theres Password on su -
-I Would recommend to change the password to your password using sudo passwd root for example triaxis or become root using sudo -i
-Boot from the Ubuntu Server ISO (or Triaxis bootstrap ISO if available).
-Press Ctrl+Alt+F2 to switch to a shell.
+2 Boot from the Ubuntu Server ISO (or Triaxis bootstrap ISO if available).
+  Theres Password on su -
+  I Would recommend to change the password to your password using sudo passwd root for example triaxis or become root using sudo -i
+  Press Ctrl+Alt+F2 to switch to a shell.
 3 Partition the Disk Using cfdisk fdisk parted etc
   cfdisk /dev/sda
   Create partitions:
