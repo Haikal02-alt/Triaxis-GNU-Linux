@@ -1,0 +1,8 @@
+GRUB (GNU GRUB, or GRand Unified Bootloader) is the default bootloader used by most Linux distributions. 
+It’s the program that runs right after your computer’s BIOS/UEFI finishes its hardware checks, and it decides which operating system kernel to load.
+If you have multiple operating systems installed, GRUB gives you a menu to choose from.
+
+Grub Is A Default Bootloader For Triaxis Since Its Supports Both Uefi And Legacy BIOS offering a unified way to boot operating systems across different hardware types 
+though they achieve this with different files and configurations for each mode.
+
+For Triaxis The Grub Have A Black Background With Blue Square and Cyan Line
