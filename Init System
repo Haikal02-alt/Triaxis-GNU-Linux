@@ -1,0 +1,46 @@
+systemd
+Systemd Is a Default Init System For Triaxis
+
+OpenRC
+sudo apt install openrc
+
+runit
+sudo apt install runit
+
+s6
+sudo apt install s6
+
+dinit
+sudo apt search dinit
+
+if available
+sudo apt install dinit
+
+If Triaxis doesn’t ship Dinit yet
+
+git clone https://github.com/davmac314/dinit.git
+cd dinit
+make
+sudo make install
+
+Switch Init System
+
+sudo nano /etc/default/grub
+Add:
+
+For OpenRC
+init=/sbin/openrc-init
+
+For runit
+init=/sbin/runit-init
+
+For s6
+init=/sbin/s6-svscan
+
+For dinit
+init=/sbin/dinit
+
+sudo update-grub
+
+Reboot and confirm With
+ps -p 1 -o comm=
