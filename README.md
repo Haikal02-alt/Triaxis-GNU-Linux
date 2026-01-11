@@ -34,3 +34,6 @@ BGRT
 
 Spinner
 <img width="1019" height="761" alt="Screenshot from 2026-01-11 11-37-17" src="https://github.com/user-attachments/assets/59268257-a1d1-46a2-bc41-724035805484" />
+
+Breeze-Text
+<img width="1019" height="761" alt="Screenshot from 2026-01-11 11-34-00" src="https://github.com/user-attachments/assets/bfd80aba-46f6-4203-bfcc-d562b4bc21dd" />
