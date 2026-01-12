@@ -29,3 +29,5 @@ sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/plymouth/themes/spinfinit
 sudo update-initramfs -u
 
 To Change plymouth theme Logo Using sudo cp or sudo mv dont forget to use sudo update-initramfs -u
+
+Warning Some Text On Plymouth Themes Name Text With 4 Dots and Breeze-Text Might Have Different Fonts
