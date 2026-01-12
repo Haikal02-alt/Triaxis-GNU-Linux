@@ -24,3 +24,8 @@ Then sudo update-initramfs -u
 Then reboot
 If you Want To add plymouth themes use
 sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/<theme-name>/<theme-name>.plymouth 100
+For The Spinfinity
+sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/plymouth/themes/spinfinity/header-image.png
+sudo update-initramfs -u
+
+To Change plymouth theme Logo Using sudo cp or sudo mv dont forget to use sudo update-initramfs -u
