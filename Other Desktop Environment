@@ -145,7 +145,7 @@ sudo apt install lxde -y
 Best for: Users who liked Ubuntu’s old workflow with global menus and Dash.
 Install
 sudo apt update
-sudo apt install ubuntu-unity-desktop -y
+sudo apt install unity -y
 
 25 Budgie
 sudo apt search budgie-desktop
