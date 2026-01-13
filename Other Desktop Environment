@@ -141,11 +141,30 @@ Install
 sudo apt update
 sudo apt install lxde -y
 
-24 Unity (Canonical’s old DE)
-Best for: Users who liked Ubuntu’s old workflow with global menus and Dash.
-Install
-sudo apt update
-sudo apt install unity -y
+24 Zorin Desktop‑like Environment
+Base Desktop: Install GNOME or XFCE (depending on whether you want Zorin Core or Zorin Lite style).
+For Gnome
+sudo apt install gnome-shell gnome-session
+For XFCE
+sudo apt install xfce4
+
+Zorin Appearance Tweaks:
+
+Install Zorin GTK themes and icon packs (available on GitHub or gnome-look.org).
+
+Apply them via GNOME Tweaks or XFCE Appearance settings.
+
+Zorin Menu / Layouts:
+
+For GNOME: use Dash to Panel and Arc Menu extensions to mimic Zorin’s Windows‑like layout.
+
+For XFCE: configure the panel to bottom, add Whisker Menu, and apply Zorin icons.
+
+Fonts & Branding:
+
+Zorin uses Ubuntu fonts and a clean branding palette. Install fonts-ubuntu and set them system‑wide.
+
+Optional: add Zorin wallpapers.
 
 25 Budgie
 sudo apt search budgie-desktop
