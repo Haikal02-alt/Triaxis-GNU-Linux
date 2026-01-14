@@ -8,6 +8,7 @@ Triaxis Is Also Build from source You compile everything yourself, giving you to
 Educational focus: It's also a learning tool to understand how Linux works, not just how to use it.
 Customization: Creates a minimal system you can build upon, adding only what you need or install kde plasma
 Process: Uses an 25 Step Install Because Triaxis Have Manual Install By Default But You Can Use Ubuntu Server Installer If You Cant Do Manual Install
+Triaxis Is Also Plug And Play Distro
 
 Triaxis Official Desktop Preview
 
