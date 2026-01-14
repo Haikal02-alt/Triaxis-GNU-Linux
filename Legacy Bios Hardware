@@ -1,4 +1,11 @@
 When you ask if Triaxis GNU/Linux is lightweight, the answer depends on Desktop Environment,Ram,etc
+Legacy BIOS hardware refers to
+older computer systems using the traditional Basic Input/Output System for firmware
+relying on Master Boot Record (MBR) partitioning, and lacking modern features like Secure Boot found in UEFI
+requiring specific older OSes or custom setups for compatibility but being phased out for faster
+more secure UEFI-based systems. This older hardware is characterized by its reliance on keyboard navigation
+slower boot times, and support for drives up to 2TB
+contrasting with newer UEFI systems that use GPT and mouse-driven interfaces
 
 Lightweight Desktop Environments
 LXDE (Lightweight X11 Desktop Environment)
