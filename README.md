@@ -51,4 +51,13 @@ Bootloader Preview
 Grub
 <img width="1018" height="761" alt="Screenshot from 2026-01-11 14-44-51" src="https://github.com/user-attachments/assets/ccbe9107-32be-4203-bb0f-2e60cfed8540" />
 
+Triaxis Wallpapers
 
+Shards Of Glass
+<img width="1919" height="1079" alt="Screenshot 2025-05-13 091211" src="https://github.com/user-attachments/assets/9c00dd62-0ab3-471f-86e6-71f2b2b0d82f" />
+
+Monody
+![Lock screen 6 Monody](https://github.com/user-attachments/assets/a7fc9f02-40e7-4e9a-88a3-2e47e0ccb500)
+
+Minecraft
+![Home screen 4](https://github.com/user-attachments/assets/0f3a2bd4-3fee-4acb-8fdc-428c3ce510a9)
