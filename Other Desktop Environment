@@ -284,7 +284,64 @@ sudo apt install wmii
 38 notion
 sudo apt install notion
 
-These Are 38 Listed Certified Alternative Desktop Environment Including WM For Triaxis
+39 Labwc
+Install Dependencies
+sudo apt install build-essential meson ninja-build \
+  pkg-config libwayland-dev libxkbcommon-dev \
+  libwlroots-dev libdrm-dev libpixman-1-dev \
+  libinput-dev libudev-dev
+
+Clone the Labwc Repository
+git clone https://github.com/labwc/labwc.git
+cd labwc
+
+Build with Meson/Ninja
+meson setup build
+ninja -C build
+sudo ninja -C build install
+
+Configure Labwc
+mkdir -p ~/.config/labwc
+cp /usr/local/share/labwc/* ~/.config/labwc/
+
+Start Labwc
+labwc
+
+40 River
+Install Dependencies
+sudo apt install build-essential meson ninja-build \
+  pkg-config libwayland-dev libxkbcommon-dev \
+  libwlroots-dev libdrm-dev libpixman-1-dev \
+  libinput-dev libudev-dev
+
+Clone the River Repository
+git clone https://github.com/riverwm/river.git
+cd river
+
+Build with Meson/Ninja
+meson setup build
+ninja -C build
+sudo ninja -C build install
+
+Configure River
+Create a startup script:
+mkdir -p ~/.config/river
+nano ~/.config/river/init
+
+Example init file:
+#!/bin/sh
+riverctl map normal Super Return spawn foot
+riverctl map normal Super Q close
+riverctl map normal Super D spawn wofi --show drun
+rivertile -view-padding 5 -outer-padding 5 &
+
+Make it executable:
+chmod +x ~/.config/river/init
+
+Start River
+river
+
+These Are 40 Listed Certified Alternative Desktop Environment Including WM For Triaxis
 For Pantheon Pantheon packages outside elementary OS can be unstable.
 For herbstluftwm wmii notion Update the system first Using sudo apt update && sudo apt upgrade
 After You Install It Logout The Session Or Restart The System
