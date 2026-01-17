@@ -95,6 +95,7 @@ the open sudo nano /etc/os-release then you find logo= then Change to LOGO=/usr/
 Configure Plymouth Run sudo nano /etc/default/grub then if you see GRUB_CMDLINE_LINUX_DEFAULT="" Change it to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" ctrl x then y then enter then sudo update-grub
 Then sudo nano /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth Then Change title=Ubuntu 24.04 to title=Triaxis GNU/Linux Ctrl X Y Enter Then sudo update-initramfs -u
 Then Reboot
+Warning Some Text Might Have Different Fonts Or Changed To Another Font
 
 22 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
 Run sudo nano /etc/sddm.conf If the file doesn’t exist, create it with root Generate a default config: sudo sddm --example-config > /etc/sddm.conf then edit it sudo nano /etc/sddm.conf Set LXQt theme in the config
