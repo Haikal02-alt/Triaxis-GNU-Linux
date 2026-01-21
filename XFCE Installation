@@ -2,7 +2,7 @@ Before you Install Make sure you are on base with no desktop environment
 To Install XFCE Run sudo apt install xfce4 -y
 then sudo reboot
 if theres no lightdm xfce then it says failed to start session I Would Recommend To Change LightDM To SDDM Run Recovery Mode Then root then install with sudo apt install sddm then sudo apt purge lightdm then sudo apt autoremove
-change zutty to konsole using properties then add konsole then remove the zutty
+If Its Zutty change zutty to konsole gnome terminal xfce terminal other terminal using properties then add konsole then remove the zutty
 Change The About Icon Using sudo cp /usr/share/pixmaps/Triaxis-logo.png /usr/share/icons/hicolor/48x48/apps/xfce4-about.png
 Then Refresh the icon cache With sudo gtk-update-icon-cache /usr/share/icons/hicolor
 Restart XFCE xfce4-session-logout Then Logout And Log Back in Or Reboot Your System
