@@ -75,6 +75,7 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
 
 16 Update Using sudo apt update
 17 Install Kde Plasma Desktop sudo apt install kde-standard for base and servers dont install desktop environment if you Want Other Desktop Environment Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/Other%20Desktop%20Environment
+Change Grub If You Need It
 GRUB_TIMEOUT=0
 Change them to:
 GRUB_TIMEOUT_STYLE=menu
@@ -103,6 +104,7 @@ Edit the SDDM config file: with sudo nano /etc/sddm.conf If the file doesn’t e
 Current=lubuntu
 Or use the command sudo sddm --example-config > /etc/sddm.conf
 Restart SDDM sudo systemctl restart sddm
+You can Also go to settings then startup and shutdown then login screen sddm then click lubuntu then apply
 Install Firefox with sudo apt update
 sudo apt install firefox
 if you cant install firefox you can install other browsers like konqueror sudo apt install konqueror
@@ -117,6 +119,8 @@ NAME="Triaxis"
 PRETTY_NAME="Triaxis"
 ID=triaxis
 VERSION="2026.1.08"
+VERSION_ID="2026.1.08"
+VERSION_CODENAME=noble to VERSION_CODENAME=
 Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
 Now, when you open About System, the link will point to your GitHub page.
@@ -124,8 +128,8 @@ Now, when you open About System, the link will point to your GitHub page.
 For Base Install
 sudo nano /etc/os-release
 then rename id=ubuntu to id=triaxis
-then sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis
-then sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis
+then sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
+then sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
 Then type sudo reboot Or type logout
 
 For Beginners
