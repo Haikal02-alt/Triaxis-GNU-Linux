@@ -105,6 +105,7 @@ Or use the command sudo sddm --example-config > /etc/sddm.conf
 Restart SDDM sudo systemctl restart sddm
 Install Firefox with sudo apt update
 sudo apt install firefox
+if you cant install firefox you can install other browsers like konqueror sudo apt install konqueror
 22 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
 23 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
 24 Change the Link Open the os-release file sudo nano /etc/os-release
