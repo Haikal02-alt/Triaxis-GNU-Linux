@@ -83,11 +83,6 @@ update grub using sudo update-grub
 18 Rename GRUB Menu Entries GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian` Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
 Then Update grub using sudo update-grub
 19 Edit /etc/os-release sudo nano /etc/os-release Change NAME="Ubuntu"
-PRETTY_NAME="Ubuntu 24.04 LTS"
-To NAME="Triaxis"
-PRETTY_NAME="Triaxis"
-Change ID=ubuntu to ID=triaxis
-Change 24.04 To 2026.1.08
 Change HOME URL To https://github.com/Haikal02-alt/Triaxis-GNU-Linux
 20 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 21 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
@@ -119,8 +114,8 @@ Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
 Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 Then Pretty Name And Name To Triaxis then Change Version_id and version to 2026.1.08
 (Optional) You can also change other fields:
-NAME="Triaxis GNU/Linux"
-PRETTY_NAME="Triaxis GNU/Linux 1.0"
+NAME="Triaxis"
+PRETTY_NAME="Triaxis"
 ID=triaxis
 VERSION="2026.1.08"
 SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
