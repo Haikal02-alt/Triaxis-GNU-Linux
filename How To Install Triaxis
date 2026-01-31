@@ -86,6 +86,9 @@ Then Update grub using sudo update-grub
 PRETTY_NAME="Ubuntu 24.04 LTS"
 To NAME="Triaxis"
 PRETTY_NAME="Triaxis"
+Change ID=ubuntu to ID=triaxis
+Change 24.04 To 2026.1.08
+Change HOME URL To https://github.com/Haikal02-alt/Triaxis-GNU-Linux
 20 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 21 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
 Or You Can Download Triaxis Logo On Readme then theres a triaxis logo then Save Image As /home/yourname/Pictures then name it to Triaxis-logo.png then Open a terminal.
