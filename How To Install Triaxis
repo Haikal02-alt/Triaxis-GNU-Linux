@@ -65,7 +65,7 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
 
 14 Create User
    adduser yourname
-  usermod -aG sudo yourname
+   usermod -aG sudo yourname
 
 15 Exit & Reboot
    exit
