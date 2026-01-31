@@ -82,10 +82,8 @@ GRUB_TIMEOUT=5
 update grub using sudo update-grub
 18 Rename GRUB Menu Entries GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian` Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
 Then Update grub using sudo update-grub
-19 Edit /etc/os-release sudo nano /etc/os-release Change NAME="Ubuntu"
-Change HOME URL To https://github.com/Haikal02-alt/Triaxis-GNU-Linux
-20 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
-21 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
+19 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
+20 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
 Or You Can Download Triaxis Logo On Readme then theres a triaxis logo then Save Image As /home/yourname/Pictures then name it to Triaxis-logo.png then Open a terminal.
 Use the mv command with sudo:
 sudo mv /home/yourname/Picture/Triaxis-logo.png /usr/share/pixmaps/
@@ -95,7 +93,7 @@ Then sudo nano /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth Then 
 Then Reboot
 Warning Some Text Might Have Different Fonts Or Changed To Another Font
 
-22 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
+21 Replace The SDDM Use sudo apt install sddm-theme-lubuntu Locate Available SDDM Themes If you’re getting “Permission denied” when trying to change SDDM to use the LXQt theme, it usually means you don’t have the right privileges or the file isn’t writable by your user. Here’s how to fix it:
 Run sudo nano /etc/sddm.conf If the file doesn’t exist, create it with root Generate a default config: sudo sddm --example-config > /etc/sddm.conf then edit it sudo nano /etc/sddm.conf Set LXQt theme in the config
 Inside /etc/sddm.conf, add: [Theme]
 Current=lubuntu
@@ -107,9 +105,9 @@ Or use the command sudo sddm --example-config > /etc/sddm.conf
 Restart SDDM sudo systemctl restart sddm
 Install Firefox with sudo apt update
 sudo apt install firefox
-23 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
-24 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
-25 Change the Link Open the os-release file sudo nano /etc/os-release
+22 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
+23 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
+24 Change the Link Open the os-release file sudo nano /etc/os-release
 Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
 Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 Then Pretty Name And Name To Triaxis then Change Version_id and version to 2026.1.08
@@ -118,8 +116,6 @@ NAME="Triaxis"
 PRETTY_NAME="Triaxis"
 ID=triaxis
 VERSION="2026.1.08"
-SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
-BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
 Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
 Now, when you open About System, the link will point to your GitHub page.
@@ -134,4 +130,4 @@ Then type sudo reboot Or type logout
 For Beginners
 Use Ubuntu Server Installer
 
-26 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
+25 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
