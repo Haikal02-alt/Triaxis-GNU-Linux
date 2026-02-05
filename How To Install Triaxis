@@ -84,14 +84,21 @@ Change them to:
 GRUB_TIMEOUT_STYLE=menu
 GRUB_TIMEOUT=5
 update grub using sudo update-grub
-18 Rename GRUB Menu Entries GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian` Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
+18 Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
 Then Update grub using sudo update-grub
 19 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 20 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
-Or You Can Download Triaxis Logo On Readme then theres a triaxis logo then Save Image As /home/yourname/Pictures then name it to Triaxis-logo.png then Open a terminal.
+Or Install firefox or konqueror Then You Can Download Triaxis Logo On Readme then theres a triaxis logo then Save Image As /home/yourname/Pictures then name it to Triaxis-logo.png then Open a terminal.
 Use the mv command with sudo:
 sudo mv /home/yourname/Picture/Triaxis-logo.png /usr/share/pixmaps/
+then sudo cp /usr/share/pixmaps/Triaxis-logo.png /usr/share/pixmaps/ubuntu-logo.svg
+then sudo cp /usr/share/pixmaps/Triaxis-logo.png /usr/share/pixmaps/ubuntu-logo-text.png
+then sudo cp /usr/share/pixmaps/Triaxis-logo.png /usr/share/pixmaps/ubuntu-logo-text-dark.png
 the open sudo nano /etc/os-release then you find logo= then Change to LOGO=/usr/share/pixmaps/Triaxis-logo.png
+if you cant see the change logo heres a guided version then follow the capital word
+1 GO TO sudo nano /etc/os-release
+2 THEN CHANGE LOGO=ubuntu-logo TO LOGO=/usr/share/pixmaps/Triaxis-logo.png
+3 THEN CTRL X Y ENTER
 Configure Plymouth Run sudo nano /etc/default/grub then if you see GRUB_CMDLINE_LINUX_DEFAULT="" Change it to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" ctrl x then y then enter then sudo update-grub
 Then sudo nano /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth Then Change title=Ubuntu 24.04 to title=Triaxis GNU/Linux Ctrl X Y Enter Then sudo update-initramfs -u
 Then Reboot
@@ -119,7 +126,7 @@ Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 Then Pretty Name And Name To Triaxis then Change Version_id and version to 2026.1.08
 (Optional) You can also change other fields:
 NAME="Triaxis"
-PRETTY_NAME="Triaxis"
+PRETTY_NAME="Triaxis GNU/Linux"
 ID=triaxis
 VERSION="2026.1.08"
 VERSION_ID="2026.1.08"
