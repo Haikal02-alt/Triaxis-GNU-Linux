@@ -123,13 +123,13 @@ if you cant install firefox you can install other browsers like konqueror sudo a
 24 Change the Link Open the os-release file sudo nano /etc/os-release
 Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
 Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
-Then Pretty Name And Name To Triaxis then Change Version_id and version to 2026.1.08
+Then Pretty Name And Name To Triaxis then Change Version_id and version to
 (Optional) You can also change other fields:
 NAME="Triaxis"
 PRETTY_NAME="Triaxis GNU/Linux"
 ID=triaxis
-VERSION="2026.1.08"
-VERSION_ID="2026.1.08"
+VERSION=""
+VERSION_ID=""
 VERSION_CODENAME=noble to VERSION_CODENAME=
 Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
