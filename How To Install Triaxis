@@ -84,7 +84,7 @@ Change them to:
 GRUB_TIMEOUT_STYLE=menu
 GRUB_TIMEOUT=5
 update grub using sudo update-grub
-18 Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis GNU/Linux"
+18 Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis"
 Then Update grub using sudo update-grub
 19 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 20 Add A logo use figlet to install it use sudo apt install figlet then figlet TRI then press prt sc then click rectangular region then screenshot the TRI on figlet then name it to triaxis-logo.png then move the image to /usr/share/pixmaps/ sudo cp ~/your TRI Logo/triaxis-logo.png /usr/share/pixmaps/
@@ -125,8 +125,8 @@ Find the line that looks like this: HOME_URL="https://www.ubuntu.com/"
 Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 Then Pretty Name And Name To Triaxis then Change Version_id and version to
 (Optional) You can also change other fields:
-NAME="Triaxis"
-PRETTY_NAME="Triaxis"
+NAME="Triaxis GNU/Linux"
+PRETTY_NAME="Triaxis GNU/Linux"
 ID=triaxis
 VERSION=""
 VERSION_ID=""
