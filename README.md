@@ -14,18 +14,61 @@ Triaxis Official Desktop Preview
 
 Kde Plasma (Default Desktop Environment)
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-26-46" src="https://github.com/user-attachments/assets/a998614e-6f7e-488e-a426-2bcdd009f61b" />
+Pros
+Easy to use
+QT Desktop Environment
+Default Desktop Environment
+Very customizable
+
+Cons
+Heavier on resources
+Needs the user to set up most of the theming and device settings
+Might be missing some quality of life features
+Only supports X11
 
 Gnome
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-25-01" src="https://github.com/user-attachments/assets/d4975828-6f28-4984-87cb-5dcf1f3b5b81" />
+Pros
+GTK Desktop Environment
+Simplistic design
+Doesn't overwhelm with options
+Default desktop for many Linux distributions
+
+Cons
+Heavier on resources
+Less configurable than KDE
+Custom-installed extensions are prone to breakage on major updates
 
 Base (No Desktop Environment)
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-25-43" src="https://github.com/user-attachments/assets/17d7eeac-4598-4e5d-b1dd-f8b20c94e8dc" />
+Pros
+Very Lightweight
+
+Cons
+Doesnt Support Apps That Require Desktop Environment
 
 Sway
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-23-30" src="https://github.com/user-attachments/assets/c42ea94a-02a4-4076-9034-88d0e65a6856" />
+Pros
+Fast, efficient window management using Wayland
+Keyboard-driven workflow
+Lightweight & minimal
+Highly customizable
+
+Cons
+Steep learning curve
 
 Xfce
 <img width="1316" height="831" alt="Screenshot from 2026-01-10 11-18-23" src="https://github.com/user-attachments/assets/2d0a2c9b-4a65-479b-833e-c57d3322e409" />
+Pros
+Very traditional design
+One of the most stable desktop environments
+Light on resources
+X11-based desktop environment built on the GTK toolkit
+
+Cons
+May be too simplistic for some users
+Not as feature-rich as KDE or GNOME
 
 Some Features Preview
 
