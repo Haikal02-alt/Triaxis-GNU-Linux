@@ -126,7 +126,7 @@ Replace it to HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 Then Pretty Name And Name To Triaxis then Change Version_id and version to
 (Optional) You can also change other fields:
 NAME="Triaxis"
-PRETTY_NAME="Triaxis GNU/Linux"
+PRETTY_NAME="Triaxis"
 ID=triaxis
 VERSION=""
 VERSION_ID=""
