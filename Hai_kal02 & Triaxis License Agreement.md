@@ -1,6 +1,5 @@
-Hai_kal02 & Triaxis GPL License Agreement
-Version 1.0 — January 2026
-It Is standard GPL But Custom License is custom (Hai_kal02 & Triaxis License)
+Hai_kal02 & Triaxis License Agreement
+Version 2.0 — March 2026
 
 1. Preamble (Clauses 1–5)
 This License governs Triaxis GNU/Linux and works authored by Hai_kal02.
