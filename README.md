@@ -13,7 +13,7 @@ Triaxis Is Also A Plug And Play Distro
 Triaxis Official Desktop Preview
 
 Kde Plasma (Default Desktop Environment)
-<img width="1316" height="831" alt="Screenshot from 2026-01-10 11-26-46" src="https://github.com/user-attachments/assets/a998614e-6f7e-488e-a426-2bcdd009f61b" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-22-27" src="https://github.com/user-attachments/assets/060d21d6-0b6d-4c8f-93bd-7cd5a0e4341c" />
 Pros
 Easy to use
 QT Desktop Environment
@@ -27,7 +27,7 @@ Might be missing some quality of life features
 Only supports X11
 
 Gnome
-<img width="1316" height="831" alt="Screenshot from 2026-01-10 11-25-01" src="https://github.com/user-attachments/assets/d4975828-6f28-4984-87cb-5dcf1f3b5b81" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-21-28" src="https://github.com/user-attachments/assets/f4a16aa4-7efb-482c-b826-f788056ea4a1" />
 Pros
 GTK Desktop Environment
 Simplistic design
@@ -48,7 +48,7 @@ Cons
 Doesnt Support Apps That Require Desktop Environment
 
 Sway
-<img width="1316" height="831" alt="Screenshot from 2026-01-10 11-23-30" src="https://github.com/user-attachments/assets/c42ea94a-02a4-4076-9034-88d0e65a6856" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-20-36" src="https://github.com/user-attachments/assets/ae54b186-45d2-4c8e-b968-72266c20ff16" />
 Pros
 Fast, efficient window management using Wayland
 Keyboard-driven workflow
@@ -59,7 +59,7 @@ Cons
 Steep learning curve
 
 Xfce
-<img width="1316" height="831" alt="Screenshot from 2026-01-10 11-18-23" src="https://github.com/user-attachments/assets/2d0a2c9b-4a65-479b-833e-c57d3322e409" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-17-59" src="https://github.com/user-attachments/assets/d6cfbe68-1a3a-4266-af4d-bbfdf4440da6" />
 Pros
 Very traditional design
 One of the most stable desktop environments
@@ -107,3 +107,17 @@ Monody
 
 Minecraft
 ![Home screen 4](https://github.com/user-attachments/assets/0f3a2bd4-3fee-4acb-8fdc-428c3ce510a9)
+
+Login Screen Preview
+
+SDDM
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-22-46" src="https://github.com/user-attachments/assets/7160c263-90f8-455d-aa9c-2f219258ee87" />
+
+GDM
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-23-18" src="https://github.com/user-attachments/assets/167a7e09-9af6-4853-aa1e-8a19462a551c" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-23-25" src="https://github.com/user-attachments/assets/db399e1d-a375-4659-a835-4ecb23fc5253" />
+
+LightDM
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-24-00" src="https://github.com/user-attachments/assets/506ec1b9-0593-4678-960b-becb6f322001" />
+
+
