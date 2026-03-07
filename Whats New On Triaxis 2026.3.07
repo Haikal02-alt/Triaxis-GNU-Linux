@@ -5,6 +5,7 @@ This Snapshot Rolling Release Will Have A New Feature
   sudo apt install gnome-software-plugin-flatpak
   Add the Flathub repository
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  Reboot
 2 Added Welcome Center Install It Using sudo apt install plasma-welcome
 3 Added Copilot Install It Using sudo snap install copilot-desktop
 4 Removed VERSION_ID=""
