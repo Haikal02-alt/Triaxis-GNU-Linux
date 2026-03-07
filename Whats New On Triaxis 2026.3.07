@@ -25,5 +25,6 @@ This Snapshot Rolling Release Will Have A New Feature
     ID=triaxis
     ID_LIKE=debian
     BUILD_ID=rolling
+    Remove UBUNTU_CODENAME Because Its A Rolling Release Distro
   4 Ctrl X Y Enter
   5 sudo apt update && sudo apt upgrade -y
