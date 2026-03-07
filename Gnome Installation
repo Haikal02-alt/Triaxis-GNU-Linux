@@ -16,3 +16,5 @@ Or
 sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo '/usr/share/pixmaps/Triaxis-logo.png'
 If its didnt work you cannot do it
 If You Want To Remove Maxmize and Minimize Button Go To Gnome tweaks then windows then uncheck maximize and minimize
+Install GNOME Apps (If Necessary)
+Run sudo apt install gedit gnome-system-monitor gnome-control-center gnome-calculator gnome-disk-utility gnome-screenshot gnome-weather gnome-maps gnome-clocks gnome-contacts eog gnome-extensions-app -y
