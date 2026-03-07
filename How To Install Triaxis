@@ -166,8 +166,8 @@ How To Do It
 5 sudo apt update && sudo apt upgrade -y
 
 23 Change The Base Name UBUNTU TO Triaxis
-sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
-sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
+sudo nano /etc/issue then change The Name Ubuntu (Version Name) LTS To Triaxis GNU/Linux
+sudo nano /etc/issue.net then rename Ubuntu (Version Name) LTS To Triaxis GNU/Linux
 Then type sudo reboot Or type logout
 
 24 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
