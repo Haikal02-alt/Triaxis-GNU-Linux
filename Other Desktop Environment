@@ -3,14 +3,14 @@ Note That Kde Plasma Is Official And Default Desktop Environment For Triaxis Gno
 XFCE Is also Official For Triaxis Which Is Very Good For Older Machines But Not A Default Desktop Environment
 For Window Manager For Example Hyprland Sway i3wm awesome and bspwm I Would Recommend SDDM For Login Screen
 For XFCE I Would Also Recommend SDDM For Login Screen
-For Other Desktop Environment Or Window Manager That Have No Listed On Ligtdm After you install the desktop environment or window manager I Would Recommend SDDM For Login Screen
+For Other Desktop Environment Or Window Manager That Have No Listed On Ligtdm After you install the desktop environment or window manager I Would Recommend SDDM Or lightdm-gtk-greeter For Login Screen
 Before you Install Make sure you are on base with no desktop environment
 
 1 Gnome
 To Install Use sudo apt install gnome-session -y
 
 2 XFCE
-sudo apt install xfce4 -y
+sudo apt install xfce4 xfce4-goodies -y
 
 3 LXQt
 sudo apt install lxqt -y
