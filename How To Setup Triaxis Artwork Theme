@@ -1,0 +1,40 @@
+1 Download The Triaxis Official Artwork Theme Slasher Here
+2 Then Click Save Image As
+3 Save It To Download Then Name It To Slasher.png
+4 Then Create Folder Name Slasher
+5 Then Move Slasher.png To Folder Name Slasher
+6 Open Terminal Then sudo mv /home/yourusername/Slasher /usr/share/wallpapers/
+7 On KDE Plasma 
+  Right‑click on the desktop → Configure Desktop and Wallpaper. Under Wallpaper, choose Image. Click Open and select your Slasher wallpaper file.
+  Adjust scaling (Scaled, Centered, or Fill) depending on your preference.
+  Apply → the Slasher Wallpaper
+  
+  On GNOME
+  Open Settings → Appearance.
+  Under Background, click the image selector.
+  Choose your Slasher wallpaper file.
+  GNOME lets you set different images for light mode and dark mode if desired.
+  Apply → the Slasher becomes your GNOME background.
+
+  On Sway (Wayland tiling WM)
+  Edit your Sway config file (usually ~/.config/sway/config).
+  Add a line like:
+  output * bg /usr/share/wallpapers/Slasher/Slasher.png fill
+  fill ensures it scales properly.
+  Save the config and reload Sway (Super+Shift+C).
+
+  On XFCE
+  Right‑click on the desktop → Desktop Settings.
+  Under Background, click Folder or Image.
+  Select your Slasher wallpaper file.
+  Choose style (Scaled, Zoom, Centered, etc.).
+  Apply
+
+8 You Can Select Slasher On SDDM
+  Open System Settings.
+  Go to Startup and Shutdown → Login Screen (SDDM).
+  In the Theme section, pick the theme you want (e.g., Lubuntu, or any custom one).
+  Click Background (some themes show this option directly).
+  Browse and select your Slasher wallpaper image.
+  Apply changes.
+  Restart or log out
