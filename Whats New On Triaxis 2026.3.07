@@ -1,0 +1,29 @@
+This Snapshot Rolling Release Will Have A New Feature
+1 Added Flatpak Backends On KDE Plasma Run sudo snap install copilot-desktop
+2 Added Welcome Center Install It Using sudo apt install plasma-welcome
+3 Added Copilot Install It Using sudo snap install copilot-desktop
+4 Removed VERSION_ID=""
+  VERSION=""
+  VERSION_CODENAME=""
+  And Added BUILD_ID=rolling
+  Example
+  PRETTY_NAME="Triaxis GNU/Linux"
+  NAME="Triaxis GNU/Linux"
+  ID=triaxis
+  ID_LIKE=debian
+  BUILD_ID=rolling
+  How To Do It
+  1 Open sudo nano /etc/os-release
+  2 Remove
+    VERSION_ID=""
+    VERSION=""
+    VERSION_CODENAME=""
+  3 Add BUILD_ID=rolling After The ID_LIKE=debian
+    Example
+    PRETTY_NAME="Triaxis GNU/Linux"
+    NAME="Triaxis GNU/Linux"
+    ID=triaxis
+    ID_LIKE=debian
+    BUILD_ID=rolling
+  4 Ctrl X Y Enter
+  5 sudo apt update && sudo apt upgrade -y
