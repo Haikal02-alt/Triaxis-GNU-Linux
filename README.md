@@ -40,7 +40,7 @@ Less configurable than KDE
 Custom-installed extensions are prone to breakage on major updates
 
 Base (No Desktop Environment)
-<img width="1316" height="831" alt="Screenshot from 2026-01-10 11-25-43" src="https://github.com/user-attachments/assets/17d7eeac-4598-4e5d-b1dd-f8b20c94e8dc" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-31-07" src="https://github.com/user-attachments/assets/4267e8e5-86f5-4227-8402-45fcf0a04b82" />
 Pros
 Very Lightweight
 
@@ -119,5 +119,8 @@ GDM
 
 LightDM
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-24-00" src="https://github.com/user-attachments/assets/506ec1b9-0593-4678-960b-becb6f322001" />
+
+Minimal
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-31-21" src="https://github.com/user-attachments/assets/9d635d5b-6a19-4a41-95c2-1b1bc02b0049" />
 
 
