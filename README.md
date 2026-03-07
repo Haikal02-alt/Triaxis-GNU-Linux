@@ -94,7 +94,10 @@ Bootloader Preview
 Grub
 <img width="1018" height="761" alt="Screenshot from 2026-01-11 14-44-51" src="https://github.com/user-attachments/assets/ccbe9107-32be-4203-bb0f-2e60cfed8540" />
 
-Triaxis Wallpapers
+Triaxis Official Artwork Theme Slasher
+![Slasher 2](https://github.com/user-attachments/assets/6944c24b-b66d-499c-8937-371b0bf80ad8)
+
+Triaxis Custom Wallpapers
 
 Shards Of Glass
 <img width="1919" height="1079" alt="Screenshot 2025-05-13 091211" src="https://github.com/user-attachments/assets/9c00dd62-0ab3-471f-86e6-71f2b2b0d82f" />
