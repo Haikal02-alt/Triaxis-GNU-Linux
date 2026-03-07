@@ -28,3 +28,4 @@ This Snapshot Rolling Release Will Have A New Feature
     Remove UBUNTU_CODENAME Because Its A Rolling Release Distro
   4 Ctrl X Y Enter
   5 sudo apt update && sudo apt upgrade -y
+5 Added A Artwork Theme Its Called Slasher You Can Setup Here https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/How%20To%20Setup%20Triaxis%20Artwork%20Theme
