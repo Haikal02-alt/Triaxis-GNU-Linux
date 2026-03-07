@@ -135,7 +135,7 @@ Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
 Now, when you open About System, the link will point to your GitHub page.
 
-22 Add Flatpak Backends On KDE Plasma Run sudo snap install copilot-desktop
+22 (For New User Only) Add Flatpak Backends On KDE Plasma Run sudo snap install copilot-desktop
 Add Welcome Center Install It Using sudo apt install plasma-welcome
 Add Copilot Install It Using sudo snap install copilot-desktop
 Remove VERSION_ID=""
