@@ -176,3 +176,39 @@ System76 Meerkat → Ships with Linux preinstalled.
 TUXEDO Nano → Linux preinstalled, certified.
 
 Slimbook One → Compact Linux desktop.
+
+Certified ARM Based
+
+ARM Certified Laptop
+
+Apple Silicon (M1, M2, M3 MacBooks) → Works via Asahi Linux base; Triaxis can be bootstrapped, though GPU acceleration is partial.
+
+Lenovo ThinkPad X13s (Qualcomm Snapdragon 8cx Gen 3) → ARM‑native, certified with Ubuntu/Triaxis; strong battery life, Wi‑Fi firmware required.
+
+PineBook Pro (Rockchip RK3399) → Community‑driven ARM laptop, fully compatible with Triaxis builds.
+
+Chromebooks (ARM variants) → Certified when bootloader unlocked; requires kernel ≥ 6.x for Wi‑Fi and GPU.
+
+Surface Pro X (Microsoft SQ1/SQ2 ARM) → Works with Ubuntu ARM builds; touchscreen and pen support partial but improving.
+
+ARM Certified PC
+
+Raspberry Pi 4 / 5 → Fully certified, ideal for lightweight Triaxis builds; supports server and desktop environments.
+
+RockPro64 (Pine64) → ARM workstation board, certified with Triaxis for DIY builds.
+
+Odroid N2+ / N2L → ARM SBCs certified for Triaxis, strong multimedia support.
+
+Apple Mac Mini (M1/M2/M3) → Asahi Linux base, Triaxis can be layered; GPU acceleration partial.
+
+ARM‑based Chromeboxes → Certified with kernel ≥ 6.x, requires firmware tweaks.
+
+Ampere Altra Developer Platform → ARM server/workstation board, certified for Triaxis server builds.
+
+ARM Certified Phones
+
+PinePhone / PinePhone Pro (Allwinner A64, Rockchip RK3399) → Fully certified, designed for Linux phones; Triaxis builds run with community kernels.
+
+ARM Certified Tablets
+
+PineTab / PineTab2 (ARM community tablets) → Fully certified, designed for Linux builds, strong community support.
