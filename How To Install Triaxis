@@ -135,14 +135,39 @@ Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
 Now, when you open About System, the link will point to your GitHub page.
 
-For Base Install
-sudo nano /etc/os-release
-then rename id=ubuntu to id=triaxis
-then sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
-then sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
+22 Add Flatpak Backends On KDE Plasma Run sudo snap install copilot-desktop
+Add Welcome Center Install It Using sudo apt install plasma-welcome
+Add Copilot Install It Using sudo snap install copilot-desktop
+Remove VERSION_ID=""
+VERSION=""
+VERSION_CODENAME=""
+And Added BUILD_ID=rolling
+Example
+PRETTY_NAME="Triaxis GNU/Linux"
+NAME="Triaxis GNU/Linux"
+ID=triaxis
+ID_LIKE=debian
+BUILD_ID=rolling
+How To Do It
+1 Open sudo nano /etc/os-release
+2 Remove
+    VERSION_ID=""
+    VERSION=""
+    VERSION_CODENAME=""
+3 Add BUILD_ID=rolling After The ID_LIKE=debian
+    Example
+    PRETTY_NAME="Triaxis GNU/Linux"
+    NAME="Triaxis GNU/Linux"
+    ID=triaxis
+    ID_LIKE=debian
+    BUILD_ID=rolling
+    Remove UBUNTU_CODENAME Because Its A Rolling Release Distro
+4 Ctrl X Y Enter
+5 sudo apt update && sudo apt upgrade -y
+
+23 Change The Base Name UBUNTU TO Triaxis
+sudo nano /etc/issue then change The Name Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
+sudo nano /etc/issue.net then rename Ubuntu 24.04.3 LTS To Triaxis GNU/Linux
 Then type sudo reboot Or type logout
 
-For Beginners
-Use Ubuntu Server Installer
-
-25 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
+24 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
