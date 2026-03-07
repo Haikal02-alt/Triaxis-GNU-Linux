@@ -1,5 +1,5 @@
 Before you Install Make sure you are on base with no desktop environment
-To Install XFCE Run sudo apt install xfce4 -y
+To Install XFCE Run sudo apt install xfce4 xfce4-goodies -y
 then sudo reboot
-if theres no lightdm xfce then it says failed to start session I Would Recommend To Use LightDM GTK Greeter Run Recovery Mode Then root then install with sudo apt install lightdm-gtk-greeter
+if theres no lightdm xfce then it says failed to start session I Would Recommend To Use LightDM GTK Greeter Run Recovery Mode Then root then install with sudo apt install lightdm lightdm-gtk-greeter
 If Its Zutty change zutty to konsole gnome terminal xfce terminal other terminal using properties then add konsole then remove the zutty
