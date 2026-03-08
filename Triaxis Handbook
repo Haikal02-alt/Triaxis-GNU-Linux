@@ -1,4 +1,4 @@
-Welcome To Triaxis Install Guide
+Welcome To Triaxis GNU/Linux Handbook
 This Guide Will Help You To Install Triaxis Correctly
 (NOTE Triaxis Supports Intel or AMD Architecture Starting On March 6 2026 Triaxis Finally Support ARM architecture But Triaxis Does Not Officially Support 32 Bit)
 
@@ -217,4 +217,18 @@ Then type sudo reboot Or type logout
   Apply changes.
   Restart or log out
 
-25 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
+25 (For New User Only)
+   Add The Wiki On /etc/os-release add DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
+   Run sudo nano /etc/os-release
+   then add DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki after the HOME_URL
+   Example
+   BUILD_ID=rolling
+   HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+   DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
+  
+   Add Wayland For KDE Plasma And Set To Default You Can Add It Using This Command
+   sudo apt update
+   sudo apt install plasma-workspace-wayland
+   sudo reboot
+
+26 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
