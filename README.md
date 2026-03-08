@@ -24,7 +24,6 @@ Cons
 Heavier on resources
 Needs the user to set up most of the theming and device settings
 Might be missing some quality of life features
-Only supports X11
 
 Gnome
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-21-28" src="https://github.com/user-attachments/assets/f4a16aa4-7efb-482c-b826-f788056ea4a1" />
