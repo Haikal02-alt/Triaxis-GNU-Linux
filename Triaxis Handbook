@@ -76,6 +76,7 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
 16 Update Using sudo apt update
 17 Install Kde Plasma Desktop sudo apt install plasma-workspace-wayland for base and servers dont install desktop environment if you Want Other Desktop Environment Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/Other%20Desktop%20Environment
    After You Install KDE Plasma Run these commands
+   sudo apt install sddm
    sudo systemctl enable sddm
    sudo systemctl start sddm
 Change Grub If You Need It Run sudo nano /etc/default/grub then
