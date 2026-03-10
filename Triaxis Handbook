@@ -74,7 +74,7 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
    reboot
 
 16 Update Using sudo apt update
-17 Install Kde Plasma Desktop sudo apt install kde-standard for base and servers dont install desktop environment if you Want Other Desktop Environment Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/Other%20Desktop%20Environment
+17 Install Kde Plasma Desktop sudo apt install plasma-workspace-wayland for base and servers dont install desktop environment if you Want Other Desktop Environment Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/Other%20Desktop%20Environment
    After You Install KDE Plasma Run these commands
    sudo systemctl enable sddm
    sudo systemctl start sddm
@@ -226,9 +226,4 @@ Then type sudo reboot Or type logout
    HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
    DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
   
-   Add Wayland For KDE Plasma And Set To Default You Can Add It Using This Command
-   sudo apt update
-   sudo apt install plasma-workspace-wayland
-   sudo reboot
-
 26 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
