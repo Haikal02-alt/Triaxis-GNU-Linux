@@ -1,0 +1,107 @@
+Welcome To Triaxis GNU/Linux Handbook ARM
+This Guide Will Help You To Install Triaxis Correctly
+
+1 enter https://ubuntu.com/download/server/arm then download ubuntu server lts iso then Before You Install Flash Ubuntu Server Iso With Rufus Etcher Or Ventoy
+Make Sure That There Are No important Files Inside the USB Drive Then Backup Your Data On Your System Because It Will Erase Your Partition Drive After Installing Triaxis
+For Rufus There are both ISO mode (the default, file-copy method) and DD mode (a block-level copy method) options
+and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO mode partitions and formats the USB like a standard drive
+
+2 Boot from the Ubuntu Server ISO
+  Theres Password on su -
+  I Would recommend to change the password to your password using sudo passwd root for example triaxis or become root using sudo -i
+  Press Ctrl+Alt+F2 to switch to a shell.
+3 Partition the Disk Using cfdisk fdisk parted etc
+  cfdisk /dev/sda
+  Create partitions:
+
+4 EFI (if UEFI): 512MB, type EFI System.
+  Root (/): rest of disk, type Linux filesystem.
+  Swap: optional, type Linux swap.
+  Write changes and quit.
+
+5 Format Partitions
+  mkfs.ext4 /dev/sda2     # root
+  mkswap /dev/sda3        # swap
+  mkfs.fat -F32 /dev/sda1 # EFI (if UEFI)
+
+6 Mount Target System
+  mount /dev/sda2 /mnt
+  mkdir /mnt/boot
+  mkdir /mnt/boot/efi
+  mount /dev/sda1 /mnt/boot/efi
+  swapon /dev/sda3
+
+7 Bootstrap Base System
+  debootstrap --arch amd64 focal /mnt http://archive.ubuntu.com/ubuntu
+
+8 Chroot Into New System
+
+  mount --bind /dev /mnt/dev
+  mount --bind /proc /mnt/proc
+  mount --bind /sys /mnt/sys
+  chroot /mnt
+
+9 Configure System
+  Inside chroot:
+  echo "myhostname" > /etc/hostname
+  nano /etc/hosts   # add 127.0.0.1 myhostname
+
+10 Set up networking:
+   apt install net-tools ifupdown
+
+11 Install Kernel & Essentials
+   apt install linux-image-generic grub-pc sudo vim
+
+12 Install Bootloader
+   For BIOS:
+   grub-install /dev/sda
+   update-grub
+
+13 For UEFI:
+   apt install grub-efi
+   grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ubuntu
+   update-grub
+
+14 Create User
+   adduser yourname
+   usermod -aG sudo yourname
+
+15 Exit & Reboot
+   exit
+   umount -R /mnt
+   swapoff -a
+   reboot
+
+16 Run sudo nano /etc/os-release
+Then Change Ubuntu To Triaxis GNU/Linux
+Example
+
+PRETTY_NAME="Triaxis GNU/Linux ARM"
+NAME="Triaxis GNU/Linux ARM"
+ID=triaxis
+ID_LIKE=debian
+BUILD_ID=rolling
+HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
+
+Keep The Support URL Bug Report URL And Privacy Policy URL Ubuntu
+
+Then sudo nano /etc/issue
+Then Change Ubuntu (Version Name LTS) \n \l To Triaxis GNU/Linux ARM \n \l
+CTRL X Y ENTER
+
+Then sudo nano /etc/issue.net
+Then Change Ubuntu (Version Name LTS) To Triaxis GNU/Linux ARM
+CTRL X Y ENTER
+
+17 Change Grub If You Need It Run sudo nano /etc/default/grub then
+GRUB_TIMEOUT=0
+Change them to:
+GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+update grub using sudo update-grub
+Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis ARM"
+Then Update grub using sudo update-grub
+enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
+
+18 Have Fun And Start Using Triaxis ARM
