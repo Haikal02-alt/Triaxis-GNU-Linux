@@ -227,5 +227,20 @@ Then type sudo reboot Or type logout
    BUILD_ID=rolling
    HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
    DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
-  
+
+For Base Install
+Run sudo nano /etc/os-release
+Then Change Ubuntu To Triaxis GNU/Linux
+Example
+
+PRETTY_NAME="Triaxis GNU/Linux"
+NAME="Triaxis GNU/Linux"
+ID=triaxis
+ID_LIKE=debian
+BUILD_ID=rolling
+HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
+
+Keep The Support URL Bug Report URL And Privacy Policy URL Ubuntu
+
 29 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
