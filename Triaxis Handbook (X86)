@@ -10,13 +10,12 @@ Run sudo nano /etc/os-release
 Then Change Ubuntu To Triaxis GNU/Linux
 Example
 
-PRETTY_NAME="Triaxis GNU/Linux X86"
 NAME="Triaxis GNU/Linux X86"
 ID=triaxis
 ID_LIKE=debian
 BUILD_ID=rolling
+PRETTY_NAME="Triaxis GNU/Linux X86"
 HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
-DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
 
 Keep The Support URL Bug Report URL And Privacy Policy URL Ubuntu
 
