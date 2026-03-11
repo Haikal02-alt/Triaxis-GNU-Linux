@@ -137,7 +137,7 @@ Save and exit (CTRL+O, CTRL+X in nano).
 Restart Plasma session (log out and back in, or reboot).
 Now, when you open About System, the link will point to your GitHub page.
 
-22 (For New User Only) Add Flatpak Backends On KDE Plasma Run sudo apt install plasma-discover-backend-flatpak
+25 (For New User Only) Add Flatpak Backends On KDE Plasma Run sudo apt install plasma-discover-backend-flatpak
 If You Havent Install Flatpak sudo apt install flatpak
 If You Are using GNOME
 sudo apt install gnome-software-plugin-flatpak
@@ -172,12 +172,12 @@ How To Do It
 4 Ctrl X Y Enter
 5 sudo apt update && sudo apt upgrade -y
 
-23 Change The Base Name UBUNTU TO Triaxis
+26 Change The Base Name UBUNTU TO Triaxis
 sudo nano /etc/issue then change The Name Ubuntu (Version Name) LTS To Triaxis GNU/Linux
 sudo nano /etc/issue.net then rename Ubuntu (Version Name) LTS To Triaxis GNU/Linux
 Then type sudo reboot Or type logout
 
-24 (For New User Only) Setup The Artwork Theme
+27 (For New User Only) Setup The Artwork Theme
 1 Download The Triaxis Official Artwork Theme Slasher Here
 2 Then Click Save Image As
 3 Save It To Download Then Name It To Slasher.png
@@ -219,7 +219,7 @@ Then type sudo reboot Or type logout
   Apply changes.
   Restart or log out
 
-25 (For New User Only)
+28 (For New User Only)
    Add The Wiki On /etc/os-release add DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
    Run sudo nano /etc/os-release
    then add DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki after the HOME_URL
@@ -228,4 +228,4 @@ Then type sudo reboot Or type logout
    HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
    DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
   
-26 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
+29 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
