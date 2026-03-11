@@ -1,0 +1,41 @@
+Welcome To Triaxis GNU/Linux Handbook x86
+This Guide Will Help You To Install Triaxis Correctly
+
+1 Download Ubuntu Server 16.04 Here https://releases.ubuntu.com/16.04/
+2 Then Select Server install image 32-bit PC (i386) server install image
+3 Setup Ubuntu Server Since Theres No Manual Install On Ubuntu 16.04 Server
+4 After You Install
+
+Run sudo nano /etc/os-release
+Then Change Ubuntu To Triaxis GNU/Linux
+Example
+
+PRETTY_NAME="Triaxis GNU/Linux X86"
+NAME="Triaxis GNU/Linux X86"
+ID=triaxis
+ID_LIKE=debian
+BUILD_ID=rolling
+HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
+
+Keep The Support URL Bug Report URL And Privacy Policy URL Ubuntu
+
+Then sudo nano /etc/issue
+Then Change Ubuntu (Version Name LTS) \n \l To Triaxis GNU/Linux \n \l
+CTRL X Y ENTER
+
+Then sudo nano /etc/issue.net
+Then Change Ubuntu (Version Name LTS) To Triaxis GNU/Linux
+CTRL X Y ENTER
+
+Change Grub If You Need It Run sudo nano /etc/default/grub then
+GRUB_TIMEOUT=0
+Change them to:
+GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+update grub using sudo update-grub
+Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis X86"
+Then Update grub using sudo update-grub
+enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
+
+Have Fun And Start Using Triaxis x86
