@@ -2,7 +2,7 @@
 
 # Welcome To Triaxis GNU/Linux
 
-Triaxis GNU/Linux Is A GNU/Linux Which Is Rolling Release And DIY Distro Just Like Arch Gentoo LFS And NixOS Which They Are Diy Distro
+Triaxis GNU/Linux Is A Linux Distro Which Is Rolling Release And DIY Distro Just Like Arch Gentoo LFS And NixOS Which They Are Diy Distro
 Triaxis Is A Customizable Linux distro That Allow You To Customize Anything You Want
 WARNING Triaxis Doesnt Include Graphical Install You Just Setup The Ubuntu Server LTS Then Build It Manually And Making it hard and advanced user only and making it not good for very beginner
 Triaxis Is Also Build from source You compile everything yourself, giving you total control
