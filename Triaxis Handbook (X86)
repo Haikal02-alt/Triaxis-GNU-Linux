@@ -34,6 +34,5 @@ GRUB_TIMEOUT=5
 update grub using sudo update-grub
 Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis X86"
 Then Update grub using sudo update-grub
-enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 
 Have Fun And Start Using Triaxis x86
