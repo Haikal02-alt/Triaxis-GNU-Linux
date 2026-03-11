@@ -7,7 +7,7 @@ WARNING Triaxis Doesnt Include Graphical Install You Just Setup The Ubuntu Serve
 Triaxis Is Also Build from source You compile everything yourself, giving you total control
 Educational focus: It's also a learning tool to understand how Linux works, not just how to use it.
 Customization: Creates a minimal system you can build upon, adding only what you need or install kde plasma
-Process: Uses an 28 Step Install Because Triaxis Have Manual Install By Default But You Can Use Ubuntu Server Installer If You Cant Do Manual Install
+Process: Uses an 28 Step Install Because Triaxis Requires Manual Install
 
 Triaxis Official Desktop Preview
 
