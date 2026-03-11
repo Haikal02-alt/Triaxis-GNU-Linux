@@ -35,4 +35,6 @@ update grub using sudo update-grub
 Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis X86"
 Then Update grub using sudo update-grub
 
+Reboot using sudo reboot
+
 Have Fun And Start Using Triaxis x86
