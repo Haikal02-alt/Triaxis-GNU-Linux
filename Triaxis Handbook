@@ -251,4 +251,14 @@ Then sudo nano /etc/issue.net
 Then Change Ubuntu (Version Name LTS) To Triaxis GNU/Linux
 CTRL X Y ENTER
 
+Change Grub If You Need It Run sudo nano /etc/default/grub then
+GRUB_TIMEOUT=0
+Change them to:
+GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+update grub using sudo update-grub
+Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="Triaxis"
+Then Update grub using sudo update-grub
+enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
+
 29 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
