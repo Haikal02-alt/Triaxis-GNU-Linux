@@ -1,0 +1,112 @@
+Installing Apps Is Possible But Triaxis Strongly Recommends Compile it From source Not sudo apt
+
+Fastfetch
+
+1 Install Dependencies
+
+sudo apt update
+sudo apt install git cmake build-essential pkg-config \
+    libdrm-dev libpci-dev libx11-dev libwayland-dev
+
+2 Clone the Repository
+
+git clone https://github.com/fastfetch-cli/fastfetch.git
+cd fastfetch
+
+3. Configure the Build
+
+mkdir build && cd build
+cmake ..
+
+You can enable optional features with flags, for example:
+
+cmake .. -DENABLE_VULKAN=ON -DENABLE_OPENCL=ON
+
+4. Compile
+
+make -j$(nproc)
+
+5. Install (Optional)
+
+sudo make install
+
+After installation, simply run:
+
+fastfetch
+
+Super Tux
+
+git clone https://github.com/SuperTux/supertux.git
+cd supertux
+
+sudo apt update
+sudo apt install build-essential cmake libsdl2-dev \
+    libopenal-dev libvorbis-dev libogg-dev libphysfs-dev
+
+mkdir build && cd build
+cmake ..
+make
+
+./supertux2
+
+Super Tux Kart
+
+git clone https://github.com/supertuxkart/stk-code.git
+cd stk-code
+
+svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets
+
+sudo apt update
+sudo apt install build-essential cmake libopenal-dev \
+    libogg-dev libvorbis-dev libfreetype6-dev libbluetooth-dev \
+    libcurl4-openssl-dev libenet-dev
+
+cd stk-code
+mkdir build && cd build
+cmake ..
+make
+
+./bin/supertuxkart
+``` 
+
+Lutris
+
+git clone https://github.com/lutris/lutris.git
+cd lutris
+
+sudo apt update
+sudo apt install python3 python3-pip python3-gi \
+    python3-setuptools gir1.2-gtk-3.0 gir1.2-glib-2.0 \
+    libgirepository1.0-dev
+
+pip3 install --user -e .
+
+./bin/lutris
+
+Steam
+
+git clone https://github.com/ValveSoftware/steam-for-linux.git
+cd steam-for-linux
+
+sudo apt update
+sudo apt install build-essential python3 \
+    libgl1-mesa-dri libgl1-mesa-glx
+
+./steam.sh
+
+Flatpak
+
+git clone https://github.com/flatpak/flatpak.git
+cd flatpak
+
+sudo apt update
+sudo apt install build-essential automake autoconf libtool \
+    pkg-config libglib2.0-dev libjson-glib-dev libfuse-dev \
+    libzstd-dev libseccomp-dev
+
+./autogen.sh --prefix=/usr
+
+make
+sudo make install
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
