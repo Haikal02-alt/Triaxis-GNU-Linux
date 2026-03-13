@@ -1,0 +1,34 @@
+This snapshot Released In Friday March 13 2026
+Added Fastfetch (Compile It From Source)
+
+1 Install Dependencies
+
+sudo apt update
+sudo apt install git cmake build-essential pkg-config \
+    libdrm-dev libpci-dev libx11-dev libwayland-dev
+
+2 Clone the Repository
+
+git clone https://github.com/fastfetch-cli/fastfetch.git
+cd fastfetch
+
+3. Configure the Build
+
+mkdir build && cd build
+cmake ..
+
+You can enable optional features with flags, for example:
+
+cmake .. -DENABLE_VULKAN=ON -DENABLE_OPENCL=ON
+
+4. Compile
+
+make -j$(nproc)
+
+5. Install (Optional)
+
+sudo make install
+
+After installation, simply run:
+
+fastfetch
