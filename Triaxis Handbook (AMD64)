@@ -116,8 +116,21 @@ Current=lubuntu
 Or use the command sudo sddm --example-config > /etc/sddm.conf
 Restart SDDM sudo systemctl restart sddm
 You can Also go to settings then startup and shutdown then login screen sddm then click lubuntu then apply
-Install Firefox with sudo apt update
-sudo apt install firefox
+Install Firefox
+
+1 git clone https://github.com/mozilla/gecko-dev.git
+cd gecko-dev
+
+2 sudo apt update
+  sudo apt install build-essential autoconf2.13 python3 python3-pip \
+       cargo clang libgtk-3-dev libdbus-glib-1-dev libxt-dev
+
+3 ./mach bootstrap
+
+4 ./mach build
+
+5 ./mach run
+
 if you cant install firefox you can install other browsers like konqueror sudo apt install konqueror
 22 Enable The Login And Logout Sound Open System Settings Then Personalization Then Notification Then Application-specific settings then configure then system services plasma workspace configure events then click Play a sound on login and logout sounds
 23 Set ascii_distro="none" on nano ~/.config/neofetch/config.conf Because We Dont Need Neofetch Logo
