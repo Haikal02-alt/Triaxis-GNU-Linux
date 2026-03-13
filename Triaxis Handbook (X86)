@@ -3,7 +3,7 @@ This Guide Will Help You To Install Triaxis Correctly
 
 1 Download Ubuntu Server 16.04 Here https://releases.ubuntu.com/16.04/
 2 Then Select Server install image 32-bit PC (i386) server install image
-3 Setup Ubuntu Server Since Theres No Manual Install On Ubuntu 16.04 Server
+3 When You On Live Iso Press F6 The Select Expert Mode Then Setup Ubuntu Server Since Theres No Manual Install On Ubuntu 16.04 Server
 4 After You Install
 
 Run sudo nano /etc/os-release
