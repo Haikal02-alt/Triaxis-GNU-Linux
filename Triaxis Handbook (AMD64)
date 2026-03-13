@@ -93,12 +93,11 @@ Remove Snapd
 5 System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
   sudo apt-mark hold snapd
 
-17 Install Kde Plasma Desktop sudo apt install plasma-workspace-wayland for base and servers dont install desktop environment if you Want Other Desktop Environment Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/Other%20Desktop%20Environment
+17 Install Kde Plasma Desktop sudo apt install plasma-workspace-wayland konsole for base and servers dont install desktop environment if you Want Other Desktop Environment Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux/blob/main/Other%20Desktop%20Environment
    After You Install KDE Plasma Run these commands
    sudo apt install sddm
    sudo systemctl enable sddm
    sudo systemctl start sddm
-Install konsole using sudo apt install konsole on tty3
 Change Grub If You Need It Run sudo nano /etc/default/grub then
 GRUB_TIMEOUT=0
 Change them to:
