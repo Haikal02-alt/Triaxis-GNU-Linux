@@ -32,3 +32,22 @@ sudo make install
 After installation, simply run:
 
 fastfetch
+
+Removed Snapd
+
+1 You May Stop The Services Of Snap
+  sudo systemctl stop snapd
+  sudo systemctl disable snapd
+
+2 Purge Snapd (Recommended For Older Hardware Or Any Slow Hardware)
+  sudo apt purge snapd
+
+3 Clean Up Leftover Directories
+  rm -rf ~/snap
+  sudo rm -rf /var/snap /var/lib/snapd /var/cache/snapd
+
+4 Reboot
+  sudo reboot
+
+5 System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
+  sudo apt-mark hold snapd
