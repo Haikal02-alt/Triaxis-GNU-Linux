@@ -110,3 +110,18 @@ make
 sudo make install
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+Firefox
+
+1 git clone https://github.com/mozilla/gecko-dev.git
+cd gecko-dev
+
+2 sudo apt update
+  sudo apt install build-essential autoconf2.13 python3 python3-pip \
+       cargo clang libgtk-3-dev libdbus-glib-1-dev libxt-dev
+
+3 ./mach bootstrap
+
+4 ./mach build
+
+5 ./mach run
