@@ -10,6 +10,14 @@ Educational focus: It's also a learning tool to understand how Linux works, not 
 Customization: Creates a minimal system you can build upon, adding only what you need or install kde plasma
 Process: Uses an 28 Step Install Because Triaxis Requires Manual Install
 
+Supported Architectures
+AMD64
+ARM
+IBM Power
+IBM Z and LinuxONE 
+RISC-V
+X86
+
 Triaxis Official Desktop Preview
 
 Kde Plasma (Default Desktop Environment)
