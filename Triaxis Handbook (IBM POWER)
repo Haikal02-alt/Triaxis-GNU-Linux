@@ -57,22 +57,22 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
    grub-install /dev/sda
    update-grub
 
-13 For UEFI:
+   For UEFI:
    apt install grub-efi
    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ubuntu
    update-grub
 
-14 Create User
+13 Create User
    adduser yourname
    usermod -aG sudo yourname
 
-15 Exit & Reboot
+14 Exit & Reboot
    exit
    umount -R /mnt
    swapoff -a
    reboot
 
-16 Run sudo nano /etc/os-release
+15 Run sudo nano /etc/os-release
 Then Change Ubuntu To Triaxis GNU/Linux IBM POWER
 Example
 
@@ -94,7 +94,7 @@ Then sudo nano /etc/issue.net
 Then Change Ubuntu (Version Name LTS) To Triaxis GNU/Linux IBM POWER
 CTRL X Y ENTER
 
-17 Change Grub If You Need It Run sudo nano /etc/default/grub then
+16 Change Grub If You Need It Run sudo nano /etc/default/grub then
 GRUB_TIMEOUT=0
 Change them to:
 GRUB_TIMEOUT_STYLE=menu
@@ -104,21 +104,21 @@ Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="T
 Then Update grub using sudo update-grub
 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 
-18 You May Stop The Services Of Snap
+17 You May Stop The Services Of Snap
    sudo systemctl stop snapd
    sudo systemctl disable snapd
 
-19 Purge Snapd (Recommended For Older Hardware Or Any Slow Hardware)
+18 Purge Snapd (Recommended For Older Hardware Or Any Slow Hardware)
    sudo apt purge snapd
 
-20 Clean Up Leftover Directories
+19 Clean Up Leftover Directories
    rm -rf ~/snap
    sudo rm -rf /var/snap /var/lib/snapd /var/cache/snapd
 
-21 Reboot
+20 Reboot
    sudo reboot
 
-22 System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
+21 System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
   sudo apt-mark hold snapd
 
-23 Have Fun And Start Using Triaxis IBM Power
+22 Have Fun And Start Using Triaxis IBM Power
