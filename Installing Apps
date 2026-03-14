@@ -125,3 +125,15 @@ cd gecko-dev
 4 ./mach build
 
 5 ./mach run
+
+Neofetch
+
+sudo apt update
+sudo apt install git make
+
+git clone https://github.com/dylanaraps/neofetch.git
+cd neofetch
+
+sudo make install
+
+neofetch
