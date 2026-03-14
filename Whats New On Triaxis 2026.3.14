@@ -1,2 +1,10 @@
 This Snapshot Released On Saturday March 14 2026
 New Architecture Called IBM Z and LinuxONE
+
+Plymouth Was No Longer Needed
+For Existing Triaxis Users
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT=""
+sudo update-grub
+sudo apt purge plymouth
+sudo apt autoremove
