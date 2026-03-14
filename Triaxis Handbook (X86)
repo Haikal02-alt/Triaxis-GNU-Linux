@@ -51,9 +51,7 @@ Reboot using sudo reboot
 8 Reboot
   sudo reboot
 
-9 git clone is now recommended for Triaxis GNU/Linux
-
-10 System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
+9  System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
    sudo apt-mark hold snapd
 
 Have Fun And Start Using Triaxis x86
