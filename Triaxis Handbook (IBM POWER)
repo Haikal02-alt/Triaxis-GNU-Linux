@@ -121,4 +121,6 @@ enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="
 21 System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
   sudo apt-mark hold snapd
 
-22 Have Fun And Start Using Triaxis IBM Power
+22 Run sudo update-initramfs -u
+
+23 Have Fun And Start Using Triaxis IBM Power
