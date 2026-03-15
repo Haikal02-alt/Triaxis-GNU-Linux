@@ -120,4 +120,4 @@ enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="
 
 23 Run sudo update-initramfs -u
 
-24 Have Fun And Start Using Triaxis ARM
+24 Have Fun And Start Using Triaxis IBM Z and LinuxONE
