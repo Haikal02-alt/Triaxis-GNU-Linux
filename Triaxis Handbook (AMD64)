@@ -289,4 +289,6 @@ Change GRUB Distributor Name Ubuntu To Triaxis Change it to: GRUB_DISTRIBUTOR="T
 Then Update grub using sudo update-grub
 enable submenu sudo nano /etc/grub.d/10_linux then change GRUB_DISABLE_SUBMENU="true" to GRUB_DISABLE_SUBMENU="false" then sudo update-grub
 
-29 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
+29 Run sudo update-initramfs -u
+
+30 Have Fun And Start Using Triaxis And You can Say I USE Triaxis BTW
