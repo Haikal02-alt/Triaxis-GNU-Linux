@@ -54,4 +54,6 @@ Reboot using sudo reboot
 9  System Updates: Ubuntu may reinstall Snapd during major upgrades. To prevent this, you can block Snapd from being reinstalled:
    sudo apt-mark hold snapd
 
+10 Run sudo update-initramfs -u
+
 Have Fun And Start Using Triaxis x86
