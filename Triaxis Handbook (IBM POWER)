@@ -32,7 +32,8 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
   swapon /dev/sda3
 
 7 Bootstrap Base System
-  debootstrap --arch amd64 focal /mnt http://archive.ubuntu.com/ubuntu
+  Before You Do It Run apt install debootstrap
+  debootstrap --arch ppc64el ubuntucodenameexamplenoble /mnt http://archive.ubuntu.com/ubuntu
 
 8 Chroot Into New System
 
