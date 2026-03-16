@@ -29,7 +29,7 @@ and I Would Recommend To Use dd mode Because On ISO mode it Can fail Because ISO
   swapon /dev/sda3
 
 8 Bootstrap Base System
-  debootstrap --arch amd64 focal /mnt http://archive.ubuntu.com/ubuntu
+  debootstrap --arch s390x yourubuntucodenameexamplenoble /mnt http://archive.ubuntu.com/ubuntu
 
 9 Chroot Into New System
 
