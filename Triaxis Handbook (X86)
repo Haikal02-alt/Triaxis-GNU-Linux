@@ -18,6 +18,8 @@ ID_LIKE=debian
 BUILD_ID=rolling
 PRETTY_NAME="Triaxis GNU/Linux X86"
 HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+SUPPORT_URL=
+BUG_REPORT_URL=
 
 Keep The Support URL Bug Report URL And Privacy Policy URL Ubuntu
 
