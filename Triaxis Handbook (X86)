@@ -6,6 +6,8 @@ This Guide Will Help You To Install Triaxis Correctly
 3 When You On Live Iso Press F6 The Select Expert Mode Then Setup Ubuntu Server
 4 After You Install
 
+Run sudo apt update && sudo apt upgrade -y
+
 Run sudo nano /etc/os-release
 Then Change Ubuntu To Triaxis GNU/Linux
 Example
