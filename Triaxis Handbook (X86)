@@ -24,11 +24,11 @@ BUG_REPORT_URL=
 Keep The Support URL Bug Report URL And Privacy Policy URL Ubuntu
 
 Then sudo nano /etc/issue
-Then Change Ubuntu (Version Name LTS) \n \l To Triaxis GNU/Linux X86 \n \l
+Then Change Ubuntu 16.04 LTS \n \l To Triaxis GNU/Linux X86 \n \l
 CTRL X Y ENTER
 
 Then sudo nano /etc/issue.net
-Then Change Ubuntu (Version Name LTS) To Triaxis GNU/Linux X86
+Then Change Ubuntu 16.04 LTS To Triaxis GNU/Linux X86
 CTRL X Y ENTER
 
 Change Grub If You Need It Run sudo nano /etc/default/grub then
