@@ -4,13 +4,15 @@ XFCE Is also Official For Triaxis Which Is Very Good For Older Machines But Not 
 For Window Manager For Example Hyprland Sway i3wm awesome and bspwm I Would Recommend SDDM For Login Screen
 For XFCE I Would Recommend lightdm-gtk-greeter For Login Screen
 For Other Desktop Environment Or Window Manager That Have No Listed On Ligtdm After you install the desktop environment or window manager I Would Recommend SDDM Or lightdm-gtk-greeter For Login Screen
+For LXDE And IceWM I Would Recommend LXDM
+For Desktop Environment That Automatically Install debian desktop-base Remove it Using sudo apt purge desktop-base && sudo apt autoremove
 Before you Install Make sure you are on base with no desktop environment
 
 1 Gnome
 To Install Use sudo apt install gnome-session -y
 
 2 XFCE
-sudo apt install xfce4 xfce4-goodies -y
+sudo apt install xfce4 xfce4-goodies lightdm lightdm-gtk-greeter -y
 
 3 LXQt
 sudo apt install lxqt -y
@@ -60,7 +62,7 @@ sudo apt install awesome -y
 sudo apt install sway -y
 
 16 IceWM
-sudo apt install icewm -y
+sudo apt install icewm lxdm -y
 
 17 Fluxbox
 sudo apt install fluxbox -y
@@ -139,7 +141,7 @@ Extremely lightweight, fast, low RAM usage.
 Best for: Old hardware, survival builds, minimal systems.
 Install
 sudo apt update
-sudo apt install lxde -y
+sudo apt install lxde lxdm -y && sudo apt purge lightdm -y
 
 24 Zorin Desktop‑like Environment
 Base Desktop: Install GNOME or XFCE (depending on whether you want Zorin Core or Zorin Lite style).
