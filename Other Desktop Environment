@@ -21,7 +21,7 @@ sudo apt install lxqt -y
 sudo apt install mate-desktop-environment-extras -y
 
 5 Cinnamon
-sudo apt install cinnamon -y
+sudo apt install cinnamon -y && sudo apt purge desktop-base -y && sudo apt autoremove
 
 6 Budgie
 sudo apt install budgie-extras -y
@@ -141,7 +141,7 @@ Extremely lightweight, fast, low RAM usage.
 Best for: Old hardware, survival builds, minimal systems.
 Install
 sudo apt update
-sudo apt install lxde lxdm -y && sudo apt purge lightdm -y
+sudo apt install lxde lxdm -y && sudo apt purge lightdm -y && sudo apt purge desktop-base -y && sudo apt autoremove
 
 24 Zorin Desktop‑like Environment
 Base Desktop: Install GNOME or XFCE (depending on whether you want Zorin Core or Zorin Lite style).
