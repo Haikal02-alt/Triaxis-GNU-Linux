@@ -1,4 +1,4 @@
-<img width="416" height="120" alt="Screenshot from 2026-01-09 17-14-54" src="https://github.com/user-attachments/assets/d9e38f2e-3e31-4cd6-8060-8a7f94e430a7" />
+<img width="735" height="106" alt="Screenshot From 2026-03-18 22-28-58" src="https://github.com/user-attachments/assets/8b762940-34c6-43a6-a05f-2b5903902e5d" />
 
 # Welcome To Triaxis GNU/Linux
 
@@ -120,8 +120,8 @@ Old
 New
 <img width="1016" height="761" alt="Screenshot From 2026-03-18 21-33-11" src="https://github.com/user-attachments/assets/3a1b1298-5371-46a3-834a-e1320a303bb1" />
 
-Triaxis Official Artwork Theme Slasher
-![Slasher 2](https://github.com/user-attachments/assets/6944c24b-b66d-499c-8937-371b0bf80ad8)
+Triaxis Official Artwork Theme Frozenworld
+![Frozenworld (Triaxis)](https://github.com/user-attachments/assets/22ba0886-9a07-4519-bb50-98847932816c)
 
 Triaxis Custom Wallpapers
 
