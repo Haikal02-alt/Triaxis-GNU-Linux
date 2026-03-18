@@ -24,8 +24,11 @@ KDE Plasma (Default Desktop Environment)
 Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-22-27" src="https://github.com/user-attachments/assets/060d21d6-0b6d-4c8f-93bd-7cd5a0e4341c" />
 
-New
+New (Slasher)
 <img width="1277" height="796" alt="Screenshot From 2026-03-18 21-35-20" src="https://github.com/user-attachments/assets/94b60256-8b24-447e-bc8e-a060bb37687c" />
+
+New (Frozenworld)
+<img width="1276" height="796" alt="Screenshot From 2026-03-18 22-45-27" src="https://github.com/user-attachments/assets/c3bb7b0b-ca92-4de2-8afa-a904b7f29f1f" />
 
 Pros
 Easy to use
