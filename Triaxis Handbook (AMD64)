@@ -1,7 +1,7 @@
 Welcome To Triaxis GNU/Linux Handbook AMD64
 This Guide Will Help You To Install Triaxis Correctly
 
-1 Download Arch Linux ISO Here https://fastly.mirror.pkgbuild.com/iso/2026.03.01/
+1 Download Arch Linux ISO Here https://archlinux.org/download/
 2 Flash Arch Linux ISO Using Etcher
 3 Follow The Installation Guide https://wiki.archlinux.org/title/Installation_guide Or Archinstall
 4 Linux Filesystem Must Ext4
