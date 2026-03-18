@@ -52,7 +52,13 @@ Less configurable than KDE
 Custom-installed extensions are prone to breakage on major updates
 
 Base (No Desktop Environment)
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-31-07" src="https://github.com/user-attachments/assets/4267e8e5-86f5-4227-8402-45fcf0a04b82" />
+
+New
+<img width="1279" height="796" alt="Screenshot From 2026-03-18 21-39-15" src="https://github.com/user-attachments/assets/55b1d417-4b6b-4004-b265-df5a8a21b066" />
+
 Pros
 Very Lightweight
 
