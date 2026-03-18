@@ -9,4 +9,35 @@ This Guide Will Help You To Install Triaxis Correctly
 6 Desktop Environment Must Be KDE Plasma GNOME Or XFCE Or Base Or Sway Tiling WM
 7 Audio Must Pipewire
 8 Network Configuration Must Be NetworkManager
-9 This Handbook Is Unfinished
+9 After You Install Login To Desktop
+10 Open Terminal Then Run sudo pacman -Syu
+11 Run sudo nano /etc/os-release
+   Then Change NAME= And PREETY_NAME= To Triaxis GNU/Linux
+   Change ID=arch To ID=triaxis
+   Change HOME_URL"https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+12 Run sudo pacman -S firefox
+13 Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux then download triaxis logo on top beginning at readme
+14 Save The Image Then Name It To triaxis-logo.png then save it to download
+15 Then run sudo mv /home/yourusername/Downloads/triaxis-logo.png /usr/share/pixmaps
+16 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.png
+17 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.svg
+18 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text.svg
+19 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text-dark.svg
+20 Then sudo nano /etc/os-release
+21 Then Change LOGO=archlinux-logo To LOGO=/usr/share/pixmaps/triaxis-logo.png
+22 Run sudo nano /etc/default/grub
+23 Then Change GRUB_DISTRIBUTOR="Arch" To GRUB_DISTRIBUTOR="Triaxis"
+24 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
+25 Run sudo nano /etc/grub.d/10_linux
+26 If You See OS=Linux Change OS=Linux To OS=GNU/Linux And OS="${GRUB_DISTRIBUTOR} GNU/Linux"
+27 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
+28 Run sudo nano /etc/default/grub
+29 Then Change GRUB_CMDLINE_LINUX_DEFAULT="loglevel 3 quiet" To GRUB_CMDLINE_LINUX_DEFAULT=""
+30 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
+31 Scroll Down TO Triaxis Official Artwork Theme Slasher Then Download This Picture Then Name It To Slasher.jpg Then Save It To Download
+32 Then Create Folder Name Slasher On Download Then Move Slasher.jpg To Slasher Folder
+33 Run sudo mv /home/yourusername/Downloads/Slasher /usr/share/wallpapers/
+34 Right Click And Click Desktop And Wallpaper Then Find Slasher Then After Find Slasher Select Slasher Then Click OK
+35 Go To System Settings Then Notifications Then Configure For System... Then Find Login And Logout Sound Then Click Play a sound on Login And Logout Then Click Apply
+
+36 Have Fun And Start Using Triaxis GNU/Linux AMD64
