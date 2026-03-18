@@ -19,8 +19,14 @@ X86
 
 Triaxis Official Desktop Preview
 
-Kde Plasma (Default Desktop Environment)
+KDE Plasma (Default Desktop Environment)
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-22-27" src="https://github.com/user-attachments/assets/060d21d6-0b6d-4c8f-93bd-7cd5a0e4341c" />
+
+New
+<img width="1277" height="796" alt="Screenshot From 2026-03-18 21-35-20" src="https://github.com/user-attachments/assets/94b60256-8b24-447e-bc8e-a060bb37687c" />
+
 Pros
 Easy to use
 QT Desktop Environment
@@ -78,7 +84,7 @@ Not as feature-rich as KDE or GNOME
 
 Some Features Preview
 
-Plymouth Preview
+Boot Screen Preview
 
 Text With 4 dots (Default Plymouth Theme For Triaxis)
 <img width="1275" height="795" alt="Screenshot from 2026-01-10 20-10-05" src="https://github.com/user-attachments/assets/67d92c41-6c02-4437-bfa5-4b2b4d37cb86" />
@@ -95,10 +101,18 @@ Breeze-Text
 Spinfinity
 <img width="1020" height="760" alt="Screenshot from 2026-01-12 17-10-37" src="https://github.com/user-attachments/assets/35023534-873f-4540-9665-51fec40f296f" />
 
+Text (New)
+<img width="1278" height="802" alt="Screenshot From 2026-03-18 21-34-37" src="https://github.com/user-attachments/assets/b1012f2e-f25f-43fa-a9bc-3e853bdaf2e9" />
+
 Bootloader Preview
 
-Grub
+GRUB
+
+Old
 <img width="1018" height="761" alt="Screenshot from 2026-01-11 14-44-51" src="https://github.com/user-attachments/assets/ccbe9107-32be-4203-bb0f-2e60cfed8540" />
+
+New
+<img width="1016" height="761" alt="Screenshot From 2026-03-18 21-33-11" src="https://github.com/user-attachments/assets/3a1b1298-5371-46a3-834a-e1320a303bb1" />
 
 Triaxis Official Artwork Theme Slasher
 ![Slasher 2](https://github.com/user-attachments/assets/6944c24b-b66d-499c-8937-371b0bf80ad8)
@@ -117,7 +131,12 @@ Minecraft
 Login Screen Preview
 
 SDDM
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-22-46" src="https://github.com/user-attachments/assets/7160c263-90f8-455d-aa9c-2f219258ee87" />
+
+New
+<img width="1277" height="796" alt="Screenshot From 2026-03-18 21-34-56" src="https://github.com/user-attachments/assets/48fabb47-58ec-4473-91bb-ab6052675a3a" />
 
 GDM
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-23-18" src="https://github.com/user-attachments/assets/167a7e09-9af6-4853-aa1e-8a19462a551c" />
