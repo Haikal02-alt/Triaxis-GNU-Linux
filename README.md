@@ -152,7 +152,12 @@ LightDM
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-24-00" src="https://github.com/user-attachments/assets/506ec1b9-0593-4678-960b-becb6f322001" />
 
 Minimal
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-31-21" src="https://github.com/user-attachments/assets/9d635d5b-6a19-4a41-95c2-1b1bc02b0049" />
+
+New
+<img width="1279" height="796" alt="Screenshot From 2026-03-18 21-41-47" src="https://github.com/user-attachments/assets/a245a6ab-2fc0-4909-90bf-b68680cc49b7" />
 
 Triaxis GNU/Linux X86 Preview
 
