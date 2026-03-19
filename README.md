@@ -10,12 +10,10 @@ Educational focus: It's also a learning tool to understand how Linux works, not 
 Customization: Creates a minimal system you can build upon, adding only what you need or install kde plasma
 
 Supported Architectures
-AMD64
+X86_64
 ARM
-IBM Power
-IBM Z and LinuxONE 
 RISC-V
-X86
+i486 i586 i686
 
 Triaxis Official Desktop Preview
 
