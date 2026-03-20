@@ -1,4 +1,4 @@
-Welcome To Triaxis GNU/Linux Handbook i486 i586 and i686
+Welcome To Triaxis GNU/Linux Handbook i686
 This Guide Will Help You To Install Triaxis Correctly
 
 1 Download Arch Linux ISO Here https://www.archlinux32.org/download/
@@ -12,7 +12,7 @@ This Guide Will Help You To Install Triaxis Correctly
 9 After You Install Login To Desktop
 10 Open Terminal Then Run sudo pacman -Syu
 11 Run sudo nano /etc/os-release
-   Then Change NAME= And PREETY_NAME= To Triaxis GNU/Linux (Depending On What 32 Bit Variant Example Triaxis GNU/Linux i686 Triaxis GNU/Linux i586 OR Triaxis GNU/Linux i486)
+   Then Change NAME= And PREETY_NAME= To Triaxis GNU/Linux i686
    Change ID=arch To ID=triaxis
    Change HOME_URL"https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
 12 Run sudo pacman -S firefox
