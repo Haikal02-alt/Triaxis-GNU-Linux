@@ -124,10 +124,6 @@ New
 Triaxis Official Artwork Theme Frozenworld
 ![Frozenworld (Triaxis)](https://github.com/user-attachments/assets/22ba0886-9a07-4519-bb50-98847932816c)
 
-Official GRUB Theme
-![GRUB Theme For Triaxis](https://github.com/user-attachments/assets/4e1cceec-f782-4bab-abe5-4c265805d807)
-
-
 Triaxis Custom Wallpapers
 
 Shards Of Glass
