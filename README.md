@@ -13,7 +13,7 @@ Supported Architectures
 X86_64
 ARM
 RISC-V
-i486 i586 i686
+i686
 
 Triaxis Official Desktop Preview
 
