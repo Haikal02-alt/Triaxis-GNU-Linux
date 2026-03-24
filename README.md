@@ -124,6 +124,9 @@ New
 Triaxis Official Artwork Theme Frozenworld
 ![Frozenworld (Triaxis)](https://github.com/user-attachments/assets/22ba0886-9a07-4519-bb50-98847932816c)
 
+Frozenworld Compile It
+<img width="1536" height="1024" alt="Frozenworld Compile It" src="https://github.com/user-attachments/assets/f6899a9a-6688-4821-b4c0-9c18e202ab92" />
+
 Triaxis Custom Wallpapers
 
 Shards Of Glass
