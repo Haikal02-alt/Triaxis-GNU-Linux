@@ -43,4 +43,4 @@ This Guide Will Help You To Install Triaxis Correctly
    Then run sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
-37 Have Fun And Start Using Triaxis GNU/Linux AMD64
+37 Have Fun And Start Using Triaxis GNU/Linux i686
