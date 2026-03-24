@@ -34,9 +34,9 @@ This Guide Will Help You To Install Triaxis Correctly
 28 Run sudo nano /etc/default/grub
 29 Then Change GRUB_CMDLINE_LINUX_DEFAULT="loglevel 3 quiet" To GRUB_CMDLINE_LINUX_DEFAULT=""
 30 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
-31 Scroll Down TO Triaxis Official Artwork Theme Frozenworld Then Download This Picture Then Name It To Frozenworld.jpg Then Save It To Download
-32 Then Create Folder Name Frozenworld On Download Then Move Frozenworld.jpg To Frozenworld Folder
-33 Run sudo mv /home/yourusername/Downloads/Frozenworld /usr/share/wallpapers/
+31 Scroll Down TO Triaxis Official Artwork Theme Frozenworld Or Frozenworld Compile It Then Download This Picture Then Name It To Frozenworld.jpg For Frozenworld Compile It Name It To Frozenworld (Compile It).png Then Save It To Download
+32 Then Create Folder Name Frozenworld On Download Then Move Frozenworld.jpg To Frozenworld Folder (For Frozenworld Compile It Create Folder Name Frozenworld-Compile-It) On Download Then Move Frozenworld (Compile It).png To Frozenworld-Compile-It Folder
+33 Run sudo mv /home/yourusername/Downloads/Frozenworld /usr/share/wallpapers/ For Compile It Run sudo mv /home/yourusername/Downloads/Frozenworld-Compile-It /usr/share/wallpapers/
 34 Right Click And Click Desktop And Wallpaper Then Find Frozenworld Then After Find Frozenworld Select Frozenworld Then Click OK
 35 Go To System Settings Then Notifications Then Configure For System... Then Find Login And Logout Sound Then Click Play a sound on Login And Logout Then Click Apply
 
