@@ -28,6 +28,9 @@ New (Slasher)
 New (Frozenworld)
 <img width="1276" height="796" alt="Screenshot From 2026-03-18 22-45-27" src="https://github.com/user-attachments/assets/c3bb7b0b-ca92-4de2-8afa-a904b7f29f1f" />
 
+New (Frozenworld Compile It)
+<img width="1278" height="803" alt="Screenshot From 2026-03-24 16-59-32" src="https://github.com/user-attachments/assets/42790b02-42ec-4263-bc61-aa11ed4c3a44" />
+
 Pros
 Easy to use
 QT Desktop Environment
