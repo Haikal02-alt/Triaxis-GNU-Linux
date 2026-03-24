@@ -39,7 +39,9 @@ This Guide Will Help You To Install Triaxis Correctly
 33 Run sudo mv /home/yourusername/Downloads/Frozenworld /usr/share/wallpapers/ For Compile It Run sudo mv /home/yourusername/Downloads/Frozenworld-Compile-It /usr/share/wallpapers/
 34 Right Click And Click Desktop And Wallpaper Then Find Frozenworld Then After Find Frozenworld Select Frozenworld Then Click OK
 35 Go To System Settings Then Notifications Then Configure For System... Then Find Login And Logout Sound Then Click Play a sound on Login And Logout Then Click Apply
+36 Add Recovery Mode You Can go to sudo nano /etc/default/grub then find GRUB_DISABLE_RECOVERY=true then Add # For Example #GRUB_DISABLE_RECOVERY=true
+   Then run sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-36 Have Fun And Start Using Triaxis GNU/Linux AMD64
+37 Have Fun And Start Using Triaxis GNU/Linux AMD64
 
 Note: If You Are Trying To Install Triaxis GNU/Linux Inside Virtualbox I Would Recommend Bass Memory 4096 MB EFI: Enabled And Disk Size 2.00 TB
