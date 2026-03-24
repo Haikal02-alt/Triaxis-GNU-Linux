@@ -82,7 +82,14 @@ Cons
 Steep learning curve
 
 Xfce
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-17-59" src="https://github.com/user-attachments/assets/d6cfbe68-1a3a-4266-af4d-bbfdf4440da6" />
+
+New
+<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-26" src="https://github.com/user-attachments/assets/92586e97-63ba-4082-8843-38424d45b1a5" />
+<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-34" src="https://github.com/user-attachments/assets/3d577224-fcad-4555-934f-fa10433562e7" />
+
 Pros
 Very traditional design
 One of the most stable desktop environments
@@ -153,10 +160,21 @@ New
 <img width="1277" height="796" alt="Screenshot From 2026-03-18 21-34-56" src="https://github.com/user-attachments/assets/48fabb47-58ec-4473-91bb-ab6052675a3a" />
 
 GDM
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-23-18" src="https://github.com/user-attachments/assets/167a7e09-9af6-4853-aa1e-8a19462a551c" />
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-23-25" src="https://github.com/user-attachments/assets/db399e1d-a375-4659-a835-4ecb23fc5253" />
 
+New
+<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-40-00" src="https://github.com/user-attachments/assets/f9411450-51e3-4db1-a7f9-1d2dbcfe5392" />
+<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-40-34" src="https://github.com/user-attachments/assets/db2c685c-21d7-4553-b500-c33b17a1d8f2" />
+
 LightDM
+
+Old
+<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-51" src="https://github.com/user-attachments/assets/3fab7b08-7b88-4735-b3b2-3449cd03a510" />
+
+New
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-24-00" src="https://github.com/user-attachments/assets/506ec1b9-0593-4678-960b-becb6f322001" />
 
 Minimal
