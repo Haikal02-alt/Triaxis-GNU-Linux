@@ -172,10 +172,10 @@ New
 LightDM
 
 Old
-<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-51" src="https://github.com/user-attachments/assets/3fab7b08-7b88-4735-b3b2-3449cd03a510" />
+<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-24-00" src="https://github.com/user-attachments/assets/506ec1b9-0593-4678-960b-becb6f322001" />
 
 New
-<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-24-00" src="https://github.com/user-attachments/assets/506ec1b9-0593-4678-960b-becb6f322001" />
+<img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-51" src="https://github.com/user-attachments/assets/05ba0110-2442-47da-bc6f-ae6c2ebc7abc" />
 
 Minimal
 
