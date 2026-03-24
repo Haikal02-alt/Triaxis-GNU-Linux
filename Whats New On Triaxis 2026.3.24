@@ -1,2 +1,3 @@
 This Snapshot Released On Tuesday March 24 2026
-New Frozenworld Variant Named Frozenworld Compile It
+1 New Frozenworld Variant Named Frozenworld Compile It
+2 Added Recovery Mode For Existing Triaxis Users You Can go to sudo nano /etc/default/grub then find GRUB_DISABLE_RECOVERY=true then Add # For Example #GRUB_DISABLE_RECOVERY=true
