@@ -77,16 +77,24 @@ Very Lightweight
 Cons
 Doesnt Support Apps That Require Desktop Environment
 
-Sway
-<img width="1280" height="797" alt="Screenshot From 2026-03-07 14-20-36" src="https://github.com/user-attachments/assets/ae54b186-45d2-4c8e-b968-72266c20ff16" />
-Pros
-Fast, efficient window management using Wayland
-Keyboard-driven workflow
-Lightweight & minimal
-Highly customizable
+LXDE
+<img width="1279" height="797" alt="Screenshot From 2026-03-26 12-24-33" src="https://github.com/user-attachments/assets/3d79c96d-a337-4634-9975-f926e8012c41" />
 
-Cons
-Steep learning curve
+Pros:
+
+    Extremely Lightweight: Uses minimal RAM and CPU resources, often idling with very low memory usage.
+    High Performance/Speed: Extremely fast and responsive, even on antique or limited hardware.
+    Simple and Familiar: Uses a traditional desktop paradigm (start menu, taskbar, desktop icons) reminiscent of Windows XP.
+    Modular Components: Components can be used independently of the desktop environment.
+    Low Power Consumption: Ideal for extending battery life on old laptops. 
+
+Cons:
+
+    Outdated Aesthetics: The default appearance is basic and often considered dated or "old-school".
+    Development Status (Mostly Deprecated): Development has largely stalled in favor of LXQt, with the original team focusing on the Qt-based successor.
+    Fewer Advanced Features: Lacks advanced desktop customization options, special effects, or integrated settings managers found in GNOME or KDE.
+    No Built-in Compositor: Requires manual setup (like Compton/Compiz) to handle screen tearing or transparent effects.
+    Cohesion Issues: Because it is very modular, it can feel like a collection of separate parts rather than a single, cohesive system. 
 
 Xfce
 
@@ -183,6 +191,9 @@ Old
 
 New
 <img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-51" src="https://github.com/user-attachments/assets/05ba0110-2442-47da-bc6f-ae6c2ebc7abc" />
+
+LXDM
+<img width="1279" height="797" alt="Screenshot From 2026-03-26 12-24-54" src="https://github.com/user-attachments/assets/cb17e0f1-cf4b-40a0-af7f-977cb2ffc67f" />
 
 Minimal
 
