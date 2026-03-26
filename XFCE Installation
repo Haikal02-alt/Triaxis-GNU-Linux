@@ -1,5 +1,5 @@
 Before you Install Make sure you are on base with no desktop environment
 To Install XFCE Run sudo pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter; sudo systemctl enable lightdm; sudo systemctl start lightdm
 Login To XFCE
-Remove Plasma Meta With sudo pacman -Rns plasma-meta
+Remove Plasma Meta With sudo pacman -Rns plasma-meta or sudo pacman -Rns plasma
 Remove Kate sudo pacman -Rns kate
