@@ -43,8 +43,15 @@ Heavier on resources
 Needs the user to set up most of the theming and device settings
 Might be missing some quality of life features
 
-Gnome
+GNOME
+
+Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-21-28" src="https://github.com/user-attachments/assets/f4a16aa4-7efb-482c-b826-f788056ea4a1" />
+
+New
+<img width="1279" height="797" alt="Screenshot From 2026-03-26 12-04-49" src="https://github.com/user-attachments/assets/3646c814-462a-4a07-98c5-e96dafcc0c99" />
+<img width="1279" height="797" alt="Screenshot From 2026-03-26 12-05-06" src="https://github.com/user-attachments/assets/1dd545a0-49f7-4119-826a-00cb8ab3f607" />
+
 Pros
 GTK Desktop Environment
 Simplistic design
