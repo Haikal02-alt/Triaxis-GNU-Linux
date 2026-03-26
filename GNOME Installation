@@ -7,7 +7,7 @@ Make sure you are on base with no desktop environment
 5 Open GNOME Tweaks
 6 If You Are New User Who Wants To Switch KDE Plasma To GNOME Go To Appearance Then Cursor Adwaita Icons Adwaita Legacy Applications Adwaita Then Go To System Sound Theme Then Select Default
 7 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Go To Windows Then Uncheck Maximize And Minimize Titlebar Buttons
-8 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Remove All KDE Plasma Apps With sudo pacman -Rns plasma-meta
+8 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Remove All KDE Plasma Apps With sudo pacman -Rns plasma-meta then sudo pacman -Rns kate
 9 Then sudo pacman -Syu
 10 Install GNOME Apps
 sudo pacman -S nautilus gedit gnome-system-monitor gnome-control-center -y
