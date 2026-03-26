@@ -6,7 +6,7 @@ This Guide Will Help You To Install Triaxis Correctly
 3 Follow The Installation Guide https://wiki.archlinux.org/title/Installation_guide Or Archinstall
 4 Linux Filesystem Must Ext4
 5 Bootloader Must Be GRUB
-6 Desktop Environment Must Be KDE Plasma GNOME Or XFCE Or Base Or Sway Tiling WM
+6 Desktop Environment Must Be KDE Plasma GNOME Or XFCE Or Base Or LXDE
 7 Audio Must Pipewire
 8 Network Configuration Must Be NetworkManager
 9 After You Install Login To Desktop
