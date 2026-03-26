@@ -1,0 +1,11 @@
+How To Install GNOME On Triaxis
+Make sure you are on base with no desktop environment
+1 run sudo pacman -S gnome gnome-extra; sudo pacman -S gdm; sudo systemctl enable gdm; sudo systemctl start gdm
+2 Login To GNOME
+3 Run sudo pacman -S gnome-console
+4 Run sudo pacman -S gnome-software gnome-shell-extensions gnome-tweaks gnome-backgrounds
+5 Open GNOME Tweaks
+6 If You Are New User Who Wants To Switch KDE Plasma To GNOME Go To Appearance Then Cursor Adwaita Icons Adwaita Legacy Applications Adwaita Then Go To System Sound Theme Then Select Default
+7 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Go To Windows Then Uncheck Maximize And Minimize Titlebar Buttons
+8 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Remove All KDE Plasma Apps With sudo pacman -R or sudo pacman -Rns
+9 Then sudo pacman -Syu
