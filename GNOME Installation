@@ -9,7 +9,7 @@ Make sure you are on base with no desktop environment
 7 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Go To Windows Then Uncheck Maximize And Minimize Titlebar Buttons
 8 For New KDE Plasma User Who Switched From KDE Plasma To GNOME Remove All KDE Plasma Apps With sudo pacman -R or sudo pacman -Rns
 9 Then sudo pacman -Syu
-10 Install Gnome Apps (If Needed)
+10 Install GNOME Apps
 sudo pacman -S nautilus gedit gnome-system-monitor gnome-control-center -y
-sudo pacman -S gnome-tweaks gnome-settings gnome-calculator gnome-disk-utility gnome-screenshot -y
+sudo pacman -S gnome-tweaks gnome-control-center gnome-calculator gnome-disk-utility gnome-screenshot -y
 sudo pacman -S gnome-weather gnome-maps gnome-clocks gnome-contacts gnome-photos -y
