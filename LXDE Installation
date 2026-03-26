@@ -1,0 +1,5 @@
+To Install LXDE
+Make sure you are on base with no desktop environment
+1 sudo pacman -S lxde lxdm; sudo systemctl enable lxdm; sudo systemctl start lxdm
+2 For KDE Plasma Users Run sudo pacman -Rns plasma-meta then sudo pacman -Rns dolphin then sudo pacman -Rns plasma-workspace sudo pacman -Rns kate
+3 Go To Desktop Preferences Then Change Wallpaper lxde-blue.jpg To Frozenworld Or Frozenworld (Compile It)
