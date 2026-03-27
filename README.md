@@ -1,6 +1,6 @@
 <img width="735" height="106" alt="Screenshot From 2026-03-18 22-28-58" src="https://github.com/user-attachments/assets/8b762940-34c6-43a6-a05f-2b5903902e5d" />
 
-# Welcome To Triaxis GNU/Linux
+# Welcome to Triaxis GNU/Linux, a highly flexible,Arch Linux source-based Linux distribution.
 
 Triaxis GNU/Linux Is A Linux Distro Which Is Rolling Release And DIY Distro Just Like Arch Gentoo LFS And NixOS Which They Are Diy Distro
 Triaxis GNU/Linux Is A Arch Linux Source Based Which Is Arch Based But You compile from source by yourself
@@ -9,12 +9,15 @@ Triaxis Is A Build from source You compile everything yourself, giving you total
 Educational focus: It's also a learning tool to understand how Linux works, not just how to use it.
 Customization: Creates a minimal system you can build upon, adding only what you need or install kde plasma
 Triaxis GNU/Linux is primarily licensed under the GNU General Public License version 2 (GPLv2)
+100% Free & Open Source
 
 Supported Architectures
 X86_64
 ARM
 RISC-V
 i686
+OpenPOWER
+PowerPC
 
 Triaxis Official Desktop Preview
 
