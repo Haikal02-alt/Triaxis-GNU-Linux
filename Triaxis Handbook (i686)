@@ -3,7 +3,7 @@ This Guide Will Help You To Install Triaxis Correctly
 
 1 Download Arch Linux ISO Here https://www.archlinux32.org/download/
 2 Flash Arch Linux ISO Using Etcher
-3 Follow The Installation Guide https://wiki.archlinux.org/title/Installation_guide Archinstall Is Not Supported
+3 Follow The Installation Guide https://wiki.archlinux.org/title/Installation_guide
 4 Linux Filesystem Must Ext4
 5 Bootloader Must Be GRUB
 6 Desktop Environment Must Be KDE Plasma GNOME Or XFCE Or Base Or LXDE
