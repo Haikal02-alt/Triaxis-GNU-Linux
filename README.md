@@ -36,16 +36,13 @@ New (Frozenworld)
 New (Frozenworld Compile It)
 <img width="1278" height="803" alt="Screenshot From 2026-03-24 16-59-32" src="https://github.com/user-attachments/assets/42790b02-42ec-4263-bc61-aa11ed4c3a44" />
 
-Pros
-Easy to use
-QT Desktop Environment
-Default Desktop Environment
-Very customizable
+Role: The flagship and default DE of Triaxis.
 
-Cons
-Heavier on resources
-Needs the user to set up most of the theming and device settings
-Might be missing some quality of life features
+Style: Modern, feature‑rich, highly customizable.
+
+Why Default: Plasma embodies Triaxis’s philosophy of flexibility and branding — you can theme it, script it, and reshape it endlessly.
+
+Best For: Users who want a polished, futuristic interface with full control.
 
 GNOME
 
@@ -56,16 +53,13 @@ New
 <img width="1279" height="797" alt="Screenshot From 2026-03-26 12-04-49" src="https://github.com/user-attachments/assets/3646c814-462a-4a07-98c5-e96dafcc0c99" />
 <img width="1279" height="797" alt="Screenshot From 2026-03-26 12-05-06" src="https://github.com/user-attachments/assets/1dd545a0-49f7-4119-826a-00cb8ab3f607" />
 
-Pros
-GTK Desktop Environment
-Simplistic design
-Doesn't overwhelm with options
-Default desktop for many Linux distributions
+Role: A streamlined, minimalist DE.
 
-Cons
-Heavier on resources
-Less configurable than KDE
-Custom-installed extensions are prone to breakage on major updates
+Style: Focuses on simplicity and workflow efficiency.
+
+Why Included: GNOME offers a contrasting philosophy to Plasma — less customization, more focus on productivity.
+
+Best For: Users who prefer a clean, distraction‑free environment.
 
 Base (No Desktop Environment)
 
@@ -75,30 +69,29 @@ Old
 New
 <img width="1279" height="796" alt="Screenshot From 2026-03-18 21-39-15" src="https://github.com/user-attachments/assets/55b1d417-4b6b-4004-b265-df5a8a21b066" />
 
-Pros
-Very Lightweight
+Role: A barebones Triaxis system with no graphical desktop.
 
-Cons
-Doesnt Support Apps That Require Desktop Environment
+Style: Console‑only, text‑driven environment.
+
+Why It Exists:
+
+For advanced users who want total control.
+
+Ideal for servers, headless setups, or those who prefer to build their own DE from scratch.
+
+Keeps the system lightweight and minimal.
 
 LXDE
 <img width="1279" height="797" alt="Screenshot From 2026-03-26 12-24-33" src="https://github.com/user-attachments/assets/3d79c96d-a337-4634-9975-f926e8012c41" />
 
-Pros:
+Role: Newly promoted official edition (as of 2026.3.26).
 
-    Extremely Lightweight: Uses minimal RAM and CPU resources, often idling with very low memory usage.
-    High Performance/Speed: Extremely fast and responsive, even on antique or limited hardware.
-    Simple and Familiar: Uses a traditional desktop paradigm (start menu, taskbar, desktop icons) reminiscent of Windows XP.
-    Modular Components: Components can be used independently of the desktop environment.
-    Low Power Consumption: Ideal for extending battery life on old laptops. 
+Style: Ultra‑lightweight, simple, and fast.
 
-Cons:
+Why Included: LXDE expands Triaxis’s inclusivity for low‑end systems, offering a minimal DE that still feels familiar.
 
-    Outdated Aesthetics: The default appearance is basic and often considered dated or "old-school".
-    Development Status (Mostly Deprecated): Development has largely stalled in favor of LXQt, with the original team focusing on the Qt-based successor.
-    Fewer Advanced Features: Lacks advanced desktop customization options, special effects, or integrated settings managers found in GNOME or KDE.
-    No Built-in Compositor: Requires manual setup (like Compton/Compiz) to handle screen tearing or transparent effects.
-    Cohesion Issues: Because it is very modular, it can feel like a collection of separate parts rather than a single, cohesive system. 
+Best For: Users with very limited hardware or those who want a barebones, efficient desktop.
+
 
 Xfce
 
@@ -109,15 +102,13 @@ New
 <img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-26" src="https://github.com/user-attachments/assets/92586e97-63ba-4082-8843-38424d45b1a5" />
 <img width="1278" height="800" alt="Screenshot From 2026-03-24 20-50-34" src="https://github.com/user-attachments/assets/3d577224-fcad-4555-934f-fa10433562e7" />
 
-Pros
-Very traditional design
-One of the most stable desktop environments
-Light on resources
-X11-based desktop environment built on the GTK toolkit
+Role: Lightweight, classic DE.
 
-Cons
-May be too simplistic for some users
-Not as feature-rich as KDE or GNOME
+Style: Traditional desktop metaphor, resource‑friendly.
+
+Why Included: XFCE ensures Triaxis runs smoothly on older hardware or minimal setups.
+
+Best For: Users who want speed and stability without heavy resource use.
 
 Some Features Preview
 
