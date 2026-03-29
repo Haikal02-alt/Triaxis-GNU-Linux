@@ -1,0 +1,33 @@
+1 Install Distrobox sudo apt install distrobox sudo dnf install distrobox or sudo pacman -S distrobox
+2 distrobox-create --name Triaxis --image archlinux:latest
+3 Run distrobox enter Triaxis
+4 sudo pacman -S fastfetch nano
+5 Run sudo nano /etc/os-release then change
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+VERSION_ID=20260322.0.504324
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+To
+
+NAME="Triaxis GNU/Linux"
+PRETTY_NAME="Triaxis GNU/Linux"
+ID=triaxis
+BUILD_ID=rolling
+VERSION_ID=20260322.0.504324
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+
+6 Have Fun And Start Using Triaxis From Distrobox
