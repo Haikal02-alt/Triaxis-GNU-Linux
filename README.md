@@ -12,6 +12,8 @@ Triaxis GNU/Linux Does Not Provide ISO Its A Complete DIY Distro You Build it yo
 Triaxis GNU/Linux is primarily licensed under the GNU General Public License version 2 (GPLv2)
 100% Free & Open Source
 
+Its Not Arch But LFS Its Arch Based But Gentoo/LFS Like Source Based Distro
+
 Supported Architectures
 X86_64
 ARM
