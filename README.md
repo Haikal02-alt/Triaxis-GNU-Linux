@@ -208,7 +208,6 @@ Triaxis GNU/Linux X86 Preview
 Container Preview
 
 Distrobox
-<img width="1920" height="1080" alt="Screenshot From 2026-03-29 17-33-34" src="https://github.com/user-attachments/assets/21b3d629-be56-4f72-b726-c537fe216459" />
 
 You Can Find Any Archives Here
 https://github.com/Haikal02-alt/Triaxis-GNU-Linux-Archive
