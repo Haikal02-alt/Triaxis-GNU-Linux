@@ -5,3 +5,6 @@ For Existing Triaxis Users
 
 Open Terminal Then sudo nano /etc/os-release
 Then Change BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues" To BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
+
+Also Added Artwork Contest
+Link Here https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/2
