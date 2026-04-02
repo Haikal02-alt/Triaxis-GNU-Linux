@@ -41,5 +41,7 @@ This Guide Will Help You To Install Triaxis Correctly
 35 Go To System Settings Then Notifications Then Configure For System... Then Find Login And Logout Sound Then Click Play a sound on Login And Logout Then Click Apply
 36 Add Recovery Mode You Can go to sudo nano /etc/default/grub then find GRUB_DISABLE_RECOVERY=true then Add # For Example #GRUB_DISABLE_RECOVERY=true
    Then run sudo grub-mkconfig -o /boot/grub/grub.cfg
+37 Open Terminal Then sudo nano /etc/os-release
+   Then Change BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues" To BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues"
 
-37 Have Fun And Start Using Triaxis GNU/Linux RISC-V
+38 Have Fun And Start Using Triaxis GNU/Linux RISC-V
