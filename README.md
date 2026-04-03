@@ -210,7 +210,7 @@ Container Preview
 Distrobox
 <img width="1920" height="1080" alt="Distrobox Preview" src="https://github.com/user-attachments/assets/bc1f4c69-680a-4e49-b4bf-fdb43175c5a5" />
 
-FastCat Preview
+FastCat And Kitty Terminal Preview
 <img width="1281" height="802" alt="Screenshot From 2026-04-03 11-48-45" src="https://github.com/user-attachments/assets/be0bcac9-d2bd-492a-9e2d-9361fcaf1caf" />
 
 You Can Find Any Archives Here
