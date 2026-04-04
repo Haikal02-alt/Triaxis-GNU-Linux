@@ -41,8 +41,12 @@ This Guide Will Help You To Install Triaxis Correctly
 35 Go To System Settings Then Notifications Then Configure For System... Then Find Login And Logout Sound Then Click Play a sound on Login And Logout Then Click Apply
 36 Add Recovery Mode You Can go to sudo nano /etc/default/grub then find GRUB_DISABLE_RECOVERY=true then Add # For Example #GRUB_DISABLE_RECOVERY=true
    Then run sudo grub-mkconfig -o /boot/grub/grub.cfg
-37 Open Terminal Then sudo nano /etc/os-release
+37 If You Are Running UEFI And Latest Arch Linux Snapshot And You Notice Theres Splash on systemd boot which affected to Triaxis GNU/Linux Even Though Triaxis Uses GRUB Not systemd-boot
+   To To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
+   Then sudo nano /usr/share/systemd/bootctl/arch.conf Change title  Arch Linux To title   Triaxis GNU/Linux
+   Then sudo mkinitcpio -P
+38 Open Terminal Then sudo nano /etc/os-release
    Then Change BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues" To BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
 
 
-38 Have Fun And Start Using Triaxis GNU/Linux i686
+39 Have Fun And Start Using Triaxis GNU/Linux i686
