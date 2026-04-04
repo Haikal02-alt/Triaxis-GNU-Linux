@@ -1,0 +1,8 @@
+This Snapshot Released On Saturday April 4 2026
+Added Support Plasma Login Manager
+
+For Existing Triaxis User
+
+Go To tty3 Then sudo systemctl stop sddm sudo systemctl disable sddm then sudo pacman -R sddm then sudo pacman -S plasma-login-manager Then sudo systemctl enable plasmalogin Then sudo systemctl start plasmalogin
+Then Login To KDE Plasma Using PLM Then Open System Settings Then Security & Privacy Then Login Screen Then Configure Appearance Then Select Frozenworld Or Frozenworld Compile it
+Then Go To Screen Locking Then Configure Appearance Then Select Frozenworld Or Frozenworld Compile it
