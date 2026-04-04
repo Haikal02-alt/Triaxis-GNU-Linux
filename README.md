@@ -163,6 +163,14 @@ Minecraft
 
 Login Screen Preview
 
+Plasma Login Manager
+
+Frozenworld
+<img width="1594" height="999" alt="Screenshot From 2026-04-04 08-52-08" src="https://github.com/user-attachments/assets/0c3e9685-0bb0-4452-85f8-b192cd3d2f58" />
+
+Frozenworld (Compile It)
+<img width="1594" height="999" alt="Screenshot From 2026-04-04 08-49-07" src="https://github.com/user-attachments/assets/f0ab5854-3821-4374-a9e7-3c14660c8c52" />
+
 SDDM
 
 Old
