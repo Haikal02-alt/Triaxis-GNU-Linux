@@ -134,15 +134,19 @@ Spinfinity
 Text (New)
 <img width="1278" height="802" alt="Screenshot From 2026-03-18 21-34-37" src="https://github.com/user-attachments/assets/b1012f2e-f25f-43fa-a9bc-3e853bdaf2e9" />
 
-Bootloader Preview
+GRUB Preview
 
-GRUB
-
-Old
+Old (1)
 <img width="1018" height="761" alt="Screenshot from 2026-01-11 14-44-51" src="https://github.com/user-attachments/assets/ccbe9107-32be-4203-bb0f-2e60cfed8540" />
 
-New
+Old (2)
 <img width="1016" height="761" alt="Screenshot From 2026-03-18 21-33-11" src="https://github.com/user-attachments/assets/3a1b1298-5371-46a3-834a-e1320a303bb1" />
+
+New (Frozenworld Compile It)
+<img width="1599" height="1000" alt="Screenshot From 2026-04-05 17-23-49" src="https://github.com/user-attachments/assets/fbb05055-bfb8-49f1-84d6-4e29bb3f9179" />
+
+New (Frozenworld)
+<img width="1599" height="1000" alt="Screenshot From 2026-04-05 17-25-44" src="https://github.com/user-attachments/assets/3db60ac8-15a5-4b5f-a611-c9235dd2ff1c" />
 
 Triaxis Official Artwork Theme Frozenworld
 ![Frozenworld (Triaxis)](https://github.com/user-attachments/assets/22ba0886-9a07-4519-bb50-98847932816c)
