@@ -57,5 +57,10 @@ espresso (WiiU SMP)
    The Uncomment # On GRUB_BACKGROUND"/path/to/wallpaper"
    Then Change GRUB_BACKGROUND"/path/to/wallpaper" To GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld Or Frozenworld Compile IT"
    Example GRUB_BACKGROUND"GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld-Compile-It/Frozenworld (Compile It).png"
+40 Add The Wiki On /etc/os-release add DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
+   Run sudo nano /etc/os-release
+   Then Change DOCUMENTATION_URL="https://wiki.archlinux.org/" To DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki after the HOME_URL
+41 Run sudo nano /etc/os-release then change SUPPORT_URL="https://bbs.archlinux.org/" To SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
+42 Run sudo nano /etc/os-release Then Remove PRIVACY_POLICY_URL
 
-40 Have Fun And Start Using Triaxis GNU/Linux OpenPOWER and PowerPC
+43 Have Fun And Start Using Triaxis GNU/Linux OpenPOWER and PowerPC
