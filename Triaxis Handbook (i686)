@@ -47,6 +47,10 @@ This Guide Will Help You To Install Triaxis Correctly
    Then sudo mkinitcpio -P
 38 Open Terminal Then sudo nano /etc/os-release
    Then Change BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues" To BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
+39 (If Available) Open terminal Then sudo nano /etc/default/grub
+   The Uncomment # On GRUB_BACKGROUND"/path/to/wallpaper"
+   Then Change GRUB_BACKGROUND"/path/to/wallpaper" To GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld Or Frozenworld Compile IT"
+   Example GRUB_BACKGROUND"GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld-Compile-It/Frozenworld (Compile It).png"
 
 
-39 Have Fun And Start Using Triaxis GNU/Linux i686
+40 Have Fun And Start Using Triaxis GNU/Linux i686
