@@ -53,5 +53,9 @@ espresso (WiiU SMP)
    To To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
    Then sudo nano /usr/share/systemd/bootctl/arch.conf Change title  Arch Linux To title   Triaxis GNU/Linux
    Then sudo mkinitcpio -P
+39 (If Available) Open terminal Then sudo nano /etc/default/grub
+   The Uncomment # On GRUB_BACKGROUND"/path/to/wallpaper"
+   Then Change GRUB_BACKGROUND"/path/to/wallpaper" To GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld Or Frozenworld Compile IT"
+   Example GRUB_BACKGROUND"GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld-Compile-It/Frozenworld (Compile It).png"
 
-39 Have Fun And Start Using Triaxis GNU/Linux OpenPOWER and PowerPC
+40 Have Fun And Start Using Triaxis GNU/Linux OpenPOWER and PowerPC
