@@ -1,0 +1,10 @@
+This Snapshot Released On Sunday April 5 2026
+
+Added GRUB Background
+
+For Existing Triaxis Users
+
+Open terminal Then sudo nano /etc/default/grub
+The Uncomment # On GRUB_BACKGROUND"/path/to/wallpaper"
+Then Change GRUB_BACKGROUND"/path/to/wallpaper" To GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld Or Frozenworld Compile IT"
+Example GRUB_BACKGROUND"GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld-Compile-It/Frozenworld (Compile It).png"
