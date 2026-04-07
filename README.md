@@ -24,7 +24,7 @@ PowerPC
 
 Triaxis Official Desktop Preview
 
-KDE Plasma (Default Desktop Environment)
+KDE Plasma
 
 Old
 <img width="1280" height="797" alt="Screenshot From 2026-03-07 14-22-27" src="https://github.com/user-attachments/assets/060d21d6-0b6d-4c8f-93bd-7cd5a0e4341c" />
