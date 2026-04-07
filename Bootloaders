@@ -41,6 +41,8 @@ The kernel is a valid EFI executable which can be directly launched from UEFI or
 Limine
 Legacy BIOS Support=Yes
 UEFI Support=Yes
+Supports GPT and MBR partitioning.
+Can boot Linux, BSD, and other kernels Actively maintained, unlike LILO or Syslinux Lightweight design but modern enough to handle mixed setups.
 
 LILO
 Legacy BIOS Support=Yes
@@ -50,7 +52,6 @@ Discontinued due to limitations (e.g. with Btrfs, GPT, RAID, encryption).
 Windows Boot Manager
 Legacy BIOS Support=Yes
 UEFI Support=Yes
-AI Overview
 Windows Boot Manager does not natively or officially support loading Linux operating systems
 as it is designed solely for Windows partitions. However, it is possible to configure Windows Boot Manager to chainload a Linux bootloader (like GRUB) to enable dual-booting, though it is not the standard or recommended approach.
 
