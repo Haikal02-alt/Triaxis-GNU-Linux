@@ -1,62 +1,1176 @@
 Welcome To Triaxis GNU/Linux Handbook x86_64
 This Guide Will Help You To Install Triaxis Correctly
 
-1 Download Arch Linux ISO Here https://archlinux.org/download/
-2 Flash Arch Linux ISO Using Etcher
-3 Follow The Installation Guide https://wiki.archlinux.org/title/Installation_guide
-4 Linux Filesystem Must Ext4
-5 Bootloader Must Be GRUB
-6 Desktop Environment Must Be KDE Plasma GNOME Or XFCE Or Base Or LXDE
-7 Audio Must Pipewire
-8 Network Configuration Must Be NetworkManager
-9 After You Install Login To Desktop
-10 Open Terminal Then Run sudo pacman -Syu
-11 Run sudo nano /etc/os-release
-   Then Change NAME= And PREETY_NAME= To Triaxis GNU/Linux
-   Change ID=arch To ID=triaxis
-   Change HOME_URL"https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
-12 Run sudo pacman -S firefox
-13 Go To https://github.com/Haikal02-alt/Triaxis-GNU-Linux then download triaxis logo on top beginning at readme
-14 Save The Image Then Name It To triaxis-logo.png then save it to download
-15 Then run sudo mv /home/yourusername/Downloads/triaxis-logo.png /usr/share/pixmaps
-16 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.png
-17 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.svg
-18 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text.svg
-19 Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text-dark.svg
-20 Then sudo nano /etc/os-release
-21 Then Change LOGO=archlinux-logo To LOGO=/usr/share/pixmaps/triaxis-logo.png
-22 Run sudo nano /etc/default/grub
-23 Then Change GRUB_DISTRIBUTOR="Arch" To GRUB_DISTRIBUTOR="Triaxis"
-24 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
-25 Run sudo nano /etc/grub.d/10_linux
-26 If You See OS=Linux Change OS=Linux To OS=GNU/Linux And OS="${GRUB_DISTRIBUTOR} GNU/Linux"
-27 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
-28 Run sudo nano /etc/default/grub
-29 Then Change GRUB_CMDLINE_LINUX_DEFAULT="loglevel 3 quiet" To GRUB_CMDLINE_LINUX_DEFAULT=""
-30 Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
-31 Scroll Down TO Triaxis Official Artwork Theme Frozenworld Or Frozenworld Compile It Then Download This Picture Then Name It To Frozenworld.jpg For Frozenworld Compile It Name It To Frozenworld (Compile It).png Then Save It To Download
-32 Then Create Folder Name Frozenworld On Download Then Move Frozenworld.jpg To Frozenworld Folder (For Frozenworld Compile It Create Folder Name Frozenworld-Compile-It) On Download Then Move Frozenworld (Compile It).png To Frozenworld-Compile-It Folder
-33 Run sudo mv /home/yourusername/Downloads/Frozenworld /usr/share/wallpapers/ For Compile It Run sudo mv /home/yourusername/Downloads/Frozenworld-Compile-It /usr/share/wallpapers/
-34 Right Click And Click Desktop And Wallpaper Then Find Frozenworld Then After Find Frozenworld Select Frozenworld Then Click OK
-35 Go To System Settings Then Notifications Then Configure For System... Then Find Login And Logout Sound Then Click Play a sound on Login And Logout Then Click Apply
-36 Add Recovery Mode You Can go to sudo nano /etc/default/grub then find GRUB_DISABLE_RECOVERY=true then Add # For Example #GRUB_DISABLE_RECOVERY=true
-   Then run sudo grub-mkconfig -o /boot/grub/grub.cfg
-37 Open Terminal Then sudo nano /etc/os-release
-   Then Change BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues" To BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
-38 If You Are Running UEFI And Latest Arch Linux Snapshot And You Notice Theres Splash on systemd boot which affected to Triaxis GNU/Linux Even Though Triaxis Uses GRUB Not systemd-boot
-   To To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
-   Then sudo nano /usr/share/systemd/bootctl/arch.conf Change title  Arch Linux To title   Triaxis GNU/Linux
-   Then sudo mkinitcpio -P
-39 Open terminal Then sudo nano /etc/default/grub
-   The Uncomment # On GRUB_BACKGROUND"/path/to/wallpaper"
-   Then Change GRUB_BACKGROUND"/path/to/wallpaper" To GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld Or Frozenworld Compile IT"
-   Example GRUB_BACKGROUND"GRUB_BACKGROUND"/usr/share/wallpapers/Frozenworld-Compile-It/Frozenworld (Compile It).png"
-40 Add The Wiki On /etc/os-release add DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki
-   Run sudo nano /etc/os-release
-   Then Change DOCUMENTATION_URL="https://wiki.archlinux.org/" To DOCUMENTATION_URL=https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki after the HOME_URL
-41 Run sudo nano /etc/os-release then change SUPPORT_URL="https://bbs.archlinux.org/" To SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
-42 Run sudo nano /etc/os-release Then Remove PRIVACY_POLICY_URL
+1 Download Arch Linux Iso https://archlinux.org/download/
+2 Flash Arch Linux ISO With BalenaEtcher Rufus V Or Ventoy
+3 Disable Secure Boot And Fastboot In UEFI Firmware Settings (If You Are Running UEFI) Because Note Triaxis GNU/Linux do not support Secure Boot. You will need to disable Secure Boot to boot the installation medium. If desired, Secure Boot can be set up after completing the installation.
+4 Set the console keyboard layout and font
 
-43 Have Fun And Start Using Triaxis GNU/Linux AMD64
+The default console keymap is US. Available layouts can be listed with:
 
-Note: If You Are Trying To Install Triaxis GNU/Linux Inside Virtualbox I Would Recommend Bass Memory 4096 MB EFI: Enabled And Disk Size 2.00 TB
+# localectl list-keymaps
+
+To set the keyboard layout, pass its name to loadkeys(1). For example, to set a German keyboard layout:
+
+# loadkeys de-latin1
+
+Console fonts are located in /usr/share/kbd/consolefonts/ and can likewise be set with setfont(8) omitting the path and file extension. For example, to use one of the largest fonts suitable for HiDPI screens, run:
+
+# setfont ter-132b
+
+5 Verify the boot mode
+
+To verify the boot mode, check the UEFI bitness:
+
+# cat /sys/firmware/efi/fw_platform_size
+
+    If the command returns 64, the system is booted in UEFI mode and has a 64-bit x64 UEFI.
+    If the command returns 32, the system is booted in UEFI mode and has a 32-bit IA32 UEFI. While this is supported, it will limit the boot loader choice to those that support mixed mode booting.
+
+    If it returns No such file or directory, the system may be booted in BIOS (or CSM) mode.
+
+If the system did not boot in the mode you desired (UEFI vs BIOS), refer to your motherboard's manual. 
+
+6 Connect to the internet
+
+To set up a network connection in the live environment, go through the following steps:
+
+    Ensure your network interface is listed and enabled, for example with ip-link(8):
+
+    # ip link
+
+    For wireless and WWAN, make sure the card is not blocked with rfkill.
+    Connect to the network:
+        Ethernet—plug in the cable.
+        Wi-Fi—authenticate to the wireless network using iwctl.
+        Mobile broadband modem—connect to the mobile network with the mmcli utility.
+    Configure your network connection:
+        DHCP: dynamic IP address and DNS server assignment (provided by systemd-networkd and systemd-resolved) should work out of the box for Ethernet, WLAN, and WWAN network interfaces.
+        Static IP address: follow Network configuration#Static IP address.
+    The connection may be verified with ping:
+
+    # ping github.com
+
+7 Update the system clock
+
+The live system needs accurate time to prevent package signature verification failures and TLS certificate errors. The systemd-timesyncd service is enabled by default in the live environment and time will be synchronized automatically once a connection to the internet is established.
+
+Use timedatectl(1) to ensure the system clock is synchronized:
+
+# timedatectl
+
+8 Partition the disks
+
+When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/vda, /dev/nvme0n1 or /dev/mmcblk0. To identify these devices, use lsblk or fdisk.
+
+# cfdisk
+
+Results ending in rom, loop or airootfs may be ignored. mmcblk* devices ending in rpmb, boot0 and boot1 can be ignored.
+Note
+If the disk does not show up, make sure the disk controller is not in RAID mode.
+Tip
+Check that your NVMe drives and Advanced Format hard disk drives are using the optimal logical sector size before partitioning.
+
+The following partitions are required for a chosen device:
+
+    One partition for the root directory /.
+    For booting in UEFI mode: an EFI system partition.
+
+Use a partitioning tool like fdisk to modify partition tables. For example:
+
+# cfdisk /dev/the_disk_to_be_partitioned
+
+Note
+
+    Take time to plan a long-term partitioning scheme to avoid risky and complicated conversion or re-partitioning procedures in the future.
+    If you want to create any stacked block devices for LVM, system encryption or RAID, do it now.
+    If the disk from which you want to boot already has an EFI system partition, do not create another one, but use the existing partition instead.
+    Swap space can be set on a swap file for file systems supporting it. Alternatively, disk based swap can be avoided entirely by setting up swap on zram after installing the system.
+
+Example layouts
+UEFI with GPT Mount point on the installed system 	Partition 	Partition type 	Suggested size
+/boot1 	/dev/efi_system_partition 	EFI system partition 	1 GiB
+[SWAP] 	/dev/swap_partition 	Linux swap 	At least 4 GiB
+/ 	/dev/root_partition 	Linux x86-64 root (/) 	Remainder of the device. At least 23–32 GiB.
+
+    Other mount points, such as /efi, are possible, provided that the used boot loader is capable of loading the kernel and initramfs images from the root volume. See the warning in Arch boot process#Boot loader.
+
+BIOS with MBR Mount point on the installed system 	Partition 	Partition type 	Suggested size
+[SWAP] 	/dev/swap_partition 	Linux swap 	At least 4 GiB
+/ 	/dev/root_partition 	Linux 	Remainder of the device. At least 23–32 GiB.
+
+See also Partitioning#Example layouts. 
+
+9 Format the partitions
+
+Once the partitions have been created, each newly created partition must be formatted with an appropriate file system. See File systems#Create a file system for details.
+
+For example, to create an Ext4 file system on /dev/root_partition, run:
+
+# mkfs.ext4 /dev/root_partition
+
+If you created a partition for swap, initialize it with mkswap(8):
+
+# mkswap /dev/swap_partition
+
+Note
+For stacked block devices replace /dev/*_partition with the appropriate block device path.
+
+If you created an EFI system partition, format it to FAT32 using mkfs.fat(8).
+Warning
+Only format the EFI system partition if you created it during the partitioning step. If there already was an EFI system partition on disk beforehand, reformatting it can destroy the boot loaders of other installed operating systems.
+
+# mkfs.fat -F 32 /dev/efi_system_partition
+
+10 Mount the file systems
+
+Mount the root volume to /mnt. For example, if the root volume is /dev/root_partition:
+
+# mount /dev/root_partition /mnt
+
+Create any remaining mount points under /mnt (such as /mnt/boot for /boot) and mount the volumes in their corresponding hierarchical order.
+Tip
+Run mount(8) with the --mkdir option to create the specified mount point. Alternatively, create it using mkdir(1) beforehand.
+
+For UEFI systems, mount the EFI system partition. For example:
+
+# mount --mkdir /dev/efi_system_partition /mnt/boot
+
+If you created a swap volume, enable it with swapon(8):
+
+# swapon /dev/swap_partition
+
+genfstab(8) will later detect mounted file systems and swap space. 
+
+11 Select the mirrors
+
+Packages to be installed must be downloaded from mirror servers, which are defined in /etc/pacman.d/mirrorlist. The higher a mirror is placed in the list, the more priority it is given when downloading a package.
+
+On the live system, all HTTPS mirrors are enabled (i.e. uncommented). The topmost worldwide mirror should be fast enough for most people, but you may still want to inspect the file to see if it is satisfactory. If it is not, edit the file accordingly, and move the geographically closest mirrors to the top of the list, although other criteria should be taken into account. Alternatively, you can use reflector to create a mirrorlist file based on various criteria.
+
+This file will later be copied to the new system by pacstrap, so it is worth getting right. 
+
+12 nstall essential packages
+
+No configuration (except for /etc/pacman.d/mirrorlist) gets carried over from the live environment to the installed system. The only mandatory package to install is base, which does not include all tools from the live installation, so installing more packages is frequently necessary.
+
+In particular, review the following software and install everything that you need:
+
+    CPU microcode updates—amd-ucode or intel-ucode—for hardware bug and security fixes,
+    userspace utilities for file systems that will be used on the system—for the purposes of e.g. file system creation and fsck,
+    utilities for accessing and managing RAID or LVM if they will be used on the system,
+    specific firmware for other devices not included in linux-firmware (e.g. sof-firmware for onboard audio, linux-firmware-marvell for Marvell wireless and any of the multiple firmware packages for Broadcom wireless),
+    software necessary for networking (e.g. a network manager or a standalone DHCP client, authentication software for Wi-Fi, ModemManager for mobile broadband connections),
+    a console text editor (e.g nano) to allow editing configuration files from the console,
+    packages for accessing documentation in man and info pages: man-db, man-pages and texinfo.
+
+For comparison, packages available in the live system can be found in pkglist.x86_64.txt.
+
+To install more packages or package groups, append the names to the pacstrap(8) command below (space separated) or use pacman to install them while chrooted into the new system.
+
+For example, a basic installation with the Linux kernel and firmware for common hardware:
+
+# pacstrap -K /mnt base linux linux-firmware
+
+Tip
+
+    You can substitute linux with a kernel package of your choice, or you could omit it entirely when installing in a container.
+    You could omit the installation of the firmware package when installing in a virtual machine or container.
+    This initial package selection in pacstrap only needs to include what is required for the system to boot; all other software can be installed or replaced post-installation.
+
+13 Fstab
+
+To get needed file systems (like the one used for the boot directory /boot) mounted on startup, generate an fstab file with persistent block device naming using genfstab(8). For example, reference file systems by their UUIDs with -U:
+
+# genfstab -U /mnt >> /mnt/etc/fstab
+
+Check the resulting /mnt/etc/fstab file, and edit it in case of errors.
+Chroot
+
+To directly interact with the new system's environment, tools, and configurations for the next steps as if you were booted into it, change root into the new system:
+
+# arch-chroot /mnt
+
+Note
+Some systemd tools such as hostnamectl(1), localectl(1) and timedatectl(1) cannot be used inside a chroot(1), as they require an active dbus connection. [2]
+Time
+
+For human convenience (e.g. showing the correct local time or handling Daylight Saving Time), set the time zone:
+
+# ln -sf /usr/share/zoneinfo/Area/Location /etc/localtime
+
+Run hwclock(8) to generate /etc/adjtime:
+
+# hwclock --systohc
+
+This command assumes the hardware clock is set to UTC. See System time#Time standard for details.
+
+To prevent clock drift and ensure accurate time, set up time synchronization using a Network Time Protocol (NTP) client such as systemd-timesyncd. 
+
+14 Localization
+
+To use the correct region and language specific formatting (like dates, currency, decimal separators), edit /etc/locale.gen and uncomment the UTF-8 locales you will be using. Generate the locales by running:
+
+# locale-gen
+
+Create the locale.conf(5) file, and set the LANG variable accordingly:
+
+/etc/locale.conf
+
+LANG=en_US.UTF-8
+
+If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):
+
+/etc/vconsole.conf
+
+KEYMAP=de-latin1
+
+15 Network configuration
+
+To assign a consistent, identifiable name to your system (particularly useful in a networked environment), create the hostname file:
+
+/etc/hostname
+
+yourhostname
+
+Tip
+For advice on choosing a hostname, see RFC 1178. As explained in hostname(7), it must contain from 1 to 63 characters, using only lowercase a to z, 0 to 9, and -, and must not start with -.
+
+Complete the network configuration for the newly installed environment. That may include installing suitable network management software, configuring it if necessary and enabling its systemd unit so that it starts at boot. 
+
+16 Initramfs
+
+Creating a new initramfs is usually not required, because mkinitcpio was run on installation of the kernel package with pacstrap.
+
+For LVM, system encryption or RAID, modify mkinitcpio.conf(5) and recreate the initramfs image. If you have changed the default console keymap, only recreating the initramfs is required:
+
+# mkinitcpio -P
+
+17 Root password
+
+Set a secure password for the root user to allow performing administrative actions:
+
+# passwd
+
+18 GRUB
+Supported file systems
+
+GRUB bundles its own support for multiple file systems, notably FAT32, ext4, Btrfs or XFS. See #Unsupported file systems for some caveats.
+Warning
+File systems can get new features not yet supported by GRUB, making them unsuitable for /boot unless disabling incompatible features. This can be typically avoided by using a separate /boot partition with a universally supported file system such as FAT32.
+UEFI systems
+Note
+
+    It is recommended to read and understand the Unified Extensible Firmware Interface, Partitioning#GUID Partition Table and Arch boot process#UEFI 2 pages.
+    When installing to use UEFI it is important to boot the installation media in UEFI mode, otherwise efibootmgr will not be able to add the GRUB UEFI boot entry. Installing to the fallback boot path will still work even in BIOS mode since it does not touch the NVRAM.
+    To boot from a disk using UEFI, an EFI system partition is required. Follow EFI system partition#Check for an existing partition to find out if you have one already, otherwise you need to create it.
+    This whole article assumes that inserting additional GRUB2 modules via insmod is possible. As discussed in #Shim-lock, this is not the case on UEFI systems with Secure Boot enabled. If you want to use any additional GRUB module that is not included in the standard GRUB EFI file grubx64.efi on a Secure Boot system, you have to re-generate the GRUB EFI grubx64.efi with grub-mkstandalone or reinstall GRUB using grub-install with the additional GRUB modules included.
+
+Installation
+Note
+
+    UEFI firmwares are not implemented consistently across manufacturers. The procedure described below is intended to work on a wide range of UEFI systems but those experiencing problems despite applying this method are encouraged to share detailed information, and if possible the workarounds found, for their hardware-specific case. A /EFI examples article has been provided for such cases.
+    The section assumes you are installing GRUB for x64 (64-bit) UEFI. For IA32 (32-bit) UEFI (not to be confused with 32-bit CPUs), replace x86_64-efi with i386-efi where appropriate. Follow the instructions in Unified Extensible Firmware Interface#Checking the firmware bitness to figure out your UEFI's bitness.
+
+First, install the packages grub and efibootmgr: GRUB is the boot loader while efibootmgr is used by the GRUB installation script to write boot entries to NVRAM.
+
+Then follow the below steps to install GRUB to your disk:
+
+    Mount the EFI system partition and in the remainder of this section, substitute esp with its mount point.
+    Choose a boot loader identifier, here named GRUB. A directory of that name will be created in esp/EFI/ to store the EFI binary and this is the name that will appear in the UEFI boot menu to identify the GRUB boot entry.
+    Execute the following command to install the GRUB EFI application grubx64.efi to esp/EFI/GRUB/ and install its modules to /boot/grub/x86_64-efi/.
+
+        Note
+
+            Make sure to install the packages and run the grub-install command from the system in which GRUB will be installed as the boot loader. That means if you are booting from the live installation environment, you need to be inside the chroot when running grub-install. If for some reason it is necessary to run grub-install from outside of the installed system, append the --boot-directory= option with the path to the mounted /boot directory, e.g --boot-directory=/mnt/boot.
+            Some motherboards cannot handle bootloader-id with spaces in it.
+            EFI on RAID mdadm 1 version / metadata 0.90 or 1.0 ONLY! So partitions start with a complete copy of the FAT filesystem then have mdadm label at the end. grub-install requires --no-nvram or else it errors with efibootmgr: option requires an argument -- 'd'. This is a long open bug (Ubuntu discussion). The fastest workaround is to manually add the entry for each partition in the array with efibootmgr (Gentoo wiki goes a little more in depth on efibootmgr use) 
+
+        # grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
+
+After the above installation completed, the main GRUB directory is located at /boot/grub/. Read /Tips and tricks#Alternative install method for how to specify an alternative location. Note that grub-install also tries to create an entry in the firmware boot manager, named GRUB in the above example – this will, however, fail if your boot entries are full or the systems prevents the boot order from being manipulated (e.g. Thinkpad firmware has a setting called "Boot Order Lock" which needs to be disabled for efibootmgr to be able to add/remove entries); use efibootmgr to remove unnecessary entries.
+Warning
+Remember to #Generate the main configuration file after finalizing the configuration or else your os will not be in the grub menu.
+
+Tip
+If you use the option --removable then GRUB will be installed to esp/EFI/BOOT/BOOTX64.EFI (or esp/EFI/BOOT/BOOTIA32.EFI for the i386-efi target) and you will have the additional ability of being able to boot from the drive in case EFI variables are reset or you move the drive to another computer. Usually you can do this by selecting the drive itself, similar to how you would using BIOS. If dual booting with Windows, be aware Windows usually places an EFI executable there, but its only purpose is to recreate the UEFI boot entry for Windows. If you are installing GRUB on a Mac, you will have to use this option. Some desktop motherboards will only look for an EFI executable in this location, making this option mandatory, in particular with MSI boards. If you execute a UEFI update, this update might delete the existing UEFI boot entries. Therefore, it is a potential fallback strategy to have the "removable" boot entry enabled.
+Note
+
+    --efi-directory and --bootloader-id are specific to GRUB UEFI, --efi-directory replaces --root-directory which is deprecated.
+    You might note the absence of a device_path option (e.g.: /dev/sda) in the grub-install command. In fact any device_path provided will be ignored by the GRUB UEFI install script. Indeed, UEFI boot loaders do not use a MBR bootcode or partition boot sector at all.
+
+See UEFI troubleshooting in case of problems. Additionally see /Tips and tricks#UEFI further reading.
+Secure Boot support
+
+GRUB fully supports secure boot utilising either CA keys or shim; the installation command, however, is different depending on which you intend to use.
+Warning
+
+    Incorrectly configuring Secure Boot can render your system unbootable. If for any reason you cannot boot after enabling secure boot then you should disable it in firmware and reboot the system.
+    Loading unnecessary modules in your boot loader has the potential to present a security risk, only use these commands if you need them.
+
+CA Keys
+
+To make use of CA Keys the command is:
+
+# grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB --modules="tpm" --disable-shim-lock
+
+Shim-lock
+Note
+Before following this section you should make sure you have followed the instructions at Secure Boot#shim and have sbsigntools set-up and ready to receive keys.
+
+When using Shim-lock, GRUB can only be successfully booted in Secure Boot mode if its EFI binary includes all of the modules necessary to read the filesystem containing the vmlinuz and initramfs images.
+
+Since GRUB version 2.06.r261.g2f4430cc0, loading modules in Secure Boot Mode via insmod is no longer allowed, as this would violate the expectation to not sideload arbitrary code. If the GRUB modules are not embedded in the EFI binary, and GRUB tries to sideload/insmod them, GRUB will fail to boot with the message:
+
+error: prohibited by secure boot policy
+
+Ubuntu, according to its official build script, embeds the following GRUB modules in its signed GRUB EFI binary grubx64.efi:
+
+    the "basic" modules, necessary for booting from a CD or from a simple-partitioned disk: all_video, boot, btrfs, cat, chain, configfile, echo, efifwsetup, efinet, ext2, fat, font, gettext, gfxmenu, gfxterm, gfxterm_background, gzio, halt, help, hfsplus, iso9660, jpeg, keystatus, loadenv, loopback, linux, ls, lsefi, lsefimmap, lsefisystab, lssal, memdisk, minicmd, normal, ntfs, part_apple, part_msdos, part_gpt, password_pbkdf2, png, probe, reboot, regexp, search, search_fs_uuid, search_fs_file, search_label, sleep, smbios, squash4, test, true, video, xfs, zfs, zfscrypt, zfsinfo
+    the "platform-specific" modules for x86_64-efi architecture, for example:
+        play: to play sounds during boot
+        cpuid: to the CPU at boot
+        tpm: to support Measured Boot / Trusted Platform Modules
+    the "advanced" modules, consisting of modules:
+        cryptodisk: to boot from plain-mode encrypted disks
+        gcry_algorithm: to support particular hashing and encryption algorithms
+        luks: to boot from LUKS-encrypted disks:
+        lvm: to boot from LVM logical volume disks
+        mdraid09, mdraid1x, raid5rec, raid6rec: to boot from RAID virtual disks
+
+You must construct your list of GRUB modules in the form of a shell variable that we denote as GRUB_MODULES. You can use the latest Ubuntu script as a starting point, and trim away modules that are not necessary on your system. Omitting modules will make the boot process relatively faster, and save some space on the ESP partition.
+
+You also need a Secure Boot Advanced Targeting (SBAT) file/section included in the EFI binary, to improve the security; if GRUB is launched from the UEFI shim loader. This SBAT file/section contains metadata about the GRUB binary (version, maintainer, developer, upstream URL) and makes it easier for shim to block certain GRUB versions from being loaded if they have security vulnerabilities[1][2], as explained in the UEFI shim boot loader secure boot life-cycle improvements document from shim.
+
+The first-stage UEFI boot loader shim will fail to launch grubx64.efi if the SBAT section from grubx64.efi is missing!
+
+If GRUB is installed, a sample SBAT .csv file is provided under /usr/share/grub/sbat.csv.
+
+Reinstall GRUB using the provided /usr/share/grub/sbat.csv file and all the needed GRUB_MODULES and sign it:
+
+# grub-install --target=x86_64-efi --efi-directory=esp --modules="${GRUB_MODULES}" --sbat /usr/share/grub/sbat.csv
+# sbsign --key MOK.key --cert MOK.crt --output esp/EFI/GRUB/grubx64.efi esp/EFI/GRUB/grubx64.efi
+# cp esp/EFI/GRUB/grubx64.efi esp/EFI/BOOT/grubx64.efi
+
+Reboot, select the key in MokManager, and Secure Boot should be working.
+Using Secure Boot
+
+After installation see Secure Boot#Implementing Secure Boot for instructions on enabling it.
+
+If you are using the CA Keys method then key management, enrollment, and file signing can be automated by using sbctl, see Secure Boot#Assisted process with sbctl for details.
+BIOS systems
+GUID Partition Table (GPT) specific instructions
+
+On a BIOS/GPT configuration, a BIOS boot partition is required. GRUB embeds its core.img into this partition.
+Note
+
+    Before attempting this method keep in mind that not all systems will be able to support this partitioning scheme. Read more on Partitioning#GUID Partition Table.
+    The BIOS boot partition is only needed by GRUB on a BIOS/GPT setup. On a BIOS/MBR setup, GRUB uses the post-MBR gap for the embedding the core.img. On GPT, however, there is no guaranteed unused space before the first partition.
+    For UEFI systems this extra partition is not required, since no embedding of boot sectors takes place in that case. However, UEFI systems still require an EFI system partition.
+
+Create a mebibyte partition (+1M with fdisk or gdisk) on the disk with no file system and with partition type GUID 21686148-6449-6E6F-744E-656564454649.
+
+    fdisk: Create a partition and use the t command to change its partition type to BIOS boot.
+    gdisk: Create a partition with partition type ef02.
+    GNU Parted: Create a partition and set the bios_grub flag on it.
+
+This partition can be in any position order but has to be on the first 2 TiB of the disk. This partition needs to be created before GRUB installation. When the partition is ready, install the boot loader as per the instructions below.
+
+The space before the first partition can also be used as the BIOS boot partition though it will be out of GPT alignment specification. Since the partition will not be regularly accessed performance issues can be disregarded, though some disk utilities will display a warning about it. In fdisk or gdisk create a new partition starting at sector 34 and spanning to 2047 and set the type. To have the viewable partitions begin at the base consider adding this partition last.
+Master Boot Record (MBR) specific instructions
+
+Usually the post-MBR gap (after the 512 byte MBR region and before the start of the first partition) in many MBR partitioned systems is 31 KiB when DOS compatibility cylinder alignment issues are satisfied in the partition table. However a post-MBR gap of about 1 to 2 MiB is recommended to provide sufficient room for embedding GRUB's core.img (FS#24103). It is advisable to use a partitioning tool that supports 1 MiB partition alignment to obtain this space as well as to satisfy other non-512-byte-sector issues (which are unrelated to embedding of core.img).
+Installation
+
+Install the grub package. (It will replace grub-legacyAUR if that is already installed.) Then do:
+
+# grub-install --target=i386-pc /dev/sdX
+
+where i386-pc is deliberately used regardless of your actual architecture, and /dev/sdX is the disk (not a partition) where GRUB is to be installed. For example /dev/sda or /dev/nvme0n1, or /dev/mmcblk0. See Device file#Block device names for a description of the block device naming scheme.
+
+Now you must generate the main configuration file.
+
+If you use LVM for your /boot, you can install GRUB on multiple physical disks.
+Tip
+See /Tips and tricks#Alternative installation methods for other ways to install GRUB, such as to a USB stick.
+
+See grub-install(8) and GRUB Manual for more details on the grub-install command.
+Configuration
+
+On an installed system, GRUB loads the /boot/grub/grub.cfg configuration file each boot. You can follow #Generated grub.cfg for using a tool, or #Custom grub.cfg for a manual creation.
+Generated grub.cfg
+
+This section only covers editing the /etc/default/grub configuration file. See /Tips and tricks for more information.
+Note
+Remember to always re-generate the main configuration file after making changes to /etc/default/grub and/or files in /etc/grub.d/.
+Warning
+Update/reinstall the boot loader (see #UEFI systems or #BIOS systems) if a new GRUB version changes the syntax of the configuration file: mismatching configuration can result in an unbootable system. For example, the new configuration might use a function unknown to the existing GRUB binary, causing unexpected behavior.
+Generate the main configuration file
+
+After the installation, the main configuration file /boot/grub/grub.cfg needs to be generated. The generation process can be influenced by a variety of options in /etc/default/grub and scripts in /etc/grub.d/. For the list of options in /etc/default/grub and a concise description of each refer to GNU's documentation.
+
+If you have not done additional configuration, the automatic generation will determine the root filesystem of the system to boot for the configuration file. For that to succeed it is important that the system is either booted or chrooted into.
+Note
+
+    The default file path is /boot/grub/grub.cfg, not /boot/grub/i386-pc/grub.cfg.
+    If you are trying to run grub-mkconfig in a chroot or systemd-nspawn container, you might notice that it does not work: grub-probe: error: failed to get canonical path of /dev/sdaX. In this case, try using arch-chroot as described in the BBS post.
+
+Use the grub-mkconfig tool to generate /boot/grub/grub.cfg:
+
+# grub-mkconfig -o /boot/grub/grub.cfg
+
+By default the generation scripts automatically add menu entries for all installed Arch Linux kernels to the generated configuration.
+Tip
+
+    After installing or removing a kernel, you just need to re-run the above grub-mkconfig command.
+    For tips on managing multiple GRUB entries, for example when using both linux and linux-lts kernels, see /Tips and tricks#Multiple entries.
+
+To automatically add entries for other installed operating systems, see #Detecting other operating systems.
+
+You can add additional custom menu entries by editing /etc/grub.d/40_custom and re-generating /boot/grub/grub.cfg. Or you can create /boot/grub/custom.cfg and add them there. Changes to /boot/grub/custom.cfg do not require re-running grub-mkconfig, since /etc/grub.d/41_custom adds the necessary source statement to the generated configuration file.
+Tip
+/etc/grub.d/40_custom can be used as a template to create /etc/grub.d/nn_custom, where nn defines the precedence, indicating the order the script is executed. The order scripts are executed determine the placement in the GRUB boot menu. nn should be greater than 06 to ensure necessary scripts are executed first.
+
+See #Boot menu entry examples for custom menu entry examples.
+Detecting other operating systems
+
+To have grub-mkconfig search for other installed systems and automatically add them to the menu, install the os-prober package and mount the partitions from which the other systems boot. Then re-run grub-mkconfig. If you get the following output: Warning: os-prober will not be executed to detect other bootable partitions then edit /etc/default/grub and add/uncomment:
+
+GRUB_DISABLE_OS_PROBER=false
+
+Then try again.
+Note
+
+    The exact mount point does not matter, os-prober reads the mtab to identify places to search for bootable entries.
+    Remember to mount the partitions each time you run grub-mkconfig in order to include the other operating systems every time.
+    os-prober might not work properly when run in a chroot. Try again after rebooting into the system if you experience this.
+
+Tip
+You might also want GRUB to remember the last chosen boot entry, see /Tips and tricks#Recall previous entry.
+Windows
+
+For Windows installed in UEFI mode, make sure the EFI system partition containing the Windows Boot Manager (bootmgfw.efi) is mounted. Run os-prober as root to detect and generate an entry for it.
+
+For Windows installed in BIOS mode, mount the Windows system partition (its file system label should be System Reserved or SYSTEM). Run os-prober as root to detect and generate an entry for it.
+Note
+
+    os-prober might try to grub-mount a partition to probe whether the requisite .efi file exists. You need to install fuse3 to make grub-mount work properly. Otherwise, you may fail to detect a Windows system.
+    NTFS partitions may not always be detected when mounted with the default Linux drivers. If GRUB is not detecting it, try installing NTFS-3G and remounting.
+
+Additional arguments
+
+To pass custom additional arguments to the Linux image, you can set the GRUB_CMDLINE_LINUX + GRUB_CMDLINE_LINUX_DEFAULT variables in /etc/default/grub. The two are appended to each other and passed to kernel when generating regular boot entries. For the recovery boot entry, only GRUB_CMDLINE_LINUX is used in the generation.
+
+It is not necessary to use both, but can be useful. For example, you could use GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=uuid-of-swap-partition quiet" where uuid-of-swap-partition is the UUID of your swap partition to enable resume after hibernation. This would generate a recovery boot entry without the resume and without quiet suppressing kernel messages during a boot from that menu entry. Though, the other (regular) menu entries would have them as options.
+
+By default grub-mkconfig determines the UUID of the root filesystem for the configuration. To disable this, uncomment GRUB_DISABLE_LINUX_UUID=true.
+
+For generating the GRUB recovery entry you have to ensure that GRUB_DISABLE_RECOVERY is not set to true in /etc/default/grub.
+
+See Kernel parameters for more info.
+Setting the top-level menu entry
+
+By default, grub-mkconfig sorts the included kernels using sort -V and uses the first kernel in that list as the top-level entry. This means that, for example, since /boot/vmlinuz-linux-lts is sorted before /boot/vmlinuz-linux, if you have both linux-lts and linux installed, the LTS kernel will be the top-level menu entry, which may not be desirable. This can be overridden by specifying GRUB_TOP_LEVEL="path_to_kernel" in /etc/default/grub. For example, to make the regular kernel be the top-level menu entry, you can use GRUB_TOP_LEVEL="/boot/vmlinuz-linux".
+LVM
+
+This article or section is a candidate for merging with #Installation.
+Notes: grub-mkconfig is capable of detecting that it needs the lvm module, specifying it in GRUB_PRELOAD_MODULES is not required. Move warning to #Installation & #Installation_2 or create a Known issues section and document it there. (Discuss in Talk:GRUB)
+Warning
+GRUB does not support thin-provisioned logical volumes.
+
+If you use LVM for your /boot or / root partition, make sure that the lvm module is preloaded:
+
+/etc/default/grub
+
+GRUB_PRELOAD_MODULES="... lvm"
+
+RAID
+
+This article or section is a candidate for merging with #Installation.
+Notes: grub-mkconfig is capable of detecting that it needs the mdraid09 and/or mdraid1x modules, specifying them in GRUB_PRELOAD_MODULES is not required. Summarize the double grub-install in a note and move it to #Installation; move set root stuff to #Custom grub.cfg. (Discuss in Talk:GRUB)
+
+GRUB provides convenient handling of RAID volumes. You need to load GRUB modules mdraid09 or mdraid1x to allow you to address the volume natively:
+
+/etc/default/grub
+
+GRUB_PRELOAD_MODULES="... mdraid09 mdraid1x"
+
+For example, /dev/md0 becomes:
+
+set root=(md/0)
+
+whereas a partitioned RAID volume (e.g. /dev/md0p1) becomes:
+
+set root=(md/0,1)
+
+To install grub when using RAID1 as the /boot partition (or using /boot housed on a RAID1 root partition), on BIOS systems, simply run grub-install on both of the drives, such as:
+
+# grub-install --target=i386-pc --debug /dev/sda
+# grub-install --target=i386-pc --debug /dev/sdb
+
+Where the RAID 1 array housing /boot is housed on /dev/sda and /dev/sdb.
+Note
+GRUB supports booting from Btrfs RAID 0/1/10, but not RAID 5/6. You may use mdadm for RAID 5/6, which is supported by GRUB.
+Encrypted /boot
+
+GRUB also has special support for booting with an encrypted /boot. This is done by unlocking a LUKS blockdevice in order to read its configuration and load any initramfs and kernel from it. This option tries to solve the issue of having an unencrypted boot partition.
+Tip
+/boot is not required to be kept in a separate partition; it may also stay under the system's root / directory tree.
+Warning
+GRUB 2.12rc1 has limited support for LUKS2. See the #LUKS2 section below for details.
+
+To enable this feature encrypt the partition with /boot residing on it using LUKS as normal. Then add the following option to /etc/default/grub:
+
+/etc/default/grub
+
+GRUB_ENABLE_CRYPTODISK=y
+
+This option is used by grub-install to generate the grub core.img.
+
+Make sure to install grub after modifying this option or encrypting the partition.
+
+Without further changes you will be prompted twice for a passphrase: the first for GRUB to unlock the /boot mount point in early boot, the second to unlock the root filesystem itself as implemented by the initramfs. You can use a keyfile to avoid this.
+Warning
+
+    If you want to generate the main configuration file, make sure that /boot is mounted.
+    In order to perform system updates involving the /boot mount point, ensure that the encrypted /boot is unlocked and mounted before performing an update. With a separate /boot partition, this may be accomplished automatically on boot by using crypttab with a keyfile.
+
+Note
+
+    If you use a special keymap, a default GRUB installation will not know it. This is relevant for how to enter the passphrase to unlock the LUKS blockdevice. See /Tips and tricks#Manual configuration of core image for early boot.
+    If you experience issues getting the prompt for a password to display (errors regarding cryptouuid, cryptodisk, or "device not found"), try reinstalling GRUB and appending --modules="part_gpt part_msdos" to the end of your grub-install command.
+
+Tip
+You can use pacman hooks to automount your /boot when upgrades need to access related files.
+LUKS2
+
+This article or section is out of date.
+Reason: Grub 2.14rc1 supports the Argon2i and Argon2id PBKDFs. See upstream commit. (Discuss in Talk:GRUB#grub 2:2.14rc1 added support for LUKS2 + argon2 encryption.)
+
+Use grub-install as described in the #Installation section to create a bootable GRUB image with LUKS support. Note the following caveats:
+
+    Initial LUKS2 support was added to GRUB 2.06, but with several limitations that are only partially addressed in GRUB 2.12rc1. See GRUB bug #55093.
+    Since GRUB 2.12rc1, grub-install can create a core image to unlock LUKS2. However, it only supports PBKDF2, not Argon2.
+    Argon2id (cryptsetup default) and Argon2i PBKDFs are not supported (GRUB bug #59409), only PBKDF2 is.
+
+    Tip
+    You can use grub-improved-luks2-gitAUR that has been patched for LUKS2 as well as Argon2 support. Note the package's Argon2 support requires an UEFI system.[3]
+
+Note
+Before GRUB 2.12rc1, you had to manually create an EFI binary using grub-mkimage with a custom GRUB config file. For example, /boot/grub/grub-pre.cfg, with calls to cryptomount, insmod normal, and normal. This is no longer needed, grub-install is sufficient. However, you may have to run grub-mkconfig -o /boot/grub/grub.cfg at least once after upgrading from 2.06.
+
+If you enter an invalid passphrase during boot and end up at the GRUB rescue shell, try cryptomount -a to mount all (hopefully only one) encrypted partitions or use cryptomount -u $crypto_uuid to mount a specific one. Then proceed with insmod normal and normal as usual.
+
+If you enter a correct passphrase, but an Invalid passphrase error is immediately returned, make sure that the right cryptographic modules are specified. Use cryptsetup luksDump /dev/nvme0n1p2 and check whether the hash function (SHA-256, SHA-512) matches the modules (gcry_sha256, gcry_sha512) installed and the PBKDF algorithm is pbkdf2. The hash and PBDKDF algorithms can be changed for existing keys by using cryptsetup luksConvertKey --hash sha256 --pbkdf pbkdf2 /dev/nvme0n1p2. Under normal circumstances it should take a few seconds before the passphrase is processed.
+Custom grub.cfg
+
+This article or section needs expansion.
+Reason: Add instructions on how to write a custom /boot/grub/grub.cfg. See User:Eschwartz/Grub for a proposed draft. (Discuss in Talk:GRUB#Manually generate grub.cfg)
+
+This section describes the manual creation of GRUB boot entries in /boot/grub/grub.cfg instead of relying on grub-mkconfig.
+
+A basic GRUB config file uses the following options:
+
+    (hdX,Y) is the partition Y on disk X, partition numbers starting at 1, disk numbers starting at 0
+    set default=N is the default boot entry that is chosen after timeout for user action
+    set timeout=M is the time M to wait in seconds for a user selection before default is booted
+    menuentry "title" {entry options} is a boot entry titled title
+    set root=(hdX,Y) sets the boot partition, where the kernel and GRUB modules are stored (boot need not be a separate partition, and may simply be a directory under the "root" partition (/))
+
+LoaderDevicePartUUID
+
+For GRUB to set the LoaderDevicePartUUID UEFI variable required by systemd-gpt-auto-generator(8) for GPT partition automounting, load the bli module in grub.cfg:
+
+if [ "$grub_platform" = "efi" ]; then
+  insmod bli
+fi
+
+Boot menu entry examples
+Tip
+These boot entries can also be used when using a /boot/grub/grub.cfg generated by grub-mkconfig. Add them to /etc/grub.d/40_custom and re-generate the main configuration file or add them to /boot/grub/custom.cfg.
+
+For tips on managing multiple GRUB entries, for example when using both linux and linux-lts kernels, see /Tips and tricks#Multiple entries.
+
+For Archiso and Archboot boot menu entries see Multiboot USB drive#Boot entries.
+GRUB commands
+"Shutdown" menu entry
+
+menuentry "System shutdown" {
+	echo "System shutting down..."
+	halt
+}
+
+"Restart" menu entry
+
+menuentry "System restart" {
+	echo "System rebooting..."
+	reboot
+}
+
+"UEFI Firmware Settings" menu entry
+
+if [ ${grub_platform} == "efi" ]; then
+	menuentry 'UEFI Firmware Settings' --id 'uefi-firmware' {
+		fwsetup
+	}
+fi
+
+EFI binaries
+
+When launched in UEFI mode, GRUB can chainload other EFI binaries.
+Tip
+To show these menu entries only when GRUB is launched in UEFI mode, enclose them in the following if statement:
+
+if [ ${grub_platform} == "efi" ]; then
+	place UEFI-only menu entries here
+fi
+
+UEFI Shell
+
+You can launch UEFI Shell by placing it in the root of the EFI system partition and adding this menu entry:
+
+menuentry "UEFI Shell" {
+	insmod fat
+	insmod chain
+	search --no-floppy --set=root --file /shellx64.efi
+	chainloader /shellx64.efi
+}
+
+gdisk
+
+Download the gdisk EFI application and copy gdisk_x64.efi to esp/EFI/tools/.
+
+menuentry "gdisk" {
+	insmod fat
+	insmod chain
+	search --no-floppy --set=root --file /EFI/tools/gdisk_x64.efi
+	chainloader /EFI/tools/gdisk_x64.efi
+}
+
+Chainloading a unified kernel image
+
+If you have a unified kernel image generated from following Secure Boot or other means, you can add it to the boot menu. For example:
+
+menuentry "Arch Linux" {
+	insmod fat
+	insmod chain
+	search --no-floppy --set=root --fs-uuid FILESYSTEM_UUID
+	chainloader /EFI/Linux/arch-linux.efi
+}
+
+Dual-booting
+GNU/Linux
+
+Assuming that the other distribution is on partition sda2:
+
+menuentry "Other Linux" {
+	set root=(hd0,2)
+	linux /boot/vmlinuz (add other options here as required)
+	initrd /boot/initramfs.img (if the other kernel uses/needs one)
+}
+
+Alternatively let GRUB search for the right partition by UUID or file system label:
+
+menuentry "Other Linux" {
+        # assuming that UUID is 763A-9CB6
+	search --no-floppy --set=root --fs-uuid 763A-9CB6
+
+        # search by label OTHER_LINUX (make sure that partition label is unambiguous)
+        #search --no-floppy --set=root --label OTHER_LINUX
+
+	linux /boot/vmlinuz (add other options here as required, for example: root=UUID=763A-9CB6)
+	initrd /boot/initramfs.img (if the other kernel uses/needs one)
+}
+
+If the other distribution has already a valid /boot folder with installed GRUB, grub.cfg, kernel and initramfs, GRUB can be instructed to load these other grub.cfg files on-the-fly during boot. For example, for hd0 and the fourth GPT partition:
+
+menuentry "configfile hd0,gpt4"  {
+        insmod part_gpt
+        insmod btrfs
+        insmod ext2
+        set root='hd0,gpt4'
+        configfile /boot/grub/grub.cfg
+}
+
+When choosing this entry, GRUB loads the grub.cfg file from the other volume and displays that menu. Any environment variable changes made by the commands in file will not be preserved after configfile returns. Press Esc to return to the first GRUB menu.
+Windows installed in UEFI/GPT mode
+
+This mode determines where the Windows boot loader resides and chain-loads it after GRUB when the menu entry is selected. The main task here is finding the EFI system partition and running the boot loader from it.
+Note
+This menuentry will work only in UEFI boot mode and only if the Windows bitness matches the UEFI bitness. It will not work in BIOS installed GRUB. See Dual boot with Windows#Windows UEFI vs BIOS limitations and Dual boot with Windows#Boot loader UEFI vs BIOS limitations for more information.
+
+if [ "${grub_platform}" == "efi" ]; then
+	menuentry "Microsoft Windows Vista/7/8/8.1 UEFI/GPT" {
+		insmod part_gpt
+		insmod fat
+		insmod chain
+		search --no-floppy --fs-uuid --set=root $hints_string $fs_uuid
+		chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+	}
+fi
+
+where $hints_string and $fs_uuid are obtained with the following two commands.
+
+The $fs_uuid command determines the UUID of the EFI system partition:
+
+# grub-probe --target=fs_uuid esp/EFI/Microsoft/Boot/bootmgfw.efi
+
+1ce5-7f28
+
+Alternatively one can run lsblk --fs and read the UUID of the EFI system partition from there.
+
+The $hints_string command will determine the location of the EFI system partition, in this case harddrive 0:
+
+# grub-probe --target=hints_string esp/EFI/Microsoft/Boot/bootmgfw.efi
+
+--hint-bios=hd0,gpt1 --hint-efi=hd0,gpt1 --hint-baremetal=ahci0,gpt1
+
+These two commands assume the ESP Windows uses is mounted at esp. There might be case differences in the path to Windows's EFI file, what with being Windows, and all.
+Windows installed in BIOS/MBR mode
+Note
+GRUB supports booting bootmgr directly and chainloading of partition boot sector is no longer required to boot Windows in a BIOS/MBR setup.
+Warning
+It is the system partition that has /bootmgr, not your "real" Windows partition (usually C:). The system partition's filesystem label is System Reserved or SYSTEM and the partition is only about 100 to 549 MiB in size. See Wikipedia:System partition and boot partition for more information.
+
+Throughout this section, it is assumed your Windows partition is /dev/sda1. A different partition will change every instance of hd0,msdos1.
+Note
+These menu entries will work only in BIOS boot mode. It will not work in UEFI installed GRUB. See Dual boot with Windows#Windows UEFI vs BIOS limitations and Dual boot with Windows#Boot loader UEFI vs BIOS limitations .
+
+In both examples XXXX-XXXX is the filesystem UUID which can be found with command lsblk --fs.
+
+For Windows Vista/7/8/8.1/10:
+
+if [ "${grub_platform}" == "pc" ]; then
+	menuentry "Microsoft Windows Vista/7/8/8.1/10 BIOS/MBR" {
+		insmod part_msdos
+		insmod ntfs
+		insmod ntldr
+		search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1 XXXX-XXXX
+		ntldr /bootmgr
+	}
+fi
+
+For Windows XP:
+
+if [ "${grub_platform}" == "pc" ]; then
+	menuentry "Microsoft Windows XP" {
+		insmod part_msdos
+		insmod ntfs
+		insmod ntldr
+		search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1 XXXX-XXXX
+		ntldr /ntldr
+	}
+fi
+
+Note
+In some cases, GRUB may be installed without a clean Windows 8, in which case you cannot boot Windows without having an error with \boot\bcd (error code 0xc000000f). You can fix it by going to Windows Recovery Console (cmd.exe from install disk) and executing:
+
+X:\> bootrec.exe /fixboot
+X:\> bootrec.exe /RebuildBcd
+
+Do not use bootrec.exe /Fixmbr because it will wipe GRUB out. Or you can use Boot Repair function in the Troubleshooting menu - it will not wipe out GRUB but will fix most errors. Also you would better keep plugged in both the target hard drive and your bootable device ONLY. Windows usually fails to repair boot information if any other devices are connected.
+Using labels
+
+It is possible to use file system labels, human-readable strings attached to file systems, by using the --label option to search. First of all, make sure your file system has a label.
+
+Then, add an entry using labels. An example of this:
+
+menuentry "Arch Linux, session texte" {
+  search --label --set=root archroot
+  linux /boot/vmlinuz-linux root=/dev/disk/by-label/archroot ro
+  initrd /boot/initramfs-linux.img
+}
+
+Using the command shell
+
+Since the MBR is too small to store all GRUB modules, only the menu and a few basic commands reside there. The majority of GRUB functionality remains in modules in /boot/grub/, which are inserted as needed. In error conditions (e.g. if the partition layout changes) GRUB may fail to boot. When this happens, a command shell may appear.
+
+GRUB offers multiple shells/prompts. If there is a problem reading the menu but the boot loader is able to find the disk, you will likely be dropped to the "normal" shell:
+
+grub>
+
+If there is a more serious problem (e.g. GRUB cannot find required files), you may instead be dropped to the "rescue" shell:
+
+grub rescue>
+
+The rescue shell is a restricted subset of the normal shell, offering much less functionality. If dumped to the rescue shell, first try inserting the "normal" module, then starting the "normal" shell:
+
+grub rescue> set prefix=(hdX,Y)/boot/grub
+grub rescue> insmod (hdX,Y)/boot/grub/i386-pc/normal.mod
+rescue:grub> normal
+
+Pager support
+
+GRUB supports pager for reading commands that provide long output (like the help command). This works only in normal shell mode and not in rescue mode. To enable pager, in GRUB command shell type:
+
+sh:grub> set pager=1
+
+Using the command shell environment to boot operating systems
+
+grub>
+
+The GRUB's command shell environment can be used to boot operating systems. A common scenario may be to boot Windows / Linux stored on a drive/partition via chainloading.
+
+Chainloading means to load another boot-loader from the current one, ie, chain-loading.
+
+The other boot loader may be embedded at the start of a partitioned disk (MBR), at the start of a partition or a partitionless disk (VBR), or as an EFI binary in the case of UEFI.
+Chainloading a partition's VBR
+
+set root=(hdX,Y)
+chainloader +1
+boot
+
+X=0,1,2... Y=1,2,3...
+
+For example to chainload Windows stored in the first partition of the first hard disk,
+
+set root=(hd0,1)
+chainloader +1
+boot
+
+Similarly GRUB installed to a partition can be chainloaded.
+Chainloading a disk's MBR or a partitionless disk's VBR
+
+set root=hdX
+chainloader +1
+boot
+
+Chainloading Windows/Linux installed in UEFI mode
+
+insmod fat
+set root=(hd0,gpt4)
+chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+boot
+
+insmod fat is used for loading the FAT file system module for accessing the Windows boot loader on the UEFI system partition. (hd0,gpt4) or /dev/sda4 is the UEFI system partition in this example. The entry in the chainloader line specifies the path of the .efi file to be chain-loaded.
+Normal loading
+
+See the examples in #Using the rescue console
+Using the rescue console
+
+See #Using the command shell first. If unable to activate the standard shell, one possible solution is to boot using a live CD or some other rescue disk to correct configuration errors and reinstall GRUB. However, such a boot disk is not always available (nor necessary); the rescue console is surprisingly robust.
+
+The available commands in GRUB rescue include insmod, ls, set, and unset. This example uses set and insmod. set modifies variables and insmod inserts new modules to add functionality.
+
+Before starting, the user must know the location of their /boot partition (be it a separate partition, or a subdirectory under their root):
+
+grub rescue> set prefix=(hdX,Y)/boot/grub
+
+where X is the physical drive number and Y is the partition number.
+Note
+With a separate boot partition, omit /boot from the path (i.e. type set prefix=(hdX,Y)/grub).
+
+To expand console capabilities, insert the linux module:
+
+grub rescue> insmod i386-pc/linux.mod
+
+or simply
+
+grub rescue> insmod linux
+
+This introduces the linux and initrd commands, which should be familiar.
+
+An example, booting Arch Linux:
+
+set root=(hd0,5)
+linux /boot/vmlinuz-linux root=/dev/sda5
+initrd /boot/initramfs-linux.img
+boot
+
+With a separate boot partition (e.g. when using UEFI), again change the lines accordingly:
+Note
+Since boot is a separate partition and not part of your root partition, you must address the boot partition manually, in the same way as for the prefix variable.
+
+set root=(hd0,5)
+linux (hdX,Y)/vmlinuz-linux root=/dev/sda6
+initrd (hdX,Y)/initramfs-linux.img
+boot
+
+Note
+If you experienced error: premature end of file /YOUR_KERNEL_NAME during execution of linux command, you can try linux16 instead.
+
+After successfully booting the Arch Linux installation, users can correct grub.cfg as needed and then reinstall GRUB.
+
+To reinstall GRUB and fix the problem completely, changing /dev/sda if needed. See #Installation for details.
+GRUB removal
+UEFI systems
+
+Before removing grub, make sure that some other boot loader is installed and configured to take over.
+
+$ efibootmgr
+
+BootOrder: 0003,0001,0000,0002
+Boot0000* Windows Boot Manager  HD(2,GPT,4dabbedf-191b-4432-bc09-8bcbd1d7dabf,0x109000,0x32000)/File(\EFI\Microsoft\Boot\bootmgfw.efi)
+Boot0001* GRUB  HD(2,GPT,4dabbedf-191b-4432-bc09-8bcbd1d7dabf,0x109000,0x32000)/File(\EFI\GRUB\grubx64.efi)
+Boot0002* Linux-Firmware-Updater        HD(2,GPT,5dabbedf-191b-4432-bc09-8bcbd1d7dabf,0x109000,0x32000)/File(\EFI\arch\fwupdx64.efi)
+Boot0003* Linux Boot Manager    HD(2,GPT,4dabbedf-191b-4432-bc09-8bcbd1d7dabf,0x109000,0x32000)/File(\EFI\systemd\systemd-bootx64.efi)
+
+If BootOrder has grub as the first entry, install another boot loader to put it in front, such as systemd-boot above. grub can then be removed using its bootnum.
+
+# efibootmgr --delete-bootnum -b 1
+
+Also delete the esp/EFI/grub and /boot/grub directories.
+BIOS systems
+
+To replace grub with any other BIOS boot loader, simply install them, which will overwrite the MBR boot code.
+
+grub-install creates the /boot/grub directory that needs to be removed manually. Though some users will want to keep it, should they want to install grub again.
+
+After migrating to UEFI/GPT one may want to remove the MBR boot code using dd.
+Troubleshooting
+Unsupported file systems
+
+In case that GRUB does not support the root file system, an alternative /boot partition with a supported file system must be created. In some cases, the development version of GRUB grub-gitAUR may have native support for the file system.
+
+If GRUB is used with an unsupported file system it is not able to extract the UUID of your drive so it uses classic non-persistent /dev/sdXx names instead. In this case you might have to manually edit /boot/grub/grub.cfg and replace root=/dev/sdXx with root=UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX. You can use the blkid command to get the UUID of your device, see Persistent block device naming.
+
+While GRUB supports F2FS since version 2.0.4, it cannot correctly read its boot files from an F2FS partition that was created with the extra_attr flag enabled.
+Enable debug messages
+Note
+This change is overwritten when #Generate the main configuration file.
+
+Add:
+
+set pager=1
+set debug=all
+
+to grub.cfg.
+msdos-style error message
+
+grub-setup: warn: This msdos-style partition label has no post-MBR gap; embedding will not be possible!
+grub-setup: warn: Embedding is not possible. GRUB can only be installed in this setup by using blocklists.
+            However, blocklists are UNRELIABLE and its use is discouraged.
+grub-setup: error: If you really want blocklists, use --force.
+
+This error may occur when you try installing GRUB in a VMware container. Read more about it here. It happens when the first partition starts just after the MBR (block 63), without the usual space of 1 MiB (2048 blocks) before the first partition. Read #Master Boot Record (MBR) specific instructions
+UEFI
+Common installation errors
+
+    An error that may occur on some UEFI devices is Could not prepare Boot variable: Read-only file system. You have to remount /sys/firmware/efi/efivars with read-write enabled.
+
+    # mount -o remount,rw,nosuid,nodev,noexec --types efivarfs efivarfs /sys/firmware/efi/efivars
+
+    See the Gentoo Wiki on installing the boot loader.
+    If you have a problem running grub-install with sysfs or procfs and it says you must run modprobe efivarfs try mounting the efivarfs with the command above.
+    Without --target or --directory option, grub-install cannot determine for which firmware to install. In such cases grub-install will print source_dir does not exist. Please specify --target or --directory.
+    If after running grub-install you get error: esp doesn't look like an EFI partition, then the partition is most likely not FAT32 formatted.
+
+Create a GRUB entry in the firmware boot manager
+
+grub-install automatically tries to create a menu entry in the boot manager. If it does not, then see UEFI#efibootmgr for instructions to use efibootmgr to create a menu entry. However, the problem is likely to be that you have not booted your CD/USB in UEFI mode, as in Installation guide#Verify the boot mode.
+
+As another example of creating a GRUB entry in the firmware boot manager, consider efibootmgr -c. This assumes that /dev/sda1 is the EFI System Partition, and is mounted at /boot/efi. Which are the default behavior of efibootmgr. It creates a new boot option, called "Linux", and puts it at the top of the boot order list. Options may be passed to modify the default behavior. The default OS Loader is \EFI\arch\grub.efi.
+Drop to rescue shell
+
+If GRUB loads but drops into the rescue shell with no errors, it can be due to one of these two reasons:
+
+    It may be because of a missing or misplaced grub.cfg. This will happen if GRUB UEFI was installed with --boot-directory and grub.cfg is missing,
+    It also happens if the boot partition, which is hardcoded into the grubx64.efi file, has changed.
+
+GRUB UEFI not loaded
+
+An example of a working UEFI:
+
+# efibootmgr -u
+
+BootCurrent: 0000
+Timeout: 3 seconds
+BootOrder: 0000,0001,0002
+Boot0000* GRUB HD(1,800,32000,23532fbb-1bfa-4e46-851a-b494bfe9478c)File(\EFI\GRUB\grubx64.efi)
+Boot0001* Shell HD(1,800,32000,23532fbb-1bfa-4e46-851a-b494bfe9478c)File(\shellx64.efi)
+Boot0002* Festplatte BIOS(2,0,00)P0: SAMSUNG HD204UI
+
+If the screen only goes black for a second and the next boot option is tried afterwards, according to this post, moving GRUB to the partition root can help. The boot option has to be deleted and recreated afterwards. The entry for GRUB should look like this then:
+
+Boot0000* GRUB HD(1,800,32000,23532fbb-1bfa-4e46-851a-b494bfe9478c)File(\grubx64.efi)
+
+Default/fallback boot path
+
+Some UEFI firmwares require a bootable file at a known location before they will show UEFI NVRAM boot entries. If this is the case, grub-install will claim efibootmgr has added an entry to boot GRUB, however the entry will not show up in the VisualBIOS boot order selector. The solution is to install GRUB at the default/fallback boot path:
+
+# grub-install --target=x86_64-efi --efi-directory=esp --removable
+
+Alternatively you can move an already installed GRUB EFI executable to the default/fallback path:
+
+# mv esp/EFI/grub esp/EFI/BOOT
+# mv esp/EFI/BOOT/grubx64.efi esp/EFI/BOOT/BOOTX64.EFI
+
+Invalid signature
+
+If trying to boot Windows results in an "invalid signature" error, e.g. after reconfiguring partitions or adding additional hard drives, (re)move GRUB's device configuration and let it reconfigure:
+
+# mv /boot/grub/device.map /boot/grub/device.map-old
+# grub-mkconfig -o /boot/grub/grub.cfg
+
+grub-mkconfig should now mention all found boot options, including Windows. If it works, remove /boot/grub/device.map-old.
+Boot freezes
+
+If booting gets stuck without any error message after GRUB loading the kernel and the initial ramdisk, try removing the add_efi_memmap kernel parameter.
+Arch not found from other OS
+
+Some have reported that other distributions may have trouble finding Arch Linux automatically with os-prober. If this problem arises, it has been reported that detection can be improved with the presence of /etc/lsb-release. This file and updating tool is available with the package lsb-release.
+Warning when installing in chroot
+
+When installing GRUB on a LVM system in a chroot environment (e.g. during system installation), you may receive warnings like
+
+/run/lvm/lvmetad.socket: connect failed: No such file or directory
+
+or
+
+WARNING: failed to connect to lvmetad: No such file or directory. Falling back to internal scanning.
+
+This is because /run is not available inside the chroot. These warnings will not prevent the system from booting, provided that everything has been done correctly, so you may continue with the installation.
+GRUB loads slowly
+
+GRUB can take a long time to load when disk space is low. Check if you have sufficient free disk space on your /boot or / partition when you are having problems.
+error: unknown filesystem
+
+GRUB may output error: unknown filesystem and refuse to boot for a few reasons. If you are certain that all UUIDs are correct and all filesystems are valid and supported, it may be because your BIOS Boot Partition is located outside the first 2 TiB of the drive [4]. Use a partitioning tool of your choice to ensure this partition is located fully within the first 2 TiB, then reinstall and reconfigure GRUB.
+
+This error might also be caused by an ext4 filesystem having unsupported features set:
+
+    large_dir - unsupported.
+    metadata_csum_seed - will be supported in GRUB 2.11 (commit).
+
+Warning
+Make sure to check GRUB support for new file system features before you enable them on your /boot file system.
+grub-reboot not resetting
+
+GRUB seems to be unable to write to root Btrfs partitions [5]. If you use grub-reboot to boot into another entry it will therefore be unable to update its on-disk environment. Either run grub-reboot from the other entry (for example when switching between various distributions) or consider a different file system. You can reset a "sticky" entry by executing grub-editenv create and setting GRUB_DEFAULT=0 in your /etc/default/grub (do not forget grub-mkconfig -o /boot/grub/grub.cfg).
+Old Btrfs prevents installation
+
+If a drive is formatted with Btrfs without creating a partition table (eg. /dev/sdx), then later has partition table written to, there are parts of the BTRFS format that persist. Most utilities and OS's do not see this, but GRUB will refuse to install, even with --force
+
+# grub-install: warning: Attempting to install GRUB to a disk with multiple partition labels. This is not supported yet..
+# grub-install: error: filesystem `btrfs' does not support blocklists.
+
+You can zero the drive, but the easy solution that leaves your data alone is to erase the Btrfs superblock with wipefs -o 0x10040 /dev/sdx
+Windows 8/10 not found
+
+A setting in Windows 8/10 called "Hiberboot", "Hybrid Boot" or "Fast Boot" can prevent the Windows partition from being mounted, so grub-mkconfig will not find a Windows install. Disabling Hiberboot in Windows will allow it to be added to the GRUB menu.
+GRUB rescue and encrypted /boot
+
+When using an encrypted /boot, and you fail to input a correct password, you will be dropped in grub-rescue prompt.
+
+This grub-rescue prompt has limited capabilities. Use the following commands to complete the boot:
+
+grub rescue> cryptomount <partition>
+grub rescue> insmod normal
+grub rescue> normal
+
+See this blog post for a better description.
+GRUB is installed but the menu is not shown at boot
+
+Check /etc/default/grub if GRUB_TIMEOUT is set to 0, in which case set it to a positive number: it sets the number of seconds before the default GRUB entry is loaded. Also check if GRUB_TIMEOUT_STYLE is set to hidden and set it to menu, so that the menu will be shown by default. Then regenerate the main configuration file and reboot to check if it worked.
+
+If it does not work, there may be incompatibility problems with the graphical terminal. Set GRUB_TERMINAL_OUTPUT to console in /etc/default/grub to disable the GRUB graphical terminal.
+GRUB is installed, but receive "ERROR CODE 1962 - No operating system found" message on older Lenovo machines
+
+See Fixing Lenovo’s ERROR CODE 1962 by spoofing the EFI boot entries.
+Warning to perform grub-install/grub-mkconfig at each grub update
+
+This article or section needs language, wiki syntax or style improvements. See Help:Style for reference.
+Reason: This does not belong in a troubleshooting section. (Discuss in Talk:GRUB)
+
+You can do it manually or use a pacman hook, for example:
+
+/etc/pacman.d/hooks/grub-update.hook
+
+[Trigger]
+Operation = Upgrade
+
+Type = Package
+Target = grub
+
+[Action]
+Description = Regenerate grub if updated
+When = PostTransaction
+Depends = grub
+Exec = /bin/sh -c "/usr/bin/grub-install --efi-directory=esp --bootloader-id=GRUB && /usr/bin/grub-mkconfig -o /boot/grub/grub.cfg"
+
+Change grub-install options such as the --efi-directory path to match your settings. 
+
+19 Reboot
+
+Exit the chroot environment by typing exit or pressing Ctrl+d.
+
+Optionally manually unmount all the partitions with umount -R /mnt: this allows noticing any "busy" partitions, and finding the cause with fuser(1).
+
+Finally, restart the machine by typing reboot: any partitions still mounted will be automatically unmounted by systemd. Remember to remove the installation medium and then login into the new system with the root account.
+
+20 Post-installation
+   If you havent have a user Create the user (replace username with your desired name):
+    
+    useradd -m -G wheel -s /bin/bash username
+
+        -m: Creates /home/username.
+        -G wheel: Adds the user to the wheel group, allowing them to use sudo.
+        -s /bin/bash: Sets Bash as the default shell.
+    Set the password:
+    
+    passwd username
+
+    Enable Sudo privileges (Optional, but recommended):
+        Install sudo if not installed: pacman -S sudo.
+        Run visudo to edit the sudoers file: EDITOR=nano visudo.
+        Find the line %wheel ALL=(ALL:ALL) ALL and uncomment it by removing the # at the beginning.
+    Switch to new user:
+
+    su - username
+
+     
+
+Optional: Additional User Groups 
+To add a user to other groups (e.g., audio, video, storage) during creation, use the -G flag with a comma-separated list: 
+
+useradd -m -G wheel,audio,video,storage -s /bin/bash username
+
+21 run sudo nano /etc/os-release then change NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+To
+
+NAME="Triaxis GNU/Linux"
+PRETTY_NAME="Triaxis GNU/Linux"
+ID=triaxis
+BUILD_ID=rolling
+VERSION_ID=20260329.0.507017
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+DOCUMENTATION_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki"
+SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
+BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
+
+22 sudo pacman -S links
+   then links https://github.com/Haikal02-alt/Triaxis-GNU-Linux
+   then save Screenshot From 2026-03-18 22-28-58
+   then name it to triaxis-logo.png
+   then save
+   then exit links
+   then run sudo mv /home/haikal/triaxis-logo.png /usr/share/pixmaps
+   sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.png
+   Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.svg
+   Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text.svg
+   Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text-dark.svg
+   Then sudo nano /etc/os-release then add LOGO=/usr/share/pixmaps/triaxis-logo.png
+   Example
+NAME="Triaxis GNU/Linux"
+PRETTY_NAME="Triaxis GNU/Linux"
+ID=triaxis
+BUILD_ID=rolling
+VERSION_ID=20260329.0.507017
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
+DOCUMENTATION_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki"
+SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
+BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
+LOGO=/usr/share/pixmaps/triaxis-logo.png
