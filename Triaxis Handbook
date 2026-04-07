@@ -1186,6 +1186,6 @@ LOGO=/usr/share/pixmaps/triaxis-logo.png
    Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 24 If You Are Running UEFI And Latest Arch Linux Snapshot And You Notice Theres Splash on systemd boot which affected to Triaxis GNU/Linux Even Though Triaxis Uses GRUB Not systemd-boot
-   To To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
+   To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
    Then sudo nano /usr/share/systemd/bootctl/arch.conf Change title  Arch Linux To title   Triaxis GNU/Linux
    Then sudo mkinitcpio -P
