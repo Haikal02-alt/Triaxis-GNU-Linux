@@ -1,0 +1,6 @@
+Most mainstream Linux distributions are removing native 32-bit (x86_32) support
+treating it as obsolete.
+Major distros like Ubuntu, Fedora, and Fedora-based projects have either removed 32-bit installation images or proposed doing so.
+Support is shifting toward 64-bit systems, with Firefox aiming to end 32-bit Linux support by 2026.
+
+But Triaxis GNU/Linux Will Never Remove 32 Bit Support Triaxis GNU/Linux Will continue the 32 bit support
