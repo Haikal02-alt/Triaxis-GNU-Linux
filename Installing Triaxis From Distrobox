@@ -22,12 +22,11 @@ NAME="Triaxis GNU/Linux"
 PRETTY_NAME="Triaxis GNU/Linux"
 ID=triaxis
 BUILD_ID=rolling
-VERSION_ID=20260322.0.504324
+VERSION_ID=20260329.0.507017
 ANSI_COLOR="38;2;23;147;209"
 HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
-DOCUMENTATION_URL="https://wiki.archlinux.org/"
-SUPPORT_URL="https://bbs.archlinux.org/"
+DOCUMENTATION_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki"
+SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
 BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
-PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
 
 6 Have Fun And Start Using Triaxis From Distrobox
