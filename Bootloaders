@@ -1,10 +1,10 @@
 Bootloader is the first software program that runs when a computer starts, acting as a bridge between firmware (BIOS/UEFI) and the operating system kernel. It loads the Linux kernel into memory, allows users to choose between multiple operating systems, and manages boot parameters to initiate the system. 
 
-    Function: It is responsible for transferring control from the hardware to the operating system.
-    GRUB2: The Grand Unified Bootloader (GRUB) is the most common, versatile, and default bootloader on most modern Linux distributions.
-    Alternatives: Other bootloaders include systemd-boot, rEFInd, and older options like LILO or SYSLINUX.
-    Dual Booting: When multiple operating systems are installed, the bootloader provides a menu to select which one to boot.
-    Process: After the BIOS/UEFI initializes hardware, it locates the bootloader (often in the Master Boot Record or an EFI partition) to start the booting process. 
+Function: It is responsible for transferring control from the hardware to the operating system.
+GRUB2: The Grand Unified Bootloader (GRUB) is the most common, versatile, and default bootloader on most modern Linux distributions.
+Alternatives: Other bootloaders include systemd-boot, rEFInd, and older options like LILO or SYSLINUX.
+Dual Booting: When multiple operating systems are installed, the bootloader provides a menu to select which one to boot.
+Process: After the BIOS/UEFI initializes hardware, it locates the bootloader (often in the Master Boot Record or an EFI partition) to start the booting process. 
 
 How to Identify Your Bootloader:
 You can use the efibootmgr program to check the "BootCurrent" option to see which bootloader is active on UEFI systems. 
