@@ -1,12 +1,12 @@
 To Install FastCat You Must Using Kitty Terminal Run sudo pacman -S kitty Then remove konsole gnome-console xterm xfce terminal or other terminal with sudo pacman -R
 
 1 Open Kitty
-2 Run sudo pacman -S git (If You Havent Install git)
+2 Run doas pacman -S git (If You Havent Install git)
 3 Run git clone --depth 1 https://github.com/m3tozz/FastCat.git && cd FastCat && bash ./fastcat.sh --shell
 4 Type 01 Then 05
-5 Run sudo nano ~/.config/fastfetch/config.jsonc Then Change "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos To "source": "/usr/share/pixmaps/triaxis-logo.png",
+5 Run doas nano ~/.config/fastfetch/config.jsonc Then Change "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos To "source": "/usr/share/pixmaps/triaxis-logo.png",
 6 Save With ctrl x y enter
-7 Run sudo nano ~/.bashrc then Add this line at the end fastfetch
+7 Run doas nano ~/.bashrc then Add this line at the end fastfetch
 8 Save With ctrl x y enter
 
 Have Fun And You Can Use Or Rice Triaxis GNU/Linux With FastCat With Kitty Terminal
