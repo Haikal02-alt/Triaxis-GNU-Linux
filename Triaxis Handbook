@@ -1125,32 +1125,7 @@ To add a user to other groups (e.g., audio, video, storage) during creation, use
 
 useradd -m -G wheel,audio,video,storage -s /bin/bash username
 
-21 run sudo nano /etc/os-release then change NAME="Arch Linux"
-PRETTY_NAME="Arch Linux"
-ID=arch
-BUILD_ID=rolling
-ANSI_COLOR="38;2;23;147;209"
-HOME_URL="https://archlinux.org/"
-DOCUMENTATION_URL="https://wiki.archlinux.org/"
-SUPPORT_URL="https://bbs.archlinux.org/"
-BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
-PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
-LOGO=archlinux-logo
-
-To
-
-NAME="Triaxis GNU/Linux"
-PRETTY_NAME="Triaxis GNU/Linux"
-ID=triaxis
-BUILD_ID=rolling
-VERSION_ID=20260329.0.507017
-ANSI_COLOR="38;2;23;147;209"
-HOME_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux"
-DOCUMENTATION_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki"
-SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
-BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
-
-22 sudo pacman -S links
+21 sudo pacman -S links
    then links https://github.com/Haikal02-alt/Triaxis-GNU-Linux
    then save Screenshot From 2026-03-18 22-28-58
    then name it to triaxis-logo.png
@@ -1175,7 +1150,7 @@ SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
 BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
 LOGO=/usr/share/pixmaps/triaxis-logo.png
 
-23 Run sudo nano /etc/default/grub
+22 Run sudo nano /etc/default/grub
    Then Change GRUB_DISTRIBUTOR="Arch" To GRUB_DISTRIBUTOR="Triaxis"
    Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
    Run sudo nano /etc/grub.d/10_linux
@@ -1185,7 +1160,7 @@ LOGO=/usr/share/pixmaps/triaxis-logo.png
    Then Change GRUB_CMDLINE_LINUX_DEFAULT="loglevel 3 quiet" To GRUB_CMDLINE_LINUX_DEFAULT=""
    Update Grub Using sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-24 If You Are Running UEFI And Latest Arch Linux Snapshot And You Notice Theres Splash on systemd boot which affected to Triaxis GNU/Linux Even Though Triaxis Uses GRUB Not systemd-boot
+23 If You Are Running UEFI And Latest Arch Linux Snapshot And You Notice Theres Splash on systemd boot which affected to Triaxis GNU/Linux Even Though Triaxis Uses GRUB Not systemd-boot
    To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
    Then sudo nano /usr/share/systemd/bootctl/arch.conf Change title  Arch Linux To title   Triaxis GNU/Linux
    Then sudo mkinitcpio -P
