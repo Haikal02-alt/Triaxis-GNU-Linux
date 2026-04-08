@@ -1126,7 +1126,8 @@ To add a user to other groups (e.g., audio, video, storage) during creation, use
 useradd -m -G wheel,audio,video,storage -s /bin/bash username
 
 21 Install necessary packages sudo pacman -S fastfetch nano links htop btop doas
-   Configure doas: Create the configuration file with sudo nano /etc/doas.conf. A typical setup allowing users in the wheel group to use doas with password caching (similar to sudo) is
+   Configure doas: Create the configuration file with sudo nano /etc/doas.conf
+   then add this
    permit persist :wheel
    then links https://github.com/Haikal02-alt/Triaxis-GNU-Linux
    then save Screenshot From 2026-03-18 22-28-58
