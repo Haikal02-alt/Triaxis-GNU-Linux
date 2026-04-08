@@ -1,5 +1,5 @@
-Installing Apps Is Possible But Triaxis Strongly Recommends Compile it From source Not sudo pacman
-Note these sudo apt update and sudo apt install are only for old triaxis snapshots new triaxis snapshot requires sudo pacman -Syu and sudo pacman -S
+Installing Apps Is Possible But Triaxis Strongly Recommends Compile it From source Not doas pacman
+Note these sudo apt update and sudo apt install are only for old triaxis snapshots new triaxis snapshot requires doas pacman -Syu and doas pacman -S
 
 Fastfetch
 
