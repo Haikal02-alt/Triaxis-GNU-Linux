@@ -1,4 +1,4 @@
-To Install FastCat You Must Using Kitty Terminal Run sudo pacman -S kitty Then remove konsole gnome-console xterm xfce terminal or othher terminal with sudo pacman -R
+To Install FastCat You Must Using Kitty Terminal Run sudo pacman -S kitty Then remove konsole gnome-console xterm xfce terminal or other terminal with sudo pacman -R
 
 1 Open Kitty
 2 Run sudo pacman -S git (If You Havent Install git)
