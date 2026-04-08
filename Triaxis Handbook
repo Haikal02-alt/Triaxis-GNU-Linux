@@ -1125,7 +1125,9 @@ To add a user to other groups (e.g., audio, video, storage) during creation, use
 
 useradd -m -G wheel,audio,video,storage -s /bin/bash username
 
-21 Install necessary packages sudo pacman -S fastfetch nano links htop btop
+21 Install necessary packages sudo pacman -S fastfetch nano links htop btop doas
+   Configure doas: Create the configuration file with sudo nano /etc/doas.conf. A typical setup allowing users in the wheel group to use doas with password caching (similar to sudo) is
+   permit persist :wheel
    then links https://github.com/Haikal02-alt/Triaxis-GNU-Linux
    then save Screenshot From 2026-03-18 22-28-58
    then name it to triaxis-logo.png
@@ -1178,3 +1180,5 @@ LOGO=/usr/share/pixmaps/triaxis-logo.png
    To Do This Run sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/systemd/bootctl/splash-arch.bmp
    Then sudo nano /usr/share/systemd/bootctl/arch.conf Change title  Arch Linux To title   Triaxis GNU/Linux
    Then sudo mkinitcpio -P
+
+24 Run doas pacman -Rns sudo
