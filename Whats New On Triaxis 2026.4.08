@@ -2,6 +2,8 @@ Released On Wednesday April 8 2026
 
 Release Notes
 
-The most notable change is that Official Triaxis Artwork Theme And Official Triaxis Desktop Environment is no longer included but instead it moved to archive This means a official artwork theme is no longer available
+1 The most notable change is that Official Triaxis Artwork Theme And Official Triaxis Desktop Environment is no longer included but instead it moved to archive This means a official artwork theme is no longer available
 
-Official Triaxis Artwork Theme And Official Triaxis Desktop Environment had to be dropped due to lack of DIY. Of course we would appreciate it if people would start finding archive to bring it back.
+  Official Triaxis Artwork Theme And Official Triaxis Desktop Environment had to be dropped due to lack of DIY. Of course we would appreciate it if people would start finding archive to bring it back.
+
+2 Triaxis Switched From sudo to doas because doas is significantly lighter than sudo. Developed by the OpenBSD project
