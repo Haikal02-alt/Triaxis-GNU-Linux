@@ -22,5 +22,7 @@ i686
 OpenPOWER
 PowerPC
 
+Triaxis listens to our community
+
 You Can Find Any Archives Here
 https://github.com/Haikal02-alt/Triaxis-GNU-Linux-Archive
