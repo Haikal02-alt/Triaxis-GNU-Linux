@@ -1,0 +1,52 @@
+Snap is a software deployment and package management system. The packages are called 'snaps' and the tool for using them is 'snapd', which works across a range of Linux distributions and allows, therefore, distribution-agnostic upstream software deployment. Canonical, the developer of Snap, manages the Snap Store service through which snaps are deployed.
+
+snapd is a REST API daemon for managing snap packages. Users can interact with it by using the snap client, which is part of the same package.
+
+Snaps can be confined using AppArmor which is now enabled in the default kernel. Consult relevant wiki pages to find steps for enabling AppArmor in your system.
+Warning
+
+    If AppArmor is not enabled in your system then all snaps will run in devel mode which mean they will have the same unrestricted access to your system as apps installed from Arch Linux repositories.
+    Running untrusted code is never safe, sandboxing cannot change this.
+
+Installation
+
+If you didnt install git run doas pacman -S git
+
+then
+
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+
+Once installed, the systemd unit that manages the main snap communication socket needs to be enabled:
+
+doas systemctl enable --now snapd.socket
+
+Confinement
+
+To take advantage of Snap confinement and application sandboxing, ensure AppArmor is install and enabled on your system, then run the following:
+
+doas systemctl enable --now snapd.apparmor.service
+
+To test whether confinement is running correctly, install the hello-world snap and run hello-world.evil. If confinement is working, you will see a permission denied error:
+
+hello-world.evil 
+Hello Evil World!
+This example demonstrates the app confinement
+You should see a permission denied error next
+/snap/hello-world/29/bin/evil: 9: /snap/hello-world/29/bin/evil: cannot create /var/tmp/myevil.txt: Permission denied
+
+Classic support
+
+To enable classic snap support, enter the following to create a symbolic link between /var/lib/snapd/snap and /snap:
+
+doas ln -s /var/lib/snapd/snap /snap
+
+Either log out and back in again, or restart your system, to ensure snap’s paths are updated correctly.
+
+To test your system, install the hello-world snap and make sure it runs correctly:
+
+doas snap install hello-world
+hello-world 6.3 from Canonical✓ installed
+hello-world
+Hello World!
