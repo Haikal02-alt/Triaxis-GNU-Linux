@@ -24,7 +24,7 @@ PowerPC
 
 Triaxis listens to our community
 
-Triaxis uses doas instead of sudo
+Triaxis uses doas instead of sudo starting Triaxis 2026.4.08
 
 You Can Find Any Archives Here
 https://github.com/Haikal02-alt/Triaxis-GNU-Linux-Archive
