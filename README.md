@@ -24,5 +24,7 @@ PowerPC
 
 Triaxis listens to our community
 
+Triaxis uses doas instead of sudo
+
 You Can Find Any Archives Here
 https://github.com/Haikal02-alt/Triaxis-GNU-Linux-Archive
