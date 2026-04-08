@@ -1136,8 +1136,22 @@ useradd -m -G wheel,audio,video,storage -s /bin/bash username
    Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo.svg
    Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text.svg
    Then sudo cp /usr/share/pixmaps/triaxis-logo.png /usr/share/pixmaps/archlinux-logo-text-dark.svg
-   Then sudo nano /etc/os-release then add LOGO=/usr/share/pixmaps/triaxis-logo.png
-   Example
+   Then sudo nano /etc/os-release then change
+
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+To
+
 NAME="Triaxis GNU/Linux"
 PRETTY_NAME="Triaxis GNU/Linux"
 ID=triaxis
