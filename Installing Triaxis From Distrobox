@@ -29,4 +29,7 @@ DOCUMENTATION_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/wiki"
 SUPPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/discussions/3"
 BUG_REPORT_URL="https://github.com/Haikal02-alt/Triaxis-GNU-Linux/issues/1"
 
-6 Have Fun And Start Using Triaxis From Distrobox
+6 Run sudo pacman -S doas
+  then run sudo nano /etc/doas.conf
+  then add this
+  permit persist :wheel
