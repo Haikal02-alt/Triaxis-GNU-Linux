@@ -1129,6 +1129,7 @@ useradd -m -G wheel,audio,video,storage -s /bin/bash username
    Configure doas: Create the configuration file with sudo nano /etc/doas.conf
    then add this
    permit persist :wheel
+   ctrl x y enter
    then links https://github.com/Haikal02-alt/Triaxis-GNU-Linux
    then save Screenshot From 2026-03-18 22-28-58
    then name it to triaxis-logo.png
