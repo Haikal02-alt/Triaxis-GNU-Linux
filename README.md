@@ -7,7 +7,7 @@ Triaxis GNU/Linux Is A Arch Linux Source Based Which Is Arch Based But You compi
 WARNING Triaxis Doesnt Include Graphical Install You Just Setup The Arch Linux Then Build It Manually And Making it hard and advanced user only and making it not good for very beginner
 Triaxis Is A Build from source You compile everything yourself, giving you total control
 Educational focus: It's also a learning tool to understand how Linux works, not just how to use it.
-Customization: Creates a minimal system you can build upon, adding only what you need or install kde plasma
+Customization: Creates a minimal system you can build upon, adding only what you need
 Triaxis GNU/Linux Does Not Provide ISO Its A Complete DIY Distro You Build it yourself And compile everything yourself from source like git
 Triaxis GNU/Linux is primarily licensed under the GNU General Public License version 2 (GPLv2)
 100% Free & Open Source
