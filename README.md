@@ -2,6 +2,9 @@
 
 # Welcome to Triaxis GNU/Linux, a highly flexible,Arch Linux source-based Linux distribution.
 
+TRIAXIS GNU/LINUX IS NOW DISCONTINUED DUE TO COPY SOMEONE GEOMETRY DASH YOUTUBER NAME TRIAXIS AND IT IS NOW SUPERSEDED AND REPLACED BY ETERNAL LINUX LINK https://github.com/Haikal02-alt/Eternal-Linux
+RIP TRIAXIS GNU/LINUX FEBRUARY 8 2026-APRIL 19 2026
+
 Triaxis GNU/Linux Is A Linux Distro Which Is Rolling Release And DIY Distro Just Like Arch Gentoo LFS And NixOS Which They Are DIY Distro
 Triaxis GNU/Linux Is A Arch Linux Source Based Which Is Arch Based But You compile from source by yourself
 WARNING Triaxis Doesnt Include Graphical Install You Just Setup The Arch Linux Then Build It Manually And Making it hard and advanced user only and making it not good for very beginner
